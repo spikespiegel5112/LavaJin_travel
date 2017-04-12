@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE HTML>
 <html>
 <head>
 <meta charset="utf-8">
@@ -13,11 +13,11 @@
 <script type="text/javascript" src="lib/respond.min.js"></script>
 <script type="text/javascript" src="lib/PIE_IE678.js"></script>
 <![endif]-->
-<link href="__PUBLIC__/Admin/css/H-ui.min.css" rel="stylesheet" type="text/css" />
-<link href="__PUBLIC__/Admin/css/H-ui.admin.css" rel="stylesheet" type="text/css" />
-<link href="__PUBLIC__/Admin/lib/Hui-iconfont/1.0.7/iconfont.css" rel="stylesheet" type="text/css" />
-<link href="__PUBLIC__/Admin/skin/default/skin.css" rel="stylesheet" type="text/css" id="skin" />
-<link href="__PUBLIC__/Admin/css/style.css" rel="stylesheet" type="text/css" />
+<link href="/Public/Admin/css/H-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/Public/Admin/css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+<link href="/Public/Admin/lib/Hui-iconfont/1.0.7/iconfont.css" rel="stylesheet" type="text/css" />
+<link href="/Public/Admin/skin/default/skin.css" rel="stylesheet" type="text/css" id="skin" />
+<link href="/Public/Admin/css/style.css" rel="stylesheet" type="text/css" />
 <!--[if IE 6]>
 <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
@@ -46,7 +46,7 @@
 			<ul class="dropDown-menu radius box-shadow">
 				<li><a href="#">个人信息</a></li>
 				<li><a href="#">切换账户</a></li>
-				<li><a href="<{:U('Index/logout')}>">退出</a></li>
+				<li><a href="<?php echo U('Index/logout');?>">退出</a></li>
 			</ul>
 		</li>
 		<!--<li id="Hui-msg"> <a href="#" title="消息"><span class="badge badge-danger">1</span><i class="Hui-iconfont" style="font-size:18px">&#xe68a;</i></a>-->
@@ -80,7 +80,7 @@
 			<dt><i class="Hui-iconfont">&#xe60d;</i> 会员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="<{:U('Member/index')}>" data-title="会员列表" href="javascript:;">会员列表</a></li>
+					<li><a _href="<?php echo U('Member/index');?>" data-title="会员列表" href="javascript:;">会员列表</a></li>
 				</ul>
 			</dd>
 		</dl>
@@ -89,7 +89,7 @@
 		<dt><i class="Hui-iconfont">&#xe687;</i> 订单管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 		<dd>
 			<ul>
-				<li><a _href="<{:U('Order/index')}>" data-title="订单列表" href="javascript:;">订单列表</a></li>
+				<li><a _href="<?php echo U('Order/index');?>" data-title="订单列表" href="javascript:;">订单列表</a></li>
 			</ul>
 		</dd>
 
@@ -124,8 +124,8 @@
 			<dt><i class="Hui-iconfont">&#xe62e;</i> 系统管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a _href="<{:U('User/index')}>" data-title="管理员列表" href="javascipt:;">管理员列表</a> </li>
-					<li><a _href="<{:U('User/add')}>" data-title="添加管理员" href="javascipt:;">添加管理员</a> </li>
+					<li><a _href="<?php echo U('User/index');?>" data-title="管理员列表" href="javascipt:;">管理员列表</a> </li>
+					<li><a _href="<?php echo U('User/add');?>" data-title="添加管理员" href="javascipt:;">添加管理员</a> </li>
 					<!--<li><a _href="system-base.html" data-title="系统设置" href="javascript:void(0)">系统设置</a></li>-->
 					<!--<li><a _href="system-category.html" data-title="栏目管理" href="javascript:void(0)">栏目管理</a></li>-->
 					<!--<li><a _href="system-data.html" data-title="数据字典" href="javascript:void(0)">数据字典</a></li>-->
@@ -149,14 +149,14 @@
 	<div id="iframe_box" class="Hui-article">
 		<div class="show_iframe">
 			<div style="display:none" class="loading"></div>
-			<iframe scrolling="yes" frameborder="0" src="<{:U('Index/welcome')}>"></iframe>
+			<iframe scrolling="yes" frameborder="0" src="<?php echo U('Index/welcome');?>"></iframe>
 		</div>
 	</div>
 </section>
-<script type="text/javascript" src="__PUBLIC__/Admin/lib/jquery/1.9.1/jquery.min.js"></script> 
-<script type="text/javascript" src="__PUBLIC__/Admin/lib/layer/2.1/layer.js"></script> 
-<script type="text/javascript" src="__PUBLIC__/Admin/js/H-ui.js"></script> 
-<script type="text/javascript" src="__PUBLIC__/Admin/js/H-ui.admin.js"></script> 
+<script type="text/javascript" src="/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="/Public/Admin/lib/layer/2.1/layer.js"></script> 
+<script type="text/javascript" src="/Public/Admin/js/H-ui.js"></script> 
+<script type="text/javascript" src="/Public/Admin/js/H-ui.admin.js"></script> 
 <script type="text/javascript">
 /*资讯-添加*/
 function article_add(title,url){
