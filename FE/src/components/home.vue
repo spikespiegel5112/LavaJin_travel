@@ -169,6 +169,40 @@
                 </div>
                 <h5 class='title'>纳木错一日游</h5>
             </li>
+            <li>
+                <div class='thumbnail'>
+                    <span class='hot'>
+                        <img class='active' src='../images/icon/hot.png' />
+                    </span>
+                    <img src='../images/icon/TB1yRopLpXXXXaXXVXXwQxuJFXX-1025-1024.png' />
+                    <div class='price'>
+                        <span>￥298</span>
+                        <label>￥368</label>
+                    </div>
+                </div>
+                <div class='redpacket'>
+                    <span class='redpacket'></span>
+                    <label>使用红包再减10元</label>
+                </div>
+                <h5 class='title'>纳木错一日游</h5>
+            </li>
+            <li>
+                <div class='thumbnail'>
+                    <span class='hot'>
+                        <img class='active' src='../images/icon/hot.png' />
+                    </span>
+                    <img src='../images/icon/TB1yRopLpXXXXaXXVXXwQxuJFXX-1025-1024.png' />
+                    <div class='price'>
+                        <span>￥298</span>
+                        <label>￥368</label>
+                    </div>
+                </div>
+                <div class='redpacket'>
+                    <span class='redpacket'></span>
+                    <label>使用红包再减10元</label>
+                </div>
+                <h5 class='title'>纳木错一日游</h5>
+            </li>
         </ul>
     </div>
     <div class='common_nav_wrapper'>
