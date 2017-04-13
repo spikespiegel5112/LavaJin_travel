@@ -270,40 +270,37 @@ a.disabled:hover {
 	right: 0;
 	z-index: 1;
 }
+/*~~~~~~~~~~common_nav_wrapper~~~~~~~~~~*/
 .common_nav_wrapper {
-	display: inline-block;
-	padding:10px 0 0 0;
-	width: 10%;
-	/*	min-width: 140px;*/
+	display: block;
+	width: 100%;
 	background-color: #1b2133;
-	vertical-align: middle;
-	position: relative;
+	position: fixed;
+	bottom: 0;
 }
 .common_nav_wrapper.collapase{
 	width: 5%;
+}
+.common_nav_wrapper ul{
+	display: -webkit-box;
 }
 .common_nav_wrapper ul.collapase>li>a label{
 	display: none;
 }
 .common_nav_wrapper li {
-	display: block;
-	padding: 0 0 0 5%;
-	width: 95%;
 	line-height: 50px;
-	text-align: center;
-	border-left: 4px solid transparent;
+
 	box-sizing: border-box;
 	transition: all 0.3s;
-}
-.common_nav_wrapper li:hover, .common_nav_wrapper .active {
-	border-left: 4px solid #7fbe25;
-	transition: all 0.3s;
+	box-flex:1;
+	flex-wrap: nowrap;
+	-webkit-box-flex:1;
 }
 .common_nav_wrapper li a {
 	display: block;
 	color: #eee;
 	font-size: 15px;
-	text-align: left;
+	text-align: center;
 }
 .common_nav_wrapper li a span {
 	display: inline-block;
