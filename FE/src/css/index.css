@@ -1,0 +1,7 @@
+.index_carousel_wrapper {
+    width: 100%;
+    min-width: 320px;
+}
+.index_carousel_wrapper li a{
+    display: block;
+}
