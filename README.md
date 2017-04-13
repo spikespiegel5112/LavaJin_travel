@@ -1,9 +1,8 @@
 ﻿## 西藏旅游项目一期介绍
 --------------------------------------
-前端负责人: ID：Qingtian
-后端负责人: ID: G-star
+前端负责人: ID：Qingtian <br/>
+后端负责人: ID: G-star    <br/>
 项目负责人: ID：LavaJin
-测试负责人: ID：Megina
 ---------------------------------------
 采用框架  Thinkphp
   前端      Rem+Vuejs
