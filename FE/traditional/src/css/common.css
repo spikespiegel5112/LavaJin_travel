@@ -28,6 +28,10 @@ a.disabled:hover {
 .main_container{
 	width: 100%;
 }
+/*~~~~~~~~~~common_navgap_item~~~~~~~~~~*/
+.common_navgap_item{
+	height: 3rem;
+}
 /*~~~~~~~~~~form~~~~~~~~~~*/
 .common_radio_wrapper {
 	display: inline-block;
