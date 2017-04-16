@@ -313,11 +313,13 @@ a.disabled:hover {
 	text-align: center;
 }
 .common_nav_wrapper li a span {
-	display: inline-block;
-	font-size: 15px;
+	display: block;
+	padding: 0.5rem 0 0.3rem 0;
+	font-size: 1rem;
 }
 .common_nav_wrapper li a label {
 	display: inline-block;
+	font-size: 0.5rem;
 	cursor: pointer;
 }
 .common_title_wrapper {
