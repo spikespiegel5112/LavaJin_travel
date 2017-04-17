@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 	<meta charset="utf-8">
-	<title>西藏旅游 </title>
+	<title>西藏旅游</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_icgfcixm8qn9izfr.css" />
 	<link rel="stylesheet" href="/travel/Public/M/assets/css/swiper.min.css" />
 	<link rel="stylesheet" href="/travel/Public/M/css/reset.css" />
@@ -32,44 +32,44 @@
 					<a href="javascript:;">我的红包</a>
 				</li>
 				<li>
-					<a href="javascript:;">常用旅客信息</a>
+					<a href="javascript:;">常见旅客信息</a>
 				</li>
 				<li>
+					<a href="javascript:;">联系客服</a>
+				</li>
+				<li>
+					<a href="javascript:;">反馈建议</a>
+				<!-- </li>
+					<li>
 					<a href="javascript:;">我要推广</a>
-				</li>
-				<li>
-					<a href="javascript:;">联系我们</a>
-				</li>
-				<li>
-					<a href="javascript:;">关于我们</a>
-				</li>
+				</li> -->
 			</ul>
 		</div>
 		<div class='common_navgap_item'></div>
 		<div class='common_nav_wrapper'>
 			<ul>
 				<li>
-					<a href='index.html'>
+					<a href='<?php echo U('Index/index');?>'>
 						<span class='iconfont icon-house'></span>
 						<label>首页</label>
 					</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href='javascript:;'>
 						<span class='iconfont icon-order'></span>
 						<label>订单</label>
 					</a>
-				</li>
+				</li> -->
 				<li>
-					<a href='user.html'>
+					<a href='javascript:;'>
 						<span class='iconfont icon-user2'></span>
-						<label>我的</label>
+						<label>旅游攻略</label>
 					</a>
 				</li>
 				<li>
-					<a href='index.html'>
+					<a href='<?php echo U('User/index');?>'>
 						<span class='iconfont icon-house'></span>
-						<label>首页</label>
+						<label>会员中心</label>
 					</a>
 				</li>
 			</ul>
