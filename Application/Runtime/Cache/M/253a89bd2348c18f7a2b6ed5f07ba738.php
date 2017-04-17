@@ -79,7 +79,7 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='images/icon/hot.png' />
+						  <img class='active' src='/travel/Public/M/images/icon/hot.png' />
 					  </span>
 						<img src='/travel/Public/M/images/icon/TB1yRopLpXXXXaXXVXXwQxuJFXX-1025-1024.png' />
 						<div class='price'>
@@ -96,7 +96,7 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='images/icon/hot.png' />
+						  <img class='active' src='/travel/Public/M/images/icon/hot.png' />
 					  </span>
 						<img src='/travel/Public/M/images/icon/TB1yRopLpXXXXaXXVXXwQxuJFXX-1025-1024.png' />
 						<div class='price'>
@@ -113,7 +113,7 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='images/icon/hot.png' />
+						  <img class='active' src='/travel/Public/M/images/icon/hot.png' />
 					  </span>
 						<img src='/travel/Public/M/images/icon/TB1yRopLpXXXXaXXVXXwQxuJFXX-1025-1024.png' />
 						<div class='price'>
@@ -137,7 +137,7 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='images/icon/hot.png' />
+						  <img class='active' src='/travel/Public/M/images/icon/hot.png' />
 					  </span>
 						<img src='/travel/Public/M/images/icon/TB1yRopLpXXXXaXXVXXwQxuJFXX-1025-1024.png' />
 						<div class='price'>
@@ -154,7 +154,7 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='images/icon/hot.png' />
+						  <img class='active' src='/travel/Public/M/images/icon/hot.png' />
 					  </span>
 						<img src='/travel/Public/M/images/icon/TB1yRopLpXXXXaXXVXXwQxuJFXX-1025-1024.png' />
 						<div class='price'>
@@ -171,7 +171,7 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='images/icon/hot.png' />
+						  <img class='active' src='/travel/Public/M/images/icon/hot.png' />
 					  </span>
 						<img src='/travel/Public/M/images/icon/TB1yRopLpXXXXaXXVXXwQxuJFXX-1025-1024.png' />
 						<div class='price'>
@@ -188,7 +188,7 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='images/icon/hot.png' />
+						  <img class='active' src='/travel/Public/M/images/icon/hot.png' />
 					  </span>
 						<img src='/travel/Public/M/images/icon/TB1yRopLpXXXXaXXVXXwQxuJFXX-1025-1024.png' />
 						<div class='price'>
@@ -205,7 +205,7 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='images/icon/hot.png' />
+						  <img class='active' src='/travel/Public/M/images/icon/hot.png' />
 					  </span>
 						<img src='/travel/Public/M/images/icon/TB1yRopLpXXXXaXXVXXwQxuJFXX-1025-1024.png' />
 						<div class='price'>
