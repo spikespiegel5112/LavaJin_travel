@@ -20,9 +20,13 @@ a.disabled:hover {
 	text-decoration: none;
 }
 /*~~~~~~~~~~swiper~~~~~~~~~~*/
-.swiper-pagination-bullet{
+.main_container .swiper-pagination-bullets{
+	bottom: 1rem;
+}
+.main_container .swiper-pagination-bullet{
 	width: 0.4rem;
 	height: 0.4rem;
+	
 }
 /*~~~~~~~~~~main_container~~~~~~~~~~*/
 .main_container{
@@ -287,6 +291,7 @@ a.disabled:hover {
 	background-color: #1b2133;
 	position: fixed;
 	bottom: 0;
+	z-index: 1;
 }
 .common_nav_wrapper.collapase{
 	width: 5%;
