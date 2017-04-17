@@ -37,25 +37,13 @@
 					<a href="javascript:;">
 						<img src='/travel/Public/M/images/icon/TB1yRopLpXXXXaXXVXXwQxuJFXX-1025-1024.png' />
 					</a>
-					<label>一日游</label>
+					<label>旅游线路</label>
 				</li>
 				<li>
 					<a href="javascript:;">
 						<img src='/travel/Public/M/images/icon/TB1yRopLpXXXXaXXVXXwQxuJFXX-1025-1024.png' />
 					</a>
-					<label>门票</label>
-				</li>
-				<li>
-					<a href="javascript:;">
-						<img src='/travel/Public/M/images/icon/TB1yRopLpXXXXaXXVXXwQxuJFXX-1025-1024.png' />
-					</a>
-					<label>拼车租车</label>
-				</li>
-				<li>
-					<a href="javascript:;">
-						<img src='/travel/Public/M/images/icon/TB1yRopLpXXXXaXXVXXwQxuJFXX-1025-1024.png' />
-					</a>
-					<label>机票预订</label>
+					<label>租车包车</label>
 				</li>
 				<li>
 					<a href="javascript:;">
@@ -67,7 +55,19 @@
 					<a href="javascript:;">
 						<img src='/travel/Public/M/images/icon/TB1yRopLpXXXXaXXVXXwQxuJFXX-1025-1024.png' />
 					</a>
-					<label>特产售卖</label>
+					<label>机票预订</label>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src='/travel/Public/M/images/icon/TB1yRopLpXXXXaXXVXXwQxuJFXX-1025-1024.png' />
+					</a>
+					<label>特产专区</label>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<img src='/travel/Public/M/images/icon/TB1yRopLpXXXXaXXVXXwQxuJFXX-1025-1024.png' />
+					</a>
+					<label>特色服务</label>
 				</li>
 			</ul>
 		</div>
@@ -233,19 +233,13 @@
 				<li>
 					<a href='javascript:;'>
 						<span class='iconfont icon-order'></span>
-						<label>订单</label>
-					</a>
-				</li>
-				<li>
-					<a href='javascript:;'>
-						<span class='iconfont icon-house'></span>
 						<label>旅游攻略</label>
 					</a>
 				</li>
 				<li>
-					<a href='{:U('User/index')}'>
+					<a href='<?php echo U('User/index');?>'>
 						<span class='iconfont icon-user2'></span>
-						<label>我的</label>
+						<label>会员中心</label>
 					</a>
 				</li>
 				
