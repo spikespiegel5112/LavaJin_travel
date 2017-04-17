@@ -11,9 +11,9 @@
 <script type="text/javascript" src="lib/respond.min.js"></script>
 <script type="text/javascript" src="lib/PIE_IE678.js"></script>
 <![endif]-->
-<link href="/Public/Admin/css/H-ui.min.css" rel="stylesheet" type="text/css" />
-<link href="/Public/Admin/css/H-ui.admin.css" rel="stylesheet" type="text/css" />
-<link href="/Public/Admin/lib/Hui-iconfont/1.0.7/iconfont.css" rel="stylesheet" type="text/css" />
+<link href="/travel/Public/Admin/css/H-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/travel/Public/Admin/css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+<link href="/travel/Public/Admin/lib/Hui-iconfont/1.0.7/iconfont.css" rel="stylesheet" type="text/css" />
 <!--[if IE 6]>
 <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
@@ -172,8 +172,8 @@
     本后台系统由<a href="http://www.h-ui.net/" target="_blank" title="H-ui前端框架">H-ui前端框架</a>提供前端技术支持</p>
       -->
 </footer>
-<script type="text/javascript" src="/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="/Public/Admin/js/H-ui.js"></script>
+<script type="text/javascript" src="/travel/Public/Admin/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/travel/Public/Admin/js/H-ui.js"></script>
 <script>
 var _hmt = _hmt || [];
 (function() {
