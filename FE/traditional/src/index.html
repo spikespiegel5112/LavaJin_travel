@@ -2,6 +2,7 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
 	<title>dasdasdsa</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_icgfcixm8qn9izfr.css" />
 	<link rel="stylesheet" href="assets/css/swiper.min.css" />
@@ -13,7 +14,6 @@
 	<script type="text/javascript" src='assets/js/swiper.min.js'></script>
 	<script type="text/javascript" src='js/base.js'></script>
 	<script type="text/javascript" src='js/common.js'></script>
-	<script type="text/javascript" src='js/index.js'></script>
 </head>
 
 <body>
@@ -233,7 +233,7 @@
 					</a>
 				</li>
 				<li>
-					<a href='javascript:;'>
+					<a href='orderlist.html'>
 						<span class='iconfont icon-order'></span>
 						<label>订单</label>
 					</a>
@@ -264,7 +264,16 @@
 					pagination: '.swiper-pagination'
 				})
 			},
+			align: function(){
+				$('.index_categorylist_wrapper li a img').align({
+					container:'.index_categorylist_wrapper li a'
+				})
+				$('.index_productlist_wrapper li .thumbnail>img').align({
+					container:'.index_productlist_wrapper li .thumbnail'
+				})
+			},
 			main: function() {
+				this.align();
 				this.carousel();
 			},
 			init: function() {
