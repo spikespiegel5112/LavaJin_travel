@@ -1,0 +1,27 @@
+.order_main_container {
+    width: 100%;
+}
+
+.order_tab_wrapper {
+    width: 100%;
+    font-size: 0;
+}
+
+.order_tab_wrapper ul {
+    display: -webkit-box;
+}
+
+.order_tab_wrapper li {
+    line-height: 2rem;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    -webkit-box-flex: 1;
+}
+
+.order_tab_wrapper li a {
+    display: inline-block;
+    width: 100%;
+    font-size: 0.7rem;
+    line-height: 2rem;
+    text-align: center;
+}

@@ -303,11 +303,9 @@ a.disabled:hover {
 	display: none;
 }
 .common_nav_wrapper li {
-	line-height: 50px;
-
+	line-height: 0.7rem;
 	box-sizing: border-box;
 	transition: all 0.3s;
-	box-flex:1;
 	flex-wrap: nowrap;
 	-webkit-box-flex:1;
 }

@@ -1,0 +1,116 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>dasdasdsa</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_icgfcixm8qn9izfr.css" />
+	<link rel="stylesheet" href="assets/css/swiper.min.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel='stylesheet' href="css/common.css" />
+	<link rel='stylesheet' href="css/order.css" />
+	<link rel='stylesheet' href="css/access.css" />
+	<script type="text/javascript" src='assets/js/jquery.min.js'></script>
+	<script type="text/javascript" src='assets/js/swiper.min.js'></script>
+	<script type="text/javascript" src='js/base.js'></script>
+	<script type="text/javascript" src='js/common.js'></script>
+	<script type="text/javascript" src='js/index.js'></script>
+</head>
+
+<body>
+	<div class='main_container'>
+		<div class='order_main_container'>
+			<div class='order_tab_wrapper'>
+				<ul>
+					<li>
+						<a href="javascript:;">全部</a>
+					</li>
+					<li>
+						<a href="javascript:;">待支付</a>
+					</li>
+					<li>
+						<a href="javascript:;">待出行</a>
+					</li>
+					<li>
+						<a href="javascript:;">待评价</a>
+					</li>
+					<li>
+						<a href="javascript:;">退款单</a>
+					</li>
+				</ul>
+			</div>
+			<div class='order_list_wrapper'>
+				<ul>
+					<li>
+
+					</li>
+					<li>
+						
+					</li>
+					<li>
+						
+					</li>
+					<li>
+						
+					</li>
+					<li>
+						
+					</li>
+					<li>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class='common_navgap_item'></div>
+		<div class='common_nav_wrapper'>
+			<ul>
+				<li>
+					<a href='index.html'>
+						<span class='iconfont icon-house'></span>
+						<label>首页</label>
+					</a>
+				</li>
+				<li>
+					<a href='javascript:;'>
+						<span class='iconfont icon-order'></span>
+						<label>订单</label>
+					</a>
+				</li>
+				<li>
+					<a href='user.html'>
+						<span class='iconfont icon-user2'></span>
+						<label>我的</label>
+					</a>
+				</li>
+				<li>
+					<a href='index.html'>
+						<span class='iconfont icon-house'></span>
+						<label>首页</label>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+(function($){
+	$(function(){
+		var orderList = {
+			tab: function() {
+				$('.order_tab_wrapper li').toggleActive({
+					classname:''
+				})
+			},
+			main: function() {
+				this.carousel();
+			},
+			init: function() {
+				this.main();
+			}
+		}
+		orderList.init();
+	})
+})(jQuery)
+</script>
+</html>
+
