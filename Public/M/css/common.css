@@ -20,9 +20,13 @@ a.disabled:hover {
 	text-decoration: none;
 }
 /*~~~~~~~~~~swiper~~~~~~~~~~*/
-.swiper-pagination-bullet{
+.main_container .swiper-pagination-bullets{
+	bottom: 1rem;
+}
+.main_container .swiper-pagination-bullet{
 	width: 0.4rem;
 	height: 0.4rem;
+	
 }
 /*~~~~~~~~~~main_container~~~~~~~~~~*/
 .main_container{
@@ -56,18 +60,24 @@ a.disabled:hover {
 /*~~~~~~~~~~common_btn_item~~~~~~~~~~*/
 .common_btn_item {
 	display: inline-block;
-	height: 25px;
-	background-color: #2277da;
-	border: 1px solid #2277da;
-	border-radius: 2px;
-	padding: 0 15px;
+	margin: 0.1rem;
+	min-width: 2rem;
+	height: 1rem;
+	line-height: 1rem;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 0.1rem;
+	padding: 0 0.2rem;
 	width: auto;
-	height: 100%;
-	line-height: 25px;
-	font-size: 13px;
-	color: #fff;
+	font-size: 0.5rem;
+	color: #333;
 	text-align: center;
 	box-sizing: border-box;
+}
+.common_btn_item.primary{
+	background-color: #ff9900;
+	border: 1px solid #ff9900;
+	color: #fff;
 }
 /*~~~~~~~~~~common_header_wrapper~~~~~~~~~~*/
 
@@ -287,6 +297,7 @@ a.disabled:hover {
 	background-color: #1b2133;
 	position: fixed;
 	bottom: 0;
+	z-index: 1;
 }
 .common_nav_wrapper.collapase{
 	width: 5%;
@@ -298,11 +309,9 @@ a.disabled:hover {
 	display: none;
 }
 .common_nav_wrapper li {
-	line-height: 50px;
-
+	line-height: 0.7rem;
 	box-sizing: border-box;
 	transition: all 0.3s;
-	box-flex:1;
 	flex-wrap: nowrap;
 	-webkit-box-flex:1;
 }

@@ -1,18 +1,18 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes" />
 	<title>西藏旅游</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_icgfcixm8qn9izfr.css" />
-	<link rel="stylesheet" href="__PUBLIC__/M/assets/css/swiper.min.css" />
-	<link rel="stylesheet" href="__PUBLIC__/M/css/reset.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/common.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/order.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/access.css" />
-	<script type="text/javascript" src='__PUBLIC__/M/assets/js/jquery.min.js'></script>
-	<script type="text/javascript" src='__PUBLIC__/M/assets/js/swiper.min.js'></script>
-	<script type="text/javascript" src='__PUBLIC__/M/js/base.js'></script>
-	<script type="text/javascript" src='__PUBLIC__/M/js/common.js'></script>
+	<link rel="stylesheet" href="/travel/Public/M/assets/css/swiper.min.css" />
+	<link rel="stylesheet" href="/travel/Public/M/css/reset.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/common.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/order.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/access.css" />
+	<script type="text/javascript" src='/travel/Public/M/assets/js/jquery.min.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/assets/js/swiper.min.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/js/base.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/js/common.js'></script>
 </head>
 
 <body>
@@ -45,7 +45,7 @@
 							<li>
 								<div class='leftcontent'>
 									<div class='thumbnail'>
-										<img src="__PUBLIC__/M/images/static/02w58PICuYi_1024.jpg">
+										<img src="/travel/Public/M/images/static/02w58PICuYi_1024.jpg">
 									</div>
 									
 								</div>
@@ -68,7 +68,7 @@
 							<li>
 								<div class='leftcontent'>
 									<div class='thumbnail'>
-										<img src="__PUBLIC__/M/images/static/02w58PICuYi_1024.jpg">
+										<img src="/travel/Public/M/images/static/02w58PICuYi_1024.jpg">
 									</div>
 									
 								</div>
@@ -91,7 +91,7 @@
 							<li>
 								<div class='leftcontent'>
 									<div class='thumbnail'>
-										<img src="__PUBLIC__/M/images/static/02w58PICuYi_1024.jpg">
+										<img src="/travel/Public/M/images/static/02w58PICuYi_1024.jpg">
 									</div>
 									
 								</div>
@@ -114,7 +114,7 @@
 							<li>
 								<div class='leftcontent'>
 									<div class='thumbnail'>
-										<img src="__PUBLIC__/M/images/static/02w58PICuYi_1024.jpg">
+										<img src="/travel/Public/M/images/static/02w58PICuYi_1024.jpg">
 									</div>
 									
 								</div>
@@ -137,7 +137,7 @@
 							<li>
 								<div class='leftcontent'>
 									<div class='thumbnail'>
-										<img src="__PUBLIC__/M/images/static/02w58PICuYi_1024.jpg">
+										<img src="/travel/Public/M/images/static/02w58PICuYi_1024.jpg">
 									</div>
 									
 								</div>
@@ -160,7 +160,7 @@
 							<li>
 								<div class='leftcontent'>
 									<div class='thumbnail'>
-										<img src="__PUBLIC__/M/images/static/02w58PICuYi_1024.jpg">
+										<img src="/travel/Public/M/images/static/02w58PICuYi_1024.jpg">
 									</div>
 									
 								</div>
@@ -187,7 +187,7 @@
 							<li>
 								<div class='leftcontent'>
 									<div class='thumbnail'>
-										<img src="__PUBLIC__/M/images/static/02w58PICuYi_1024.jpg">
+										<img src="/travel/Public/M/images/static/02w58PICuYi_1024.jpg">
 									</div>
 									
 								</div>
@@ -229,7 +229,7 @@
 					</a>
 				</li>
 				<li>
-					<a href='<{:U('User/index')}>'>
+					<a href='<?php echo U('User/index');?>'>
 						<span class='iconfont icon-user2'></span>
 						<label>我的</label>
 					</a>
