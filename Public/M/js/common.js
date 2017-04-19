@@ -7,6 +7,7 @@
 				})
 			},
 			main: function() {
+				var that=this;
 				this.rem();
 			},
 			init: function() {
