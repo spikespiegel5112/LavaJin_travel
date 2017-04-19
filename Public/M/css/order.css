@@ -1,0 +1,139 @@
+.order_main_container {
+	width: 100%;
+}
+
+
+/*~~~~~~~~~~order_tab_wrapper~~~~~~~~~~*/
+
+.order_tab_wrapper {
+	width: 100%;
+	font-size: 0;
+	background-color: rgba(255, 255, 255, 0.8);
+	position: fixed;
+	top: 0;
+}
+
+.order_tab_wrapper ul {
+	display: -webkit-box;
+}
+
+.order_tab_wrapper li {
+	line-height: 1.6rem;
+	box-sizing: border-box;
+	flex-wrap: nowrap;
+	-webkit-box-flex: 1;
+}
+
+.order_tab_wrapper>ul>.active a {
+	color: #ff4400;
+	border-bottom: 2px solid #ff4400;
+}
+
+.order_tab_wrapper li a {
+	display: inline-block;
+	width: 100%;
+	font-size: 0.7rem;
+	line-height: 2rem;
+	text-align: center;
+}
+
+/*~~~~~~~~~~order_list_wrapper~~~~~~~~~~*/
+
+.order_list_wrapper>ul>li {
+	display: none;
+}
+
+.order_list_wrapper>ul>li>ul>li {
+	padding: 0.3rem 0 0 0;
+	font-size: 0;
+	border: 1px solid #ccc;
+}
+
+.order_list_wrapper>ul>li>ul>li:first-child {
+	border: 0;
+}
+
+.order_list_wrapper>ul>.active {
+	display: block;
+}
+
+.order_list_wrapper .leftcontent {
+	display: inline-block;
+	margin: 0.2rem;
+	width: 4rem;
+	height: 4rem;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	border-radius: 0.5rem;
+	vertical-align: top;
+}
+
+.order_list_wrapper .thumbnail {
+	width: 100%;
+	height: 100%;
+}
+
+.order_list_wrapper .thumbnail img {
+	display: block;
+	width: 100%;
+	transition: all 0.3s;
+}
+
+.order_list_wrapper .main {
+	display: inline-block;
+	width: 7rem;
+	font-size: 0.8rem;
+	vertical-align: top;
+}
+
+.order_list_wrapper .title {
+	margin: 0.3rem 0 0.5rem 0;
+	font-size: 0.6rem;
+}
+
+.order_list_wrapper .type {
+	margin: 0.1rem 0;
+	font-size: 0.5rem;
+	color: #999;
+}
+
+.order_list_wrapper .date {
+	margin: 0.1rem 0;
+	font-size: 0.5rem;
+	color: #666;
+}
+
+.order_list_wrapper .rightcontent {
+	display: inline-block;
+	width: 4.5rem;
+	font-size: 0.8rem;
+	vertical-align: top;
+}
+
+.order_list_wrapper .rightcontent .totalprice {
+	font-size: 0.5rem;
+}
+
+.order_list_wrapper .orderfooter {
+	width: 100%;
+}
+
+.order_list_wrapper .orderfooter:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.order_list_wrapper .orderfooter .orderstatus {
+	float: left;
+	margin: 0.5rem;
+	font-size: 0.4rem;
+	color: #ff4400;
+	vertical-align: middle;
+}
+
+.order_list_wrapper .orderbtn_wrapper {
+	float: right;
+	padding: 0 0.3rem;
+	font-size: 0.4rem;
+}

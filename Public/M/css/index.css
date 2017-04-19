@@ -34,11 +34,13 @@
     display: inline-block;
     margin: 0.5rem 1rem;
     width: 3rem;
+    height: 3rem;
 }
 
 .index_categorylist_wrapper li a {
     display: inline-block;
     width: 100%;
+    height: 100%;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -46,6 +48,7 @@
 .index_categorylist_wrapper li a img {
     display: inline-block;
     width: 100%;
+    transition: all 0.3s;
 }
 
 .index_categorylist_wrapper li label {
@@ -67,6 +70,7 @@
     width: 6rem;
     height: 6rem;
     position: relative;
+    overflow: hidden;
 }
 
 .index_productlist_wrapper li .thumbnail .hot {
@@ -79,6 +83,7 @@
 .index_productlist_wrapper li .thumbnail img {
     display: block;
     width: 100%;
+    transition: all 0.3s;
 }
 
 .index_productlist_wrapper li .thumbnail .price {
