@@ -26,7 +26,7 @@
 		<div class='user_mainlist_wrapper'>
 			<ul>
 				<li>
-					<a href="javascript:;">我的订单</a>
+					<a href="<?php echo U('Order/index');?>">我的订单</a>
 				</li>
 				<li>
 					<a href="javascript:;">我的红包</a>
@@ -54,12 +54,6 @@
 						<label>首页</label>
 					</a>
 				</li>
-				<!-- <li>
-					<a href='javascript:;'>
-						<span class='iconfont icon-order'></span>
-						<label>订单</label>
-					</a>
-				</li> -->
 				<li>
 					<a href='javascript:;'>
 						<span class='iconfont icon-user2'></span>
