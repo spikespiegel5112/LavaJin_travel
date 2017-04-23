@@ -20,7 +20,7 @@
 <body>
 	<div class='main_container'>
 		<div class="common_header_wrapper fixed transparent">
-			<a class="common_navbtn_item" href="javascript:;">
+			<a class="common_navbtn_item" href="<?php echo U('Index/index');?>">
 				<span class="iconfont icon-backward2"></span>
 			</a>
 		</div>
