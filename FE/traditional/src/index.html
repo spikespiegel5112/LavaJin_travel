@@ -264,13 +264,19 @@
 					pagination: '.swiper-pagination'
 				})
 			},
-			align: function(){
-				$('.index_categorylist_wrapper li a img').align({
-					container:'.index_categorylist_wrapper li a'
-				})
-				$('.index_productlist_wrapper li .thumbnail>img').align({
-					container:'.index_productlist_wrapper li .thumbnail'
-				})
+			align: function() {
+				setTimeout(function() {
+					$('.index_categorylist_wrapper li a img').align({
+						container: '.index_categorylist_wrapper li a'
+					})
+				}, 500)
+
+				setTimeout(function() {
+					$('.index_productlist_wrapper li .thumbnail>img').align({
+						container: '.index_productlist_wrapper li .thumbnail'
+					})
+				}, 500)
+
 			},
 			main: function() {
 				this.align();
@@ -283,7 +289,6 @@
 		index.init();
 	})
 })(jQuery)
-
 </script>
-</html>
 
+</html>
