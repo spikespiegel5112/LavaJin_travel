@@ -1,43 +1,40 @@
 input {
     outline: none;
 }
-
 textarea {
     padding: 0;
     resize: none;
 }
-
 .active {
     display: block;
 }
-
-a.disabled,
-.disabled {
+a.disabled, .disabled {
     color: #a2a2a2;
     border-color: #e8e8e8;
     cursor: not-allowed;
 }
-
+.fixed {
+    position: fixed!important;
+}
+.transparent {
+    background-color: transparent!important;
+}
 .common_btn_item.disabled {
     background-color: #e8e8e8;
 }
-
 a.disabled:hover {
     text-decoration: none;
 }
-
 
 /*~~~~~~~~~~swiper~~~~~~~~~~*/
 
 .main_container .swiper-pagination-bullets {
     bottom: 1rem;
 }
-
 .main_container .swiper-pagination-bullet {
     width: 0.4rem;
     height: 0.4rem;
 }
-
 
 /*~~~~~~~~~~main_container~~~~~~~~~~*/
 
@@ -45,42 +42,33 @@ a.disabled:hover {
     width: 100%;
 }
 
-
 /*~~~~~~~~~~common_navgap_item~~~~~~~~~~*/
 
 .common_navgap_item {
     height: 3rem;
 }
 
-
 /*~~~~~~~~~~form~~~~~~~~~~*/
 
 .common_radio_wrapper {
     display: inline-block;
 }
-
-.common_radio_wrapper input,
-.common_radio_wrapper label {
+.common_radio_wrapper input, .common_radio_wrapper label {
     display: inline-block;
 }
-
 .common_input_item {
     display: table-cell;
     width: auto;
     vertical-align: middle;
 }
-
-.common_input_item input,
-.common_input_item textarea {
+.common_input_item input, .common_input_item textarea {
     padding: 5px;
 }
-
 .common_layout_container {
     width: 100%;
     min-width: 1000px;
     font-size: 0;
 }
-
 
 /*~~~~~~~~~~common_btn_item~~~~~~~~~~*/
 
@@ -89,7 +77,6 @@ a.disabled:hover {
     width: 100%;
     text-align: center;
 }
-
 .common_btn_item {
     display: inline-block;
     margin: 0.1rem;
@@ -106,7 +93,6 @@ a.disabled:hover {
     text-align: center;
     box-sizing: border-box;
 }
-
 .common_btn_item.primary {
     background-color: #ff9900;
     border: 1px solid #ff9900;
@@ -119,7 +105,6 @@ a.disabled:hover {
     background-color: #fff;
     color: #666;
 }
-
 .common_blockbtn_item {
     display: block;
     text-align: center;
@@ -128,9 +113,8 @@ a.disabled:hover {
     line-height: 2rem;
     color: #fff;
     font-size: 0.8rem;
-    background-color: #e60853;
+    background-color: #ff4400;
 }
-
 
 /*~~~~~~~~~~common_header_wrapper~~~~~~~~~~*/
 
@@ -141,13 +125,10 @@ a.disabled:hover {
     height: 2rem;
     background-color: #fff;
 }
-
 .common_header_wrapper .iconfont {
     font-size: 1rem;
 }
-
-.common_header_wrapper .right_btn,
-.common_header_wrapper .left_btn {
+.common_header_wrapper .right_btn, .common_header_wrapper .left_btn {
     font-size: 1rem;
     line-height: 2rem;
     position: absolute;
@@ -157,35 +138,29 @@ a.disabled:hover {
     margin: 0 0.4rem;
     padding: 0 0.5rem;
 }
-
 .common_header_wrapper .title {
     font-size: 0.75rem;
     line-height: 2.5rem;
     text-align: center;
     color: #fff;
 }
-
 .common_header_wrapper .right_btn {
     right: 0;
     color: #000;
 }
-
 .common_header_wrapper .left_btn {
     left: 0;
 }
-
 .common_header_wrapper .add_btn span {
     font-size: 1.5rem;
     line-height: 2rem;
     color: #fff;
 }
-
 .common_header_wrapper .back_btn span {
     font-size: 1rem;
     line-height: 2rem;
     color: #000;
 }
-
 .common_header_wrapper .action_btn {
     line-height: 1.1rem;
     height: 1.1rem;
@@ -194,7 +169,6 @@ a.disabled:hover {
     border-radius: 0.6rem;
     border: 1px solid #fff;
 }
-
 .common_header_wrapper .orange_btn {
     line-height: 26px;
     height: 26px;
@@ -203,37 +177,31 @@ a.disabled:hover {
     border-radius: 1rem;
     background-color: #ff6f29;
 }
-
 .common_header_wrapper .setting_btn span {
     font-size: 29px;
     line-height: 42px;
     color: #fff;
 }
-
 .common_header_wrapper .share_btn span {
     font-size: 26px;
     line-height: 40px;
     color: #fff;
 }
-
 .common_header_wrapper .list_btn span {
     font-size: 30px;
     line-height: 40px;
     color: #fff;
 }
-
 .common_header_wrapper .left_angle span {
     font-size: 26px;
     line-height: 40px;
     color: #fff;
 }
-
 .common_header_wrapper .upload_btn span {
     font-size: 24px;
     line-height: 40px;
     color: #fff;
 }
-
 
 /*.common_header_wrapper .search_btn span{
 	color: #fff;
@@ -241,24 +209,19 @@ a.disabled:hover {
 	line-height: 42px;
 }*/
 
-.common_header_wrapper li:first-child,
-.common_header_wrapper a {
+.common_header_wrapper li:first-child, .common_header_wrapper a {
     color: #fff;
 }
-
 .common_header_wrapper li:before {
     padding: 0 0 0 5px;
     content: ' / ';
 }
-
 .common_header_wrapper li:after {
     content: ' ';
 }
-
 .common_header_wrapper li:first-child:before {
     content: ' ';
 }
-
 .common_header_wrapper p {
     font-size: 0.8rem;
     line-height: 2rem;
@@ -274,26 +237,22 @@ a.disabled:hover {
     text-overflow: ellipsis;
     color: #000;
 }
-
 @media only screen and (max-width: 320px) {
     .common_header_wrapper p {
         max-width: 230px;
     }
 }
-
 .common_header_wrapper label {
     line-height: 40px;
     margin: 0 1em;
     /*  font-size: 0.9em;*/
 }
-
 .common_header_wrapper h5 {
     line-height: 2.5em;
     float: left;
     height: 2.5em;
     padding: 0 0 0 1em;
 }
-
 .common_header_wrapper .ok_item {
     line-height: 1.5em;
     float: right;
@@ -306,13 +265,11 @@ a.disabled:hover {
     border-radius: 3px;
     background: #eee;
 }
-
 .common_header_wrapper ul {
     position: absolute;
     z-index: 1;
     margin: 0 0 0 .5em;
 }
-
 .common_header_wrapper li {
     font-size: 1em;
     line-height: 3.5em;
@@ -322,6 +279,21 @@ a.disabled:hover {
     color: #000;
 }
 
+/*~~~~~~~~~~common_navbtn_item~~~~~~~~~~*/
+
+.common_navbtn_item {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    margin: 0.4rem;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 /*~~~~~~~~~~common_block_wrapper~~~~~~~~~~*/
 
@@ -333,37 +305,61 @@ a.disabled:hover {
     overflow: hidden;
 }
 
+/*~~~~~~~~~~common_redpacket_item~~~~~~~~~~*/
+
+.common_redpacket_item {
+    display: inline-block;
+    margin: 0.3rem 0;
+    color: red;
+    font-size: 0.8rem;
+    vertical-align: middle;
+}
+.common_redpacket_item span {
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    background: url(../images/icon/coupon.jpg) no-repeat;
+    background-size: 0.8rem;
+    vertical-align: middle;
+}
+
+/*~~~~~~~~~~common_producttitle_item~~~~~~~~~~*/
+
+.common_producttitle_item {
+    padding: 1rem 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+.common_producttitle_item h2 {
+    font-size: 1rem;
+    font-weight: bold;
+}
 
 /*~~~~~~~~~~common_popup_wrapper~~~~~~~~~~*/
 
 .common_popup_wrapper {
     position: relative;
 }
-
 .common_popup_wrapper .form {
     margin: 0 auto;
     width: 95%;
     font-size: 0;
 }
-
 .common_popup_wrapper .form li {
     font-size: 14px;
 }
-
 .common_popup_wrapper .form label {
     display: inline-block;
     width: 20%;
     color: #333;
     text-align: right;
 }
-
 .common_popup_wrapper .form span {
     display: inline-block;
     padding: 0 0 0 15px;
     width: 80%;
     box-sizing: border-box;
 }
-
 .common_popup_wrapper .form input[type=text] {
     display: inline-block;
     margin: 0 0 0 5%;
@@ -373,7 +369,6 @@ a.disabled:hover {
     font-size: 16px;
     box-sizing: border-box;
 }
-
 .common_popup_wrapper .form input[type=checkbox] {
     display: inline-block;
     margin: 0 0 0 5%;
@@ -381,18 +376,15 @@ a.disabled:hover {
     font-size: 16px;
     box-sizing: border-box;
 }
-
 .common_popup_wrapper .form li {
     margin: 20px 0;
     height: 30px;
 }
-
 .common_popup_wrapper .title {
     padding: 15px 0 10px 0;
     text-align: center;
     border-bottom: 1px solid #ccc;
 }
-
 .common_popupbtn_item {
     display: block;
     margin: 20px auto 0;
@@ -405,12 +397,10 @@ a.disabled:hover {
     text-align: center;
     border-radius: 5px;
 }
-
 .common_popupbtn_item:hover {
     background: #51d366;
     transition: all 0.3s;
 }
-
 .common_popup_wrapper .closebtn {
     display: block;
     font-size: 13px;
@@ -419,16 +409,14 @@ a.disabled:hover {
     right: 10px;
 }
 
-
 /*~~~~~~~~~~layout_main_container~~~~~~~~~~*/
 
 .layout_main_container {
     display: inline-block;
     width: 100%;
-    /*	min-width: 1000px;*/
+    /*  min-width: 1000px;*/
     vertical-align: top;
 }
-
 
 /*~~~~~~~~~~common_iconbtn_item~~~~~~~~~~*/
 
@@ -439,14 +427,12 @@ a.disabled:hover {
     text-align: center;
     position: relative;
 }
-
 .common_iconbtn_item span {
     display: inline-block;
     width: 100%;
     height: 100%;
     font-size: 20px;
 }
-
 .common_iconbtn_item label {
     display: inline-block;
     padding: 1px;
@@ -464,7 +450,6 @@ a.disabled:hover {
     right: -5px;
 }
 
-
 /*~~~~~~~~~~common_search_wapper~~~~~~~~~~*/
 
 .common_search_wapper {
@@ -473,7 +458,6 @@ a.disabled:hover {
     width: 200px;
     position: relative;
 }
-
 .common_search_wapper input {
     padding: 0 10% 0 5%;
     width: 85%;
@@ -483,7 +467,6 @@ a.disabled:hover {
     background-color: #d7e0ef;
     font-size: 15px;
 }
-
 .common_search_wapper a {
     display: block;
     width: 30px;
@@ -497,7 +480,6 @@ a.disabled:hover {
     z-index: 1;
 }
 
-
 /*~~~~~~~~~~common_nav_wrapper~~~~~~~~~~*/
 
 .common_nav_wrapper {
@@ -509,19 +491,15 @@ a.disabled:hover {
     bottom: 0;
     z-index: 1;
 }
-
 .common_nav_wrapper.collapase {
     width: 5%;
 }
-
 .common_nav_wrapper ul {
     display: -webkit-box;
 }
-
 .common_nav_wrapper ul.collapase>li>a label {
     display: none;
 }
-
 .common_nav_wrapper li {
     line-height: 0.7rem;
     box-sizing: border-box;
@@ -529,51 +507,43 @@ a.disabled:hover {
     flex-wrap: nowrap;
     -webkit-box-flex: 1;
 }
-
 .common_nav_wrapper li a {
     display: block;
     color: #eee;
     font-size: 1rem;
     text-align: center;
 }
-
 .common_nav_wrapper li a span {
     display: block;
     padding: 0.5rem 0 0.3rem 0;
     font-size: 1rem;
 }
-
 .common_nav_wrapper li a label {
     display: inline-block;
     font-size: 0.5rem;
     cursor: pointer;
 }
-
 .common_title_wrapper {
     display: inline-block;
     width: 10%;
     height: 45px;
     vertical-align: middle;
 }
-
 .common_title_wrapper h1 {
     line-height: 44px;
     font-size: 16px;
     color: #1b2133;
     text-align: center;
 }
-
 .common_title_wrapper .closebtn {
     display: none;
 }
-
 
 /*~~~~~~~~~~common_tabtitle_wrapper~~~~~~~~~~*/
 
 .common_tabtitle_wrapper {
     font-size: 0;
 }
-
 .common_tabtitle_wrapper li {
     display: inline-block;
     font-size: 15px;
@@ -584,35 +554,28 @@ a.disabled:hover {
     border-color: transparent transparent #ccc transparent;
     background-color: #fff;
 }
-
 .common_tabtitle_wrapper li a {
     display: block;
     padding: 10px 20px;
     color: #999;
 }
-
 .common_tabtitle_wrapper .active {
     display: inline-block;
     border-color: #ccc #ccc transparent #ccc;
 }
-
 .common_tabtitle_wrapper .active a {
     color: #666;
 }
-
 .common_tabcontent_wrapper {
     border-top: 1px solid #ccc;
 }
-
 .common_tabcontent_wrapper>ul>li {
     display: none;
     width: 100%;
 }
-
 .common_tabcontent_wrapper .active {
     display: inline-block;
 }
-
 
 /*~~~~~~~~~~common_detailtitle_item~~~~~~~~~~*/
 
@@ -623,7 +586,6 @@ a.disabled:hover {
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
 }
-
 .common_detailtitle_item a {
     display: inline-block;
     padding: 0 10px 0 0;
@@ -631,59 +593,48 @@ a.disabled:hover {
     font-size: 16px;
     vertical-align: middle;
 }
-
-.common_detailtitle_item a span,
-.common_detailtitle_item a label {
+.common_detailtitle_item a span, .common_detailtitle_item a label {
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
     color: #2277da;
 }
-
 .common_detailtitle_item a span {
     padding: 0 2px;
 }
-
 .common_detailtitle_item h3 {
     display: inline-block;
     vertical-align: middle;
 }
-
 
 /*~~~~~~~~~~common_form_wrapper~~~~~~~~~~*/
 
 .common_form_wrapper {
     font-size: 15px;
 }
-
 .common_form_wrapper ul {
     display: table;
 }
-
 .common_form_wrapper li {
     display: table-row;
     margin: 30px 0;
     width: 100%;
     height: 40px;
 }
-
 .common_form_wrapper li>label {
     display: table-cell;
     padding: 0 20px 0 0;
     color: #666;
     vertical-align: middle;
 }
-
 .common_form_wrapper .common_input_item {
     display: table-cell;
     padding: 10px 0;
     border-color: #666;
 }
-
 .common_form_wrapper textarea {
     height: 60px;
 }
-
 
 /*~~~~~~~~~~common_formdetail_item~~~~~~~~~~*/
 
@@ -693,45 +644,37 @@ a.disabled:hover {
     vertical-align: middle;
 }
 
-
 /*~~~~~~~~~~common_footer_container~~~~~~~~~~*/
 
 .common_footer_container {
     width: 100%;
 }
-
 .common_footer_wrapper {
     margin: 0 auto;
     padding: 25px 0;
     width: 1200px;
     text-align: center;
 }
-
 .common_footer_wrapper ul li {
     display: inline-block;
     padding: 0 10px;
     font-size: 13px;
     border-left: 1px solid #98aac2;
 }
-
 .common_footer_wrapper ul li a {
     color: #98aac2;
 }
-
 .common_footer_wrapper ul li a:hover {
     color: #68798f;
 }
-
 .common_footer_wrapper ul li:first-child {
     border: 0;
 }
-
 .common_footer_wrapper .copyright {
     margin: 20px 0 0 0;
     font-size: 13px;
     color: #98aac2;
 }
-
 
 /*~~~~~~~~~~common_pagination_wrapper~~~~~~~~~~*/
 
@@ -739,7 +682,6 @@ a.disabled:hover {
     font-size: 0;
     text-align: center;
 }
-
 .common_pagination_wrapper>a {
     display: inline-block;
     padding: 0 5px;
@@ -749,14 +691,11 @@ a.disabled:hover {
     color: #3da14d;
     text-align: center;
 }
-
 .common_pagination_wrapper ul {
     display: inline-block;
     text-align: center;
 }
-
-.common_pagination_wrapper li,
-.common_pagination_wrapper>a {
+.common_pagination_wrapper li, .common_pagination_wrapper>a {
     display: inline-block;
     margin: 10px 5px;
     min-width: 30px;
@@ -764,7 +703,6 @@ a.disabled:hover {
     vertical-align: top;
     font-size: 13px;
 }
-
 .common_pagination_wrapper li a {
     display: inline-block;
     padding: 0 5px;
@@ -777,9 +715,7 @@ a.disabled:hover {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-.common_pagination_wrapper a:hover,
-.common_pagination_wrapper .active a {
+.common_pagination_wrapper a:hover, .common_pagination_wrapper .active a {
     background-color: #3da14d;
     color: #fff;
 }
