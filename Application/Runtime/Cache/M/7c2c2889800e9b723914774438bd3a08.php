@@ -4,15 +4,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes" />
 	<title>西藏旅游</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_icgfcixm8qn9izfr.css" />
-	<link rel="stylesheet" href="/travel/Public/M/assets/css/swiper.min.css" />
-	<link rel="stylesheet" href="/travel/Public/M/css/reset.css" />
-	<link rel='stylesheet' href="/travel/Public/M/css/common.css" />
-	<link rel='stylesheet' href="/travel/Public/M/css/order.css" />
-	<link rel='stylesheet' href="/travel/Public/M/css/access.css" />
-	<script type="text/javascript" src='/travel/Public/M/assets/js/jquery.min.js'></script>
-	<script type="text/javascript" src='/travel/Public/M/assets/js/swiper.min.js'></script>
-	<script type="text/javascript" src='/travel/Public/M/js/base.js'></script>
-	<script type="text/javascript" src='/travel/Public/M/js/common.js'></script>
+	<link rel="stylesheet" href="/Public/M/assets/css/swiper.min.css" />
+	<link rel="stylesheet" href="/Public/M/css/reset.css" />
+	<link rel='stylesheet' href="/Public/M/css/common.css" />
+	<link rel='stylesheet' href="/Public/M/css/order.css" />
+	<link rel='stylesheet' href="/Public/M/css/access.css" />
+	<script type="text/javascript" src='/Public/M/assets/js/jquery.min.js'></script>
+	<script type="text/javascript" src='/Public/M/assets/js/swiper.min.js'></script>
+	<script type="text/javascript" src='/Public/M/js/base.js'></script>
+	<script type="text/javascript" src='/Public/M/js/common.js'></script>
 </head>
 
 <body>
@@ -45,7 +45,7 @@
 							<li>
 								<div class='leftcontent'>
 									<div class='thumbnail'>
-										<img src="/travel/Public/M/images/static/02w58PICuYi_1024.jpg">
+										<img src="/Public/M/images/static/02w58PICuYi_1024.jpg">
 									</div>
 									
 								</div>
@@ -61,14 +61,14 @@
 									<label class='orderstatus'>待支付订单</label>
 									<div class='orderbtn_wrapper'>
 										<a class='common_btn_item' href="javascript:;">取消订单</a>
-										<a class='common_btn_item primary' href="javascript:;">确认订单</a>
+										<a class='common_btn_item primary' href="<?php echo U('Order/details');?>">确认订单</a>
 									</div>
 								</div>
 							</li>
 							<li>
 								<div class='leftcontent'>
 									<div class='thumbnail'>
-										<img src="/travel/Public/M/images/static/02w58PICuYi_1024.jpg">
+										<img src="/Public/M/images/static/02w58PICuYi_1024.jpg">
 									</div>
 									
 								</div>
@@ -84,14 +84,14 @@
 									<label class='orderstatus'>待支付订单</label>
 									<div class='orderbtn_wrapper'>
 										<a class='common_btn_item' href="javascript:;">取消订单</a>
-										<a class='common_btn_item primary' href="javascript:;">确认订单</a>
+										<a class='common_btn_item primary' href="<?php echo U('Order/details');?>">确认订单</a>
 									</div>
 								</div>
 							</li>
 							<li>
 								<div class='leftcontent'>
 									<div class='thumbnail'>
-										<img src="/travel/Public/M/images/static/02w58PICuYi_1024.jpg">
+										<img src="/Public/M/images/static/02w58PICuYi_1024.jpg">
 									</div>
 									
 								</div>
@@ -107,14 +107,14 @@
 									<label class='orderstatus'>待支付订单</label>
 									<div class='orderbtn_wrapper'>
 										<a class='common_btn_item' href="javascript:;">取消订单</a>
-										<a class='common_btn_item primary' href="javascript:;">确认订单</a>
+										<a class='common_btn_item primary' href="<?php echo U('Order/details');?>">确认订单</a>
 									</div>
 								</div>
 							</li>
 							<li>
 								<div class='leftcontent'>
 									<div class='thumbnail'>
-										<img src="/travel/Public/M/images/static/02w58PICuYi_1024.jpg">
+										<img src="/Public/M/images/static/02w58PICuYi_1024.jpg">
 									</div>
 									
 								</div>
@@ -130,14 +130,14 @@
 									<label class='orderstatus'>待支付订单</label>
 									<div class='orderbtn_wrapper'>
 										<a class='common_btn_item' href="javascript:;">取消订单</a>
-										<a class='common_btn_item primary' href="javascript:;">确认订单</a>
+										<a class='common_btn_item primary' href="<?php echo U('Order/details');?>">确认订单</a>
 									</div>
 								</div>
 							</li>
 							<li>
 								<div class='leftcontent'>
 									<div class='thumbnail'>
-										<img src="/travel/Public/M/images/static/02w58PICuYi_1024.jpg">
+										<img src="/Public/M/images/static/02w58PICuYi_1024.jpg">
 									</div>
 									
 								</div>
@@ -153,14 +153,14 @@
 									<label class='orderstatus'>待支付订单</label>
 									<div class='orderbtn_wrapper'>
 										<a class='common_btn_item' href="javascript:;">取消订单</a>
-										<a class='common_btn_item primary' href="javascript:;">确认订单</a>
+										<a class='common_btn_item primary' href="<?php echo U('Order/details');?>">确认订单</a>
 									</div>
 								</div>
 							</li>
 							<li>
 								<div class='leftcontent'>
 									<div class='thumbnail'>
-										<img src="/travel/Public/M/images/static/02w58PICuYi_1024.jpg">
+										<img src="/Public/M/images/static/02w58PICuYi_1024.jpg">
 									</div>
 									
 								</div>
@@ -176,7 +176,7 @@
 									<label class='orderstatus'>待支付订单</label>
 									<div class='orderbtn_wrapper'>
 										<a class='common_btn_item' href="javascript:;">取消订单</a>
-										<a class='common_btn_item primary' href="javascript:;">确认订单</a>
+										<a class='common_btn_item primary' href="<?php echo U('Order/details');?>">确认订单</a>
 									</div>
 								</div>
 							</li>
@@ -187,7 +187,7 @@
 							<li>
 								<div class='leftcontent'>
 									<div class='thumbnail'>
-										<img src="/travel/Public/M/images/static/02w58PICuYi_1024.jpg">
+										<img src="/Public/M/images/static/02w58PICuYi_1024.jpg">
 									</div>
 									
 								</div>
@@ -203,7 +203,7 @@
 									<label class='orderstatus'>待支付订单</label>
 									<div class='orderbtn_wrapper'>
 										<a class='' href="javascript:;">取消订单</a>
-										<a href="javascript:;">取消订单</a>
+										<a href="<?php echo U('Order/details');?>">取消订单</a>
 									</div>
 								</div>
 							</li>
@@ -217,7 +217,7 @@
 		<div class='common_nav_wrapper'>
 			<ul>
 				<li>
-					<a href='index.html'>
+					<a href='<?php echo U('Index/index');?>'>
 						<span class='iconfont icon-house'></span>
 						<label>首页</label>
 					</a>
