@@ -107,16 +107,7 @@
     color: #999;
 }
 
-.index_producttitle_item {
-    padding: 1rem 0;
-    width: 100%;
-    border-top: 1px solid #ccc;
-}
 
-.index_producttitle_item h2 {
-    font-size: 1rem;
-    font-weight: bold;
-}
 
 .index_productlist_wrapper>ul>li {
     display: inline-block;
@@ -124,22 +115,7 @@
     position: relative;
 }
 
-.index_productlist_wrapper>ul>li .redpacket {
-    display: inline-block;
-    margin: 0.3rem 0;
-    color: red;
-    font-size: 0.6rem;
-    vertical-align: middle;
-}
 
-.index_productlist_wrapper>ul>li .redpacket span {
-    display: inline-block;
-    width: 0.8rem;
-    height: 0.8rem;
-    background: url(../images/icon/coupon.jpg) no-repeat;
-    background-size: 0.8rem;
-    vertical-align: middle;
-}
 
 .index_productlist_wrapper>ul>li .title {
     font-size: 0.7rem;

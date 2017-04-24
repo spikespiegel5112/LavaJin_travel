@@ -1,7 +1,7 @@
 <?php
 namespace M\Controller;
 use Think\Controller;
-class OrderController extends Controller {
+class ProductController extends Controller {
     public function index(){
    		 $this->display();
        
