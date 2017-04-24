@@ -33,3 +33,19 @@
 .user_mainlist_wrapper li:first-child{
 	border-top: 1px solid #ccc;
 }
+/*~~~~~~~~~~user_csbanner_wrapper~~~~~~~~~~*/
+.user_csbanner_wrapper img{
+	display: block;
+	width: 100%;
+}
+/*~~~~~~~~~~user_about_wrapper~~~~~~~~~~*/
+.user_about_wrapper p{
+	margin: 0.2rem;
+	line-height: 1rem;
+	font-size: 0.6rem;
+}
+/*~~~~~~~~~~order_empty_wrapper~~~~~~~~~~*/
+.order_empty_wrapper img{
+	display: block;
+	margin: 0 auto;
+}
