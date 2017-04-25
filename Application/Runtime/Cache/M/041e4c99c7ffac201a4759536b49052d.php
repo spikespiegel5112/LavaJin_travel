@@ -5,16 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes" />
 	<title>产品详情</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_icgfcixm8qn9izfr.css" />
-	<link rel="stylesheet" href="/Public/M/assets/css/swiper.min.css" />
-	<link rel="stylesheet" href="/Public/M/css/reset.css" />
-	<link rel='stylesheet' href="/Public/M/css/common.css" />
-	<link rel='stylesheet' href="/Public/M/css/order.css" />
-	<link rel='stylesheet' href="/Public/M/css/access.css" />
-	<link rel='stylesheet' href="/Public/M/css/product.css" />
-	<script type="text/javascript" src='/Public/M/assets/js/jquery.min.js'></script>
-	<script type="text/javascript" src='/Public/M/assets/js/swiper.min.js'></script>
-	<script type="text/javascript" src='/Public/M/js/base.js'></script>
-	<script type="text/javascript" src='/Public/M/js/common.js'></script>
+	<link rel="stylesheet" href="/travel/Public/M/assets/css/swiper.min.css" />
+	<link rel="stylesheet" href="/travel/Public/M/css/reset.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/common.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/order.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/access.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/product.css" />
+	<script type="text/javascript" src='/travel/Public/M/assets/js/jquery.min.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/assets/js/swiper.min.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/js/base.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/js/common.js'></script>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
 			</a>
 		</div>
 		<div class='product_detailbanner_wrapper'>
-			<img src="/Public/M/images/banner_articlelist_announcement_00000.jpg">
+			<img src="/travel/Public/M/images/banner_articlelist_announcement_00000.jpg">
 		</div>
 		<div class='common_block_wrapper'>
 			<div class='product_detailtitle_wrapper'>
@@ -91,7 +91,7 @@
 					<h3 class='title'>拉萨-纳木错-拉萨</h3>
 					<label class='hint'>餐：自理 住：自理</label>
 					<a class='thumbnail' href="javascript:;">
-						<img src="/Public/M/images/static/02w58PICuYi_1024.jpg">
+						<img src="/travel/Public/M/images/static/02w58PICuYi_1024.jpg">
 					</a>
 					<p class='introduce'>
 						游玩当天早上6：00~6:30在布达拉宫白塔处集合，集合后搭乘旅行车前往纳木错景区，进入景区后在湖边自行游玩，当天下午2:00~2:30前往景区停车场，乘坐大巴返回拉萨市内布达拉宫白塔处。
