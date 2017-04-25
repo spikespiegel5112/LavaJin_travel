@@ -9,6 +9,8 @@ class CarrentController extends Controller {
 
   	public function detail(){
 
+
+  		header("Content-type: text/html; charset=utf-8"); 
   		echo '紧急开发中';
   		exit();
 
