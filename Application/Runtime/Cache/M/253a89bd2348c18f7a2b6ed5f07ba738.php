@@ -42,7 +42,7 @@
 					<label>旅游线路</label>
 				</li>
 				<li>
-					<a href="javascript:;">
+					<a href="<?php echo U('Carrent/index');?>">
 						<img src='/travel/Public/M/images/static/10i58PICmeX.jpg' />
 					</a>
 					<label>租车包车</label>

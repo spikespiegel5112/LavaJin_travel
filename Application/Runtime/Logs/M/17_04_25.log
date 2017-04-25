@@ -1,0 +1,54 @@
+[ 2017-04-25T12:48:50+08:00 ] ::1 /travel/m.php/carrent/index
+ERR: 无法加载控制器:Carrent
+
+[ 2017-04-25T12:49:03+08:00 ] ::1 /travel/m.php/carrent/index
+ERR: 无法加载控制器:Carrent
+
+[ 2017-04-25T12:49:12+08:00 ] ::1 /travel/m.php/carrent/index.html
+ERR: 无法加载控制器:Carrent
+
+[ 2017-04-25T12:49:14+08:00 ] ::1 /travel/m.php/carrent/index.html
+ERR: 无法加载控制器:Carrent
+
+[ 2017-04-25T12:49:35+08:00 ] ::1 /travel/m.php/carrent/assets/css/swiper.min.css
+ERR: 非法操作:assets
+
+[ 2017-04-25T12:49:35+08:00 ] ::1 /travel/m.php/carrent/assets/js/jquery.min.js
+ERR: 非法操作:assets
+
+[ 2017-04-25T12:49:35+08:00 ] ::1 /travel/m.php/carrent/assets/js/swiper.min.js
+ERR: 非法操作:assets
+
+[ 2017-04-25T12:49:35+08:00 ] ::1 /travel/m.php/carrent/js/base.js
+ERR: 非法操作:js
+
+[ 2017-04-25T12:49:35+08:00 ] ::1 /travel/m.php/carrent/js/common.js
+ERR: 非法操作:js
+
+[ 2017-04-25T12:49:36+08:00 ] ::1 /travel/m.php/carrent/css/common.css
+ERR: 非法操作:css
+
+[ 2017-04-25T12:49:36+08:00 ] ::1 /travel/m.php/carrent/css/reset.css
+ERR: 非法操作:css
+
+[ 2017-04-25T12:49:36+08:00 ] ::1 /travel/m.php/carrent/css/carrent.css
+ERR: 非法操作:css
+
+[ 2017-04-25T12:49:36+08:00 ] ::1 /travel/m.php/carrent/css/user.css
+ERR: 非法操作:css
+
+[ 2017-04-25T12:49:36+08:00 ] ::1 /travel/m.php/carrent/css/access.css
+ERR: 非法操作:css
+
+[ 2017-04-25T12:49:36+08:00 ] ::1 /travel/m.php/carrent/assets/js/swiper.min.js
+ERR: 非法操作:assets
+
+[ 2017-04-25T12:49:36+08:00 ] ::1 /travel/m.php/carrent/js/base.js
+ERR: 非法操作:js
+
+[ 2017-04-25T12:49:36+08:00 ] ::1 /travel/m.php/carrent/js/common.js
+ERR: 非法操作:js
+
+[ 2017-04-25T12:57:19+08:00 ] ::1 /travel/m.php/carrent/detail.html
+ERR: Think\Controller:dispaly方法不存在！
+
