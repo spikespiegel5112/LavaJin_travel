@@ -1,4 +1,5 @@
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
@@ -41,7 +42,7 @@
 					<label>旅游线路</label>
 				</li>
 				<li>
-					<a href="javascript:;">
+					<a href="<{:U('Carrent/index')}>">
 						<img src='__PUBLIC__/M/images/static/10i58PICmeX.jpg' />
 					</a>
 					<label>租车包车</label>
@@ -73,7 +74,7 @@
 			</ul>
 		</div>
 		<div class='index_productlist_wrapper'>
-			<div class='index_producttitle_item'>
+			<div class='common_producttitle_item'>
 				<h2>当下必玩</h2>
 			</div>
 			<ul>
@@ -90,8 +91,8 @@
 							<label>￥368</label>
 						</div>
 					</div>
-					<div class='redpacket'>
-						<span class='redpacket'></span>
+					<div class='common_redpacket_item'>
+						<span class='redpacketicon'></span>
 						<label>使用红包再减10元</label>
 					</div>
 					<h5 class='title'>纳木错一日游</h5>
@@ -101,14 +102,16 @@
 						<span class='hot'>
 						  <img class='active' src='__PUBLIC__/M/images/icon/hot.png' />
 					  </span>
+					   <a href="<{:U('Product/details')}>">
 						<img src='__PUBLIC__/M/images/static/240418-14112P9345826.jpg' />
+					</a>
 						<div class='price'>
 							<span>￥298</span>
 							<label>￥368</label>
 						</div>
 					</div>
-					<div class='redpacket'>
-						<span class='redpacket'></span>
+					<div class='common_redpacket_item'>
+						<span class='redpacketicon'></span>
 						<label>使用红包再减10元</label>
 					</div>
 					<h5 class='title'>纳木错一日游</h5>
@@ -124,8 +127,8 @@
 							<label>￥368</label>
 						</div>
 					</div>
-					<div class='redpacket'>
-						<span class='redpacket'></span>
+					<div class='common_redpacket_item'>
+						<span class='redpacketicon'></span>
 						<label>使用红包再减10元</label>
 					</div>
 					<h5 class='title'>纳木错一日游</h5>
@@ -133,7 +136,7 @@
 			</ul>
 		</div>
 		<div class='index_productlist_wrapper'>
-			<div class='index_producttitle_item'>
+			<div class='common_producttitle_item'>
 				<h2>深度体验</h2>
 			</div>
 			<ul>
@@ -148,8 +151,8 @@
 							<label>￥368</label>
 						</div>
 					</div>
-					<div class='redpacket'>
-						<span class='redpacket'></span>
+					<div class='common_redpacket_item'>
+						<span class='redpacketicon'></span>
 						<label>使用红包再减10元</label>
 					</div>
 					<h5 class='title'>纳木错一日游</h5>
@@ -165,8 +168,8 @@
 							<label>￥368</label>
 						</div>
 					</div>
-					<div class='redpacket'>
-						<span class='redpacket'></span>
+					<div class='common_redpacket_item'>
+						<span class='redpacketicon'></span>
 						<label>使用红包再减10元</label>
 					</div>
 					<h5 class='title'>纳木错一日游</h5>
@@ -182,8 +185,8 @@
 							<label>￥368</label>
 						</div>
 					</div>
-					<div class='redpacket'>
-						<span class='redpacket'></span>
+					<div class='common_redpacket_item'>
+						<span class='redpacketicon'></span>
 						<label>使用红包再减10元</label>
 					</div>
 					<h5 class='title'>纳木错一日游</h5>
@@ -199,8 +202,8 @@
 							<label>￥368</label>
 						</div>
 					</div>
-					<div class='redpacket'>
-						<span class='redpacket'></span>
+					<div class='common_redpacket_item'>
+						<span class='redpacketicon'></span>
 						<label>使用红包再减10元</label>
 					</div>
 					<h5 class='title'>纳木错一日游</h5>
@@ -216,8 +219,8 @@
 							<label>￥368</label>
 						</div>
 					</div>
-					<div class='redpacket'>
-						<span class='redpacket'></span>
+					<div class='common_redpacket_item'>
+						<span class='redpacketicon'></span>
 						<label>使用红包再减10元</label>
 					</div>
 					<h5 class='title'>纳木错一日游</h5>
@@ -234,17 +237,18 @@
 					</a>
 				</li>
 				<li>
-					<a href='javascript:;'>
-						<span class='iconfont icon-user2'></span>
-						<label>旅游攻略</label>
+					<a href='orderlist.html'>
+						<span class='iconfont icon-order'></span>
+						<label>攻略分享</label>
 					</a>
 				</li>
 				<li>
 					<a href='<{:U('User/index')}>'>
-						<span class='iconfont icon-house'></span>
-						<label>会员中心</label>
+						<span class='iconfont icon-user2'></span>
+						<label>我的</label>
 					</a>
 				</li>
+				
 			</ul>
 		</div>
 	</div>
@@ -259,13 +263,19 @@
 					pagination: '.swiper-pagination'
 				})
 			},
-			align: function(){
-				$('.index_categorylist_wrapper li a img').align({
-					container:'.index_categorylist_wrapper li a'
-				})
-				$('.index_productlist_wrapper li .thumbnail>img').align({
-					container:'.index_productlist_wrapper li .thumbnail'
-				})
+			align: function() {
+				setTimeout(function() {
+					$('.index_categorylist_wrapper li a img').align({
+						container: '.index_categorylist_wrapper li a'
+					})
+				}, 500)
+
+				setTimeout(function() {
+					$('.index_productlist_wrapper li .thumbnail>img').align({
+						container: '.index_productlist_wrapper li .thumbnail'
+					})
+				}, 500)
+
 			},
 			main: function() {
 				this.align();
@@ -278,7 +288,6 @@
 		index.init();
 	})
 })(jQuery)
-
 </script>
-</html>
 
+</html>

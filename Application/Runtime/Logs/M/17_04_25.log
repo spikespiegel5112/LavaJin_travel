@@ -1,0 +1,48 @@
+[ 2017-04-25T22:58:46+08:00 ] 127.0.0.1 /m.php/user/assets/css/swiper.min.css
+ERR: 非法操作:assets
+
+[ 2017-04-25T22:58:46+08:00 ] 127.0.0.1 /m.php/user/assets/js/swiper.min.js
+ERR: 非法操作:assets
+
+[ 2017-04-25T22:58:46+08:00 ] 127.0.0.1 /m.php/user/js/base.js
+ERR: 非法操作:js
+
+[ 2017-04-25T22:58:46+08:00 ] 127.0.0.1 /m.php/user/js/common.js
+ERR: 非法操作:js
+
+[ 2017-04-25T22:58:47+08:00 ] 127.0.0.1 /m.php/user/css/reset.css
+ERR: 非法操作:css
+
+[ 2017-04-25T22:58:47+08:00 ] 127.0.0.1 /m.php/user/assets/js/jquery.min.js
+ERR: 非法操作:assets
+
+[ 2017-04-25T22:58:47+08:00 ] 127.0.0.1 /m.php/user/css/common.css
+ERR: 非法操作:css
+
+[ 2017-04-25T22:58:48+08:00 ] 127.0.0.1 /m.php/user/css/user.css
+ERR: 非法操作:css
+
+[ 2017-04-25T22:58:48+08:00 ] 127.0.0.1 /m.php/user/css/access.css
+ERR: 非法操作:css
+
+[ 2017-04-25T22:58:48+08:00 ] 127.0.0.1 /m.php/user/assets/js/swiper.min.js
+ERR: 非法操作:assets
+
+[ 2017-04-25T22:58:48+08:00 ] 127.0.0.1 /m.php/user/js/base.js
+ERR: 非法操作:js
+
+[ 2017-04-25T22:58:48+08:00 ] 127.0.0.1 /m.php/user/js/common.js
+ERR: 非法操作:js
+
+[ 2017-04-25T23:05:59+08:00 ] 127.0.0.1 /m.php/user/feedback.html
+ERR: 模板不存在:./Application/M/View/User/feedback.html
+
+[ 2017-04-25T23:07:06+08:00 ] 127.0.0.1 /m.php/user/info.html
+ERR: 非法操作:info
+
+[ 2017-04-25T23:07:17+08:00 ] 127.0.0.1 /m.php/user/info.html
+ERR: 非法操作:info
+
+[ 2017-04-25T23:08:28+08:00 ] 127.0.0.1 /m.php/user/feedback.html
+ERR: 模板不存在:./Application/M/View/User/feedback.html
+

@@ -29,16 +29,19 @@
 					<a href="<?php echo U('Order/index');?>">我的订单</a>
 				</li>
 				<li>
-					<a href="javascript:;">我的红包</a>
+					<a href="<?php echo U('User/redbag');?>">我的红包</a>
 				</li>
 				<li>
-					<a href="javascript:;">常见旅客信息</a>
+					<a href="<?php echo U('User/info');?>">常见旅客信息</a>
 				</li>
 				<li>
-					<a href="javascript:;">联系客服</a>
+					<a href="<?php echo U('User/contact');?>">联系客服</a>
 				</li>
 				<li>
-					<a href="javascript:;">反馈建议</a>
+					<a href="<?php echo U('User/about');?>">关于我们</a>
+				</li>
+				<li>
+					<a href="<?php echo U('User/feedback');?>">反馈建议</a>
 				<!-- </li>
 					<li>
 					<a href="javascript:;">我要推广</a>
