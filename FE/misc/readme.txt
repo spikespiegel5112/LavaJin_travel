@@ -3,3 +3,4 @@ m.68.ma/m.php
 
 ²Î¿¼ÍøÖ·
 http://s.xixingke.cn/
+http://www.tibetcn.com/car/20131030/9.html
