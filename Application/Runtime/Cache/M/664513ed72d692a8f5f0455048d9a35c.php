@@ -1,20 +1,20 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
 	<title>租车列表</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_icgfcixm8qn9izfr.css" />
-	<link rel="stylesheet" href="__PUBLIC__/M/assets/css/swiper.min.css" />
-	<link rel="stylesheet" href="__PUBLIC__/M/css/reset.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/common.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/user.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/access.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/carrent.css" />
-	<script type="text/javascript" src='__PUBLIC__/M/assets/js/jquery.min.js'></script>
-	<script type="text/javascript" src='__PUBLIC__/M/assets/js/swiper.min.js'></script>
-	<script type="text/javascript" src='__PUBLIC__/M/js/base.js'></script>
-	<script type="text/javascript" src='__PUBLIC__/M/js/common.js'></script>
+	<link rel="stylesheet" href="/travel/Public/M/assets/css/swiper.min.css" />
+	<link rel="stylesheet" href="/travel/Public/M/css/reset.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/common.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/user.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/access.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/carrent.css" />
+	<script type="text/javascript" src='/travel/Public/M/assets/js/jquery.min.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/assets/js/swiper.min.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/js/base.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/js/common.js'></script>
 	
 </head>
 
@@ -24,10 +24,10 @@
 			<ul>
 				<li>
 					<a class='thumbnail' href="javascript:;">
-						<img src="__PUBLIC__/M/images/static/car.jpg">
+						<img src="/travel/Public/M/images/static/car.jpg">
 					</a>
 					<div class='detail'>
-						 <a href="<{:U('Carrent/details')}>">
+						 <a href="<?php echo U('Carrent/details');?>">
 						<h2 class='title'>14座金杯/大宇商务车 桂林阳朔包车旅游</h2>
 					</a>
 					   <div class="introduce">
@@ -37,10 +37,10 @@
 				</li>
 				<li>
 					<a class='thumbnail' href="javascript:;">
-						<img src="__PUBLIC__/M/images/static/car.jpg">
+						<img src="/travel/Public/M/images/static/car.jpg">
 					</a>
 					<div class='detail'>
-						 <a href="<{:U('Carrent/details')}>">
+						 <a href="<?php echo U('Carrent/details');?>">
 						<h2 class='title'>14座金杯/大宇商务车 桂林阳朔包车旅游</h2>
 					</a>
 					<div class="introduce">
@@ -50,10 +50,10 @@
 				</li>
 				<li>
 					<a class='thumbnail' href="javascript:;">
-						<img src="__PUBLIC__/M/images/static/car.jpg">
+						<img src="/travel/Public/M/images/static/car.jpg">
 					</a>
 					<div class='detail'>
-						 <a href="<{:U('Carrent/details')}>">
+						 <a href="<?php echo U('Carrent/details');?>">
 						<h2 class='title'>14座金杯/大宇商务车 桂林阳朔包车旅游</h2>
 					</a>
 					<div class="introduce">
@@ -63,10 +63,10 @@
 				</li>
 				<li>
 					<a class='thumbnail' href="javascript:;">
-						<img src="__PUBLIC__/M/images/static/car.jpg">
+						<img src="/travel/Public/M/images/static/car.jpg">
 					</a>
 					<div class='detail'>
-						 <a href="<{:U('Carrent/details')}>">
+						 <a href="<?php echo U('Carrent/details');?>">
 						<h2 class='title'>14座金杯/大宇商务车 桂林阳朔包车旅游</h2>
 					</a>
 					<div class="introduce">
@@ -80,7 +80,7 @@
 		<div class='common_nav_wrapper'>
 			<ul>
 				<li>
-					<a href='<{:U('Index/index')}>'>
+					<a href='<?php echo U('Index/index');?>'>
 						<span class='iconfont icon-house'></span>
 						<label>首页</label>
 					</a>
@@ -92,7 +92,7 @@
 					</a>
 				</li>
 				<li>
-					<a href='<{:U('User/index')}>'>
+					<a href='<?php echo U('User/index');?>'>
 						<span class='iconfont icon-user2'></span>
 						<label>我的</label>
 					</a>
@@ -102,4 +102,3 @@
 	</div>
 </body>
 </html>
-
