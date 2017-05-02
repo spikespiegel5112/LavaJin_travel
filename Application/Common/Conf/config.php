@@ -3,33 +3,42 @@ return array(
 	//'配置项'=>'配置值'
 
 
-    'TMPL_L_DELIM'=>'<{',
-    'TMPL_R_DELIM'=>'}>',
-
-    /* 数据库设置 */
-    'DB_TYPE'               =>  'mysql',     // 数据库类型
-    'DB_HOST'               =>  'localhost', // 服务器地址
-    'DB_NAME'               =>  'travel',          // 数据库名
-    'DB_USER'               =>  'root',      // 用户名
-    'DB_PWD'                =>  'redhat',          // 密码
-    'DB_PORT'               =>  '3306',        // 端口
-    'DB_PREFIX'             =>  'think_',    // 数据库表前缀
-    'DB_PARAMS'               =>  array(), // 数据库连接参数
-    'DB_DEBUG'                 =>  false, // 数据库调试模式 开启后可以记录SQL日志
-    'DB_FIELDS_CACHE'       =>  true,        // 启用字段缓存
-    'DB_CHARSET'            =>  'utf8',      // 数据库编码默认采用utf8
-    'DB_DEPLOY_TYPE'        =>  0, // 数据库部署方式:0 集中式(单一服务器),1 分布式(主从服务器)
-    'DB_RW_SEPARATE'        =>  false,       // 数据库读写是否分离 主从式有效
-    'DB_MASTER_NUM'         =>  1, // 读写分离后 主服务器数量
-    'DB_SLAVE_NO'           =>  '', // 指定从服务器序号
-
-    /* 数据缓存设置 */
-    'DATA_CACHE_TIME'       =>  0,      // 数据缓存有效期 0表示永久缓存
-    'DATA_CACHE_COMPRESS'   =>  false,   // 数据缓存是否压缩缓存
-    'DATA_CACHE_CHECK'      =>  false,   // 数据缓存是否校验缓存
-    'DATA_CACHE_PREFIX'     =>  '',     // 缓存前缀
-    'DATA_CACHE_TYPE'       =>  'File',  // 数据缓存类型,
-    'SHOW_PAGE_TRACE'       =>  true,   //开启页面调试
-
+    /* 模板相关配置 */
+	'TMPL_PARSE_STRING'     => array (
+			'__HUIADMIN__'	=> __ROOT__ . '/Public/Admin/H-ui.admin_v3.0',
+			'__IMG__'    	=> __ROOT__ . '/Public/' . MODULE_NAME . '/images',
+			'__CSS__'		=> __ROOT__ . '/Public/' . MODULE_NAME . '/css',
+			'__JS__'		=> __ROOT__ . '/Public/' . MODULE_NAME . '/js',
+			'__TITLE__'		=> '西藏旅游',			
+			'__VERSION__'	=> 'v1.0'
+	),
+		
+	
+		
+	/* URL配置 */
+	'URL_CASE_INSENSITIVE' => true, //默认false 表示URL区分大小写 true则表示不区分大小写
+	'URL_MODEL'            => 3, //URL模式
+	'VAR_URL_PARAMS'       => '', // PATHINFO URL参数变量
+	'URL_PATHINFO_DEPR'    => '/', //PATHINFO URL分割符
+	
+	/* 全局过滤配置 */
+	'DEFAULT_FILTER' => '', 	//全局过滤函数
+	
+	/* 数据库配置 */
+	'DB_TYPE'   => 'mysqli', 	// 数据库类型
+	'DB_HOST'   => 'localhost', // 服务器地址
+	'DB_NAME'   => 'travel', 		// 数据库名
+	'DB_USER'   => 'root', 		// 用户名
+	'DB_PWD'    => 'redhat',  	// 密码
+	'DB_PORT'   => '3306', 		// 端口
+	'DB_PREFIX' => 'travel_', 		// 数据库表前缀
+		
+	'SESSION_OPTIONS'    => array (
+			'type'   => 'Db',//session采用数据库保存
+			'expire' => 1440,//session过期时间，如果不设就是php.ini中设置的默认值
+	),
+	'SESSION_TABLE'      => 'think_session',
+	'SESSION_AUTO_START' => true,
+	
 
 );
