@@ -40,7 +40,7 @@
 }
 .index_categorylist_wrapper li a img {
 	display: inline-block;
-	width: 100%;
+	width: 160%;
 	transition: all 0.3s;
 }
 .index_categorylist_wrapper li label {
@@ -59,6 +59,7 @@
 .index_productlist_wrapper li .thumbnail {
 	width: 6rem;
 	height: 6rem;
+	border-radius: 0.4rem;
 	position: relative;
 	overflow: hidden;
 }
@@ -68,9 +69,13 @@
 	top: 0;
 	right: 0;
 }
-.index_productlist_wrapper li .thumbnail img {
+.index_productlist_wrapper li .thumbnail .hot img{
 	display: block;
 	width: 100%;
+}
+.index_productlist_wrapper li .thumbnail img {
+	display: block;
+	width: 200%;
 	transition: all 0.3s;
 }
 .index_productlist_wrapper li .thumbnail .price {
