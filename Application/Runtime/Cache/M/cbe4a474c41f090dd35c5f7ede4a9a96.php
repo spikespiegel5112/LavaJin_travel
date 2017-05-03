@@ -1,27 +1,27 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1.0 user-scalable=no" />
 	<title>线路列表</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_icgfcixm8qn9izfr.css" />
-	<link rel="stylesheet" href="__PUBLIC__/M/assets/css/swiper.min.css" />
-	<link rel="stylesheet" href="__PUBLIC__/M/css/reset.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/common.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/user.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/access.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/carrent.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/product.css" />
-	<script type="text/javascript" src='__PUBLIC__/M/assets/js/jquery.min.js'></script>
-	<script type="text/javascript" src='__PUBLIC__/M/assets/js/swiper.min.js'></script>
-	<script type="text/javascript" src='__PUBLIC__/M/js/base.js'></script>
-	<script type="text/javascript" src='__PUBLIC__/M/js/common.js'></script>
+	<link rel="stylesheet" href="/Public/M/assets/css/swiper.min.css" />
+	<link rel="stylesheet" href="/Public/M/css/reset.css" />
+	<link rel='stylesheet' href="/Public/M/css/common.css" />
+	<link rel='stylesheet' href="/Public/M/css/user.css" />
+	<link rel='stylesheet' href="/Public/M/css/access.css" />
+	<link rel='stylesheet' href="/Public/M/css/carrent.css" />
+	<link rel='stylesheet' href="/Public/M/css/product.css" />
+	<script type="text/javascript" src='/Public/M/assets/js/jquery.min.js'></script>
+	<script type="text/javascript" src='/Public/M/assets/js/swiper.min.js'></script>
+	<script type="text/javascript" src='/Public/M/js/base.js'></script>
+	<script type="text/javascript" src='/Public/M/js/common.js'></script>
 </head>
 
 <body>
 	<div class='main_container'>
 		<div class="common_header_wrapper">
-			<a class="left_btn back_btn" href="{:U('Index/index')}">
+			<a class="left_btn back_btn" href="<?php echo U('Index/index');?>">
 				<span class="iconfont icon-backward2"></span>
 			</a>
 			<p>线路列表</p>
@@ -29,11 +29,11 @@
 		<div class='common_list_wrapper'>
 			<ul>
 				<li>
-					<a class='thumbnail' href="{:U('Product/details')}">
-						<img src="__PUBLIC__/M/images/static/10i58PICmeX.jpg">
+					<a class='thumbnail' href="<?php echo U('Product/details');?>">
+						<img src="/Public/M/images/static/10i58PICmeX.jpg">
 					</a>
 					<div class='detail'>
-						<a href="{:U('Product/details')}">
+						<a href="<?php echo U('Product/details');?>">
 						<h2 class='title'><span class='productid'>A938</span>拉萨之旅</h2>
 					</a>
 						<ul class='product_list_wrapper'>
@@ -65,11 +65,11 @@
 					</div>
 				</li>
 				<li>
-					<a class='thumbnail' href="{:U('Product/details')}">
-						<img src="__PUBLIC__/M/images/static/10i58PICmeX.jpg">
+					<a class='thumbnail' href="<?php echo U('Product/details');?>">
+						<img src="/Public/M/images/static/10i58PICmeX.jpg">
 					</a>
 					<div class='detail'>
-						<a href="{:U('Product/details')}">
+						<a href="<?php echo U('Product/details');?>">
 						<h2 class='title'><span class='productid'>A937</span>拉萨之旅</h2>
 					</a>
 						<ul class='product_list_wrapper'>
@@ -102,7 +102,7 @@
 				</li>
 				<li>
 					<a class='thumbnail' href="javascript:;">
-						<img src="__PUBLIC__/M/images/static/10i58PICmeX.jpg">
+						<img src="/Public/M/images/static/10i58PICmeX.jpg">
 					</a>
 					<div class='detail'>
 						<h2 class='title'><span class='productid'>A937</span>拉萨之旅</h2>
@@ -141,7 +141,7 @@
 		<div class='common_nav_wrapper'>
 			<ul>
 				<li>
-					<a href='{:U('Index/index')}'>
+					<a href='<?php echo U('Index/index');?>'>
 						<span class='iconfont icon-house'></span>
 						<label>首页</label>
 					</a>
@@ -153,7 +153,7 @@
 					</a>
 				</li>
 				<li>
-					<a href='{:U('User/index')}'>
+					<a href='<?php echo U('User/index');?>'>
 						<span class='iconfont icon-user2'></span>
 						<label>我的</label>
 					</a>
