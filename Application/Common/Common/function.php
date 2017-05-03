@@ -192,16 +192,21 @@ function delDirAndFile($path, $delDir = FALSE) {
 /**
  * 获取文件夹下面的所有图片
  */
-function getImageList($path){
+function getImageList($path,$mainimg=''){
 	$imglist = array();
 	$handle = opendir($path);
 	if ($handle) {
 		while (false !== ( $item = readdir($handle) )) {
 			if ($item != "." && $item != ".."){
-				$imglist[] = $item;
-			}		
+					
+				if(strpos($mainimg,$item)){					
+					array_unshift($imglist,$item);
+				}else{
+					$imglist[] = $item;
+				}
+			}
 		}
-		closedir($handle);		
+		closedir($handle);
 	}
 	return $imglist;
 }

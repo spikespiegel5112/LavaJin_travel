@@ -4,7 +4,7 @@
 	<div class="page-container">
         <div class="cl pd-5 bg-1 bk-gray mt-20">
             <span class="l">
-                <a href="javascript:;" onClick="travel_edit('新增线路','{:U('travel/travel_edit')}','','510')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 新增线路</a>
+                <a href="javascript:;" onClick="travel_edit('新增线路','{:U('travel/travel_edit')}','1600','850')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 新增线路</a>
             </span>
             <span class="r">共有数据：<strong id="dataTableCount">{:count($travel_list)}</strong> 条</span>
         </div>
@@ -13,8 +13,8 @@
             <thead>
                 <tr class="text-c">
                     <th width="40">ID</th>
-                    <th width="150">缩略图</th>
-                    <th width="150">产品</th>
+                    <th width="40">缩略图</th>
+                    <th width="300">产品</th>
                     <th width="40">分类栏目</th>
                     <th width="40">售卖价</th>
                     <th width="40">状态</th>
@@ -25,9 +25,9 @@
             	<volist name="travel_list" id="vo" key="k">
                 <tr class="text-c">
                     <td>{$k}</td>
-                    <td></td>
+                    <td><if condition="$vo['smallImg'] neq ''"><img src="./Uploads/travel/{$vo['id']}/{$vo['smallImg']}" style="width:60px;"></if></td>
                     <td>{$vo.travel_title}</td>
-                    <td>{$vo.travel_column}</td>
+                    <td>{$vo.category}</td>
                     <td>{$vo.travel_price}</td>               
                     <td class="td-status">
                     	<if condition="$vo['travel_status'] eq 1">

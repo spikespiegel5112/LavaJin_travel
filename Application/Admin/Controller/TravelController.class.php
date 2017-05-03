@@ -21,7 +21,10 @@ class TravelController extends PublicController {
 		$id = I('get.id');
 		if($id){
 			$travel = M('travel')->find($id);
+			$imageList = getImageList("./Uploads/travel/$id",$travel['travel_mainimg'],$val['travel_mainimg']);
+			
 			$this->assign('travel',$travel);
+			$this->assign('imageList',$imageList);
 		}else{
 			$tmpFolder = tmpfolder('./Uploads/tmp');
 			$this->assign('tmpFolder',$tmpFolder);
@@ -52,8 +55,10 @@ class TravelController extends PublicController {
 		$travel_list = M('travel')->select();
 		foreach ($travel_list as $key => &$val){
 			$val['category'] = M('category')->where(array('category_code'=>$val['travel_column']))->getField('category');
+			//查询图片
+			$imageList = getImageList("./Uploads/travel/{$val['id']}",$val['travel_mainimg']);
+			$val['smallImg'] = empty($imageList)?'':$imageList[0];
 		}
-		
 		$this->assign('travel_list',$travel_list);	
 		$this->display();
 	}
@@ -158,19 +163,42 @@ class TravelController extends PublicController {
 	 * 图片上传
 	 */
 	public function uploader(){
+		$id = I('get.id');
+		$tmpFolder = I('get.tmpFolder');
+		
 		$upload = new \Think\Upload();// 实例化上传类
 		$upload->maxSize   =     3145728 ;// 设置附件上传大小
 		$upload->exts      =     array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
-		$upload->rootPath  =     './Uploads/tmp/'; // 设置附件上传根目录
-		$upload->savePath  =     ''; // 设置附件上传（子）目录
-		$upload->subName   = 	 I('get.tmpFolder');
+		$upload->rootPath  =     './Uploads/'; // 设置附件上传根目录
+		if(!empty($tmpFolder)){		
+			$upload->savePath  =     'tmp/'; // 设置附件上传（子）目录
+			$upload->subName   = 	 $tmpFolder;
+		}else if(!empty($id)){
+			$upload->savePath  =     'travel/'; // 设置附件上传（子）目录
+			$upload->subName   = 	 $id;
+		}
 		// 上传文件
 		$info   =   $upload->upload();
 		if(!$info) {// 上传错误提示错误信息
-			$this->error($upload->getError());
+			$rst = array(
+				'status'	=> 0,
+				'error'		=> $upload->getError()
+			);			
 		}else{// 上传成功
-			$this->success('上传成功！');
-		}
+			$rst = array(
+					'status'	=> 1,
+					'img'		=> $upload->rootPath.$info['file']['savepath'].$info['file']['savename']
+			);
+		}		
+		echo json_encode($rst);
+	}
+	
+	/**
+	 * 删除图片
+	 */
+	public function delImg(){
+		unlink(I('post.img'));
+		$this->success("删除成功");
 	}
     
 }
