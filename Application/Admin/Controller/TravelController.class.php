@@ -21,7 +21,7 @@ class TravelController extends PublicController {
 		$id = I('get.id');
 		if($id){
 			$travel = M('travel')->find($id);
-			$imageList = getImageList("./Uploads/travel/$id",$travel['travel_mainimg'],$val['travel_mainimg']);
+			$imageList = getImageList("./Uploads/travel/$id",$travel['travel_mainimg'],$travel['travel_mainimg']);
 			
 			$this->assign('travel',$travel);
 			$this->assign('imageList',$imageList);
