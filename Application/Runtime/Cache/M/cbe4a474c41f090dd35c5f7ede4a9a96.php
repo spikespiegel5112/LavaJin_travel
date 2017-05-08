@@ -5,17 +5,17 @@
 	<meta name="viewport" content="initial-scale=1.0 user-scalable=no" />
 	<title>线路列表</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_icgfcixm8qn9izfr.css" />
-	<link rel="stylesheet" href="/Public/M/assets/css/swiper.min.css" />
-	<link rel="stylesheet" href="/Public/M/css/reset.css" />
-	<link rel='stylesheet' href="/Public/M/css/common.css" />
-	<link rel='stylesheet' href="/Public/M/css/user.css" />
-	<link rel='stylesheet' href="/Public/M/css/access.css" />
-	<link rel='stylesheet' href="/Public/M/css/carrent.css" />
-	<link rel='stylesheet' href="/Public/M/css/product.css" />
-	<script type="text/javascript" src='/Public/M/assets/js/jquery.min.js'></script>
-	<script type="text/javascript" src='/Public/M/assets/js/swiper.min.js'></script>
-	<script type="text/javascript" src='/Public/M/js/base.js'></script>
-	<script type="text/javascript" src='/Public/M/js/common.js'></script>
+	<link rel="stylesheet" href="/travel/Public/M/assets/css/swiper.min.css" />
+	<link rel="stylesheet" href="/travel/Public/M/css/reset.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/common.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/user.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/access.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/carrent.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/product.css" />
+	<script type="text/javascript" src='/travel/Public/M/assets/js/jquery.min.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/assets/js/swiper.min.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/js/base.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/js/common.js'></script>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
 			<ul>
 				<li>
 					<a class='thumbnail' href="<?php echo U('Product/details');?>">
-						<img src="/Public/M/images/static/10i58PICmeX.jpg">
+						<img src="/travel/Public/M/images/static/10i58PICmeX.jpg">
 					</a>
 					<div class='detail'>
 						<a href="<?php echo U('Product/details');?>">
@@ -66,7 +66,7 @@
 				</li>
 				<li>
 					<a class='thumbnail' href="<?php echo U('Product/details');?>">
-						<img src="/Public/M/images/static/10i58PICmeX.jpg">
+						<img src="/travel/Public/M/images/static/10i58PICmeX.jpg">
 					</a>
 					<div class='detail'>
 						<a href="<?php echo U('Product/details');?>">
@@ -102,7 +102,7 @@
 				</li>
 				<li>
 					<a class='thumbnail' href="javascript:;">
-						<img src="/Public/M/images/static/10i58PICmeX.jpg">
+						<img src="/travel/Public/M/images/static/10i58PICmeX.jpg">
 					</a>
 					<div class='detail'>
 						<h2 class='title'><span class='productid'>A937</span>拉萨之旅</h2>

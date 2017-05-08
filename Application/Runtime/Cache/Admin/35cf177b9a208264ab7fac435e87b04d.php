@@ -6,17 +6,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
-<link rel="Bookmark" href="/Public/Admin/H-ui.admin_v3.0/favicon.ico" >
-<link rel="Shortcut Icon" href="/Public/Admin/H-ui.admin_v3.0/favicon.ico" />
+<link rel="Bookmark" href="/travel/Public/Admin/H-ui.admin_v3.0/favicon.ico" >
+<link rel="Shortcut Icon" href="/travel/Public/Admin/H-ui.admin_v3.0/favicon.ico" />
 <!--[if lt IE 9]>
 <script type="text/javascript" src="lib/html5shiv.js"></script>
 <script type="text/javascript" src="lib/respond.min.js"></script>
 <![endif]-->
-<link rel="stylesheet" type="text/css" href="/Public/Admin/H-ui.admin_v3.0/static/h-ui/css/H-ui.min.css" />
-<link rel="stylesheet" type="text/css" href="/Public/Admin/H-ui.admin_v3.0/static/h-ui.admin/css/H-ui.admin.css" />
-<link rel="stylesheet" type="text/css" href="/Public/Admin/H-ui.admin_v3.0/lib/Hui-iconfont/1.0.8/iconfont.css" />
-<link rel="stylesheet" type="text/css" href="/Public/Admin/H-ui.admin_v3.0/static/h-ui.admin/skin/default/skin.css" id="skin" />
-<link rel="stylesheet" type="text/css" href="/Public/Admin/H-ui.admin_v3.0/static/h-ui.admin/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/travel/Public/Admin/H-ui.admin_v3.0/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="/travel/Public/Admin/H-ui.admin_v3.0/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="/travel/Public/Admin/H-ui.admin_v3.0/lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="/travel/Public/Admin/H-ui.admin_v3.0/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="/travel/Public/Admin/H-ui.admin_v3.0/static/h-ui.admin/css/style.css" />
 <!--[if IE 6]>
 <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
@@ -79,20 +79,19 @@
 <!-- 底部 -->
 <footer class="footer mt-20">
 	<div class="container">
-		<p>版权所有：中国航天科技集团公司七三八疗养院<br>
-			地址：无锡市大浮西渚头1号　邮编：214081</p>
+		<p>Auth:LavaJin</p>
 	</div>
 </footer>
 <!-- /底部 -->
-<script type="text/javascript" src="/Public/Admin/H-ui.admin_v3.0/lib/jquery/1.9.1/jquery.min.js"></script> 
-<script type="text/javascript" src="/Public/Admin/H-ui.admin_v3.0/lib/layer/2.4/layer.js"></script>
-<script type="text/javascript" src="/Public/Admin/H-ui.admin_v3.0/static/h-ui/js/H-ui.min.js"></script>
-<script type="text/javascript" src="/Public/Admin/H-ui.admin_v3.0/static/h-ui.admin/js/H-ui.admin.js"></script> 
+<script type="text/javascript" src="/travel/Public/Admin/H-ui.admin_v3.0/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="/travel/Public/Admin/H-ui.admin_v3.0/lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="/travel/Public/Admin/H-ui.admin_v3.0/static/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="/travel/Public/Admin/H-ui.admin_v3.0/static/h-ui.admin/js/H-ui.admin.js"></script> 
 
 <!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="/Public/Admin/H-ui.admin_v3.0/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
-<script type="text/javascript" src="/Public/Admin/H-ui.admin_v3.0/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
-<script type="text/javascript" src="/Public/Admin/H-ui.admin_v3.0/lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript" src="/travel/Public/Admin/H-ui.admin_v3.0/lib/My97DatePicker/4.8/WdatePicker.js"></script> 
+<script type="text/javascript" src="/travel/Public/Admin/H-ui.admin_v3.0/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="/travel/Public/Admin/H-ui.admin_v3.0/lib/laypage/1.2/laypage.js"></script>
 <script type="text/javascript">
 $(function(){
 	$('.table-sort').dataTable({

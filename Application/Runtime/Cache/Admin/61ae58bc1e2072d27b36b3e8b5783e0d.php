@@ -39,76 +39,87 @@
 <!-- /头部 -->
 
 	<div class="page-container">
-        <form action="<?php echo U('travel_update');?>" method="post" class="form form-horizontal" id="form-travel-add">
-        	<input type="hidden" name="id" value="<?php echo ($travel['id']); ?>" />
+        <form action="<?php echo U('carrental_update');?>" method="post" class="form form-horizontal" id="form-travel-add">
+        	<input type="hidden" name="id" value="<?php echo ($carrental['id']); ?>" />
             <input type="hidden" name="tmpFolder" value="<?php echo ($tmpFolder); ?>" />
-            <input type="hidden" name="travel_mainimg" value="<?php echo ($travel['travel_mainimg']); ?>" />
+            <input type="hidden" name="carrental_mainimg" value="<?php echo ($carrental['carrental_mainimg']); ?>" />
             <div class="row cl">
-                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>产品标题：</label>
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>租赁汽车标题：</label>
                 <div class="formControls col-xs-8 col-sm-9">
-                    <input type="text" class="input-text" value="<?php echo ($travel['travel_title']); ?>" placeholder="" id="" name="travel_title">
+                    <input type="text" class="input-text" value="<?php echo ($carrental['carrental_title']); ?>" placeholder="" id="" name="carrental_title">
                 </div>
             </div>
             <div class="row cl">
-                <label class="form-label col-xs-4 col-sm-2">简略标题：</label>
+                <label class="form-label col-xs-4 col-sm-2">汽车品牌：</label>
                 <div class="formControls col-xs-8 col-sm-9">
-                    <input type="text" class="input-text" value="<?php echo ($travel['travel_short_title']); ?>" placeholder="" id="" name="travel_short_title">
+                    <input type="text" class="input-text" value="<?php echo ($carrental['carrental_brand']); ?>" placeholder="" id="" name="carrental_brand">
                 </div>
             </div>
             <div class="row cl">
-                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>分类栏目：</label>
-                <div class="formControls col-xs-8 col-sm-9"> <span class="select-box"  style="width:20%;">
-                    <select name="travel_column" class="select">
-                    	<option value="">-----</option>
-                    	<?php if(is_array($category_list)): $i = 0; $__LIST__ = $category_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["category_code"]); ?>" <?php if($travel['travel_column'] == $vo['category_code'] ): ?>selected<?php endif; ?> ><?php echo ($vo["category"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-                    </select>
-                    </span> </div>
-            </div>
-            <div class="row cl">
-                <label class="form-label col-xs-4 col-sm-2">排序值：</label>
+                <label class="form-label col-xs-4 col-sm-2">汽车级别：</label>
                 <div class="formControls col-xs-8 col-sm-9">
-                    <input type="text" class="input-text" value="<?php echo ($travel['travel_sort']); ?>" placeholder="数字越大越靠前" id="" name="travel_sort" style="width:20%;">
+                    <input type="text" class="input-text" value="<?php echo ($carrental['carrental_level']); ?>" placeholder="" id="" name="carrental_level">
                 </div>
             </div>
             <div class="row cl">
-                <label class="form-label col-xs-4 col-sm-2">允许评论：</label>
-                <div class="formControls col-xs-8 col-sm-9 skin-minimal">
-                    <div class="check-box">
-                        <input type="checkbox" id="checkbox-1" value="1" name="travel_allow_comment" <?php if($travel['travel_allow_comment'] == 1): ?>checked<?php endif; ?>>
-                        <label for="checkbox-1">&nbsp;</label>
-                    </div>
+                <label class="form-label col-xs-4 col-sm-2">可乘人数/座位数：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" class="input-text" value="<?php echo ($carrental['carrental_seatnumber']); ?>" placeholder="" id="" name="carrental_seatnumber">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2">汽车库存量：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" class="input-text" value="<?php echo ($carrental['carrental_number']); ?>" placeholder="填写可以租赁的总量数" id="" name="carrental_number" style="width:20%;"> 辆
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2">车辆简介：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <TEXTAREA name="carrental_briefing"  class="input-text" style="height:80px;"><?php echo ($carrental['carrental_briefing']); ?></TEXTAREA>
                 </div>
             </div>            
             <div class="row cl">
-                <label class="form-label col-xs-4 col-sm-2">原价：</label>
+                <label class="form-label col-xs-4 col-sm-2">排序值：</label>
                 <div class="formControls col-xs-8 col-sm-9">
-                    <input type="text" name="travel_original_price" id="" placeholder="" value="<?php echo ($travel['travel_original_price']); ?>" class="input-text" style="width:20%">
-                    元</div>
-            </div>
-            <div class="row cl">
-                <label class="form-label col-xs-4 col-sm-2">*售卖价：</label>
-                <div class="formControls col-xs-8 col-sm-9">
-                    <input type="text" name="travel_price" id="" placeholder="" value="<?php echo ($travel['travel_price']); ?>" class="input-text" style="width:20%">
-                    元</div>
-            </div>
+                    <input type="text" class="input-text" value="<?php echo ($carrental['carrental_sort']); ?>" placeholder="数字越大越靠前" id="" name="carrental_sort" style="width:20%;">
+                </div>
+            </div>           
             <div class="row cl">
                 <label class="form-label col-xs-4 col-sm-2">上架：</label>
                 <div class="formControls col-xs-8 col-sm-9 skin-minimal">
                     <div class="check-box">
-                        <input type="checkbox" id="checkbox-1" value="1" name="travel_status" <?php if($travel['travel_status'] == 1): ?>checked<?php endif; ?>>
+                        <input type="checkbox" id="checkbox-1" value="1" name="carrental_status" <?php if($carrental['carrental_status'] == 1): ?>checked<?php endif; ?>>
                         <label for="checkbox-1">&nbsp;</label>
                     </div>
                 </div>
-            </div>
-            <div class="row cl">
-                <label class="form-label col-xs-4 col-sm-2">商品亮点：</label>
+            </div>	
+            <div id="carrentalCategory" class="row cl">
+                <label class="form-label col-xs-4 col-sm-2">线路类别：</label>
                 <div class="formControls col-xs-8 col-sm-9">
-                    <textarea name="travel_highlights" cols="" rows="" class="textarea"  placeholder="多个亮点用英文|隔开" datatype="*10-100" dragonfly="true" nullmsg="备注不能为空！" onKeyUp="$.Huitextarealength(this,400)"><?php echo ($travel['travel_highlights']); ?></textarea>
-                    <p class="textarea-numberbar"><em class="textarea-length">0</em>/400</p>
+                   <ul>
+                   		<li class="col-xs-3 col-sm-3">价格类型</li>
+                   		<li class="col-xs-2 col-sm-2">市场价格</li>
+                   		<li class="col-xs-2 col-sm-2">价格</li>
+                   		<li class="col-xs-2 col-sm-2">单位</li>
+                   		<li class="col-xs-2 col-sm-2">排序</li>
+                   		<li class="col-xs-1 col-sm-1">操作<a class="f-r" style="text-decoration:none;" onclick="addCategory()" href="javascript:;" title="添加"><i class="Hui-iconfont">&#xe600;</i></a></li>
+                   </ul>                 
                 </div>
+                <?php if(is_array($carrental_category)): $i = 0; $__LIST__ = $carrental_category;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="formControls col-xs-8 col-sm-9 col-xs-8 col-xs-offset-4 col-sm-offset-2">
+                   <span class="col-xs-3 col-sm-3"><input type="hidden" name="travel_carrental_category_id[]" value="<?php echo ($vo['id']); ?>"><input type="text" class="input-text" value="<?php echo ($vo['travel_carrental_category_title']); ?>" placeholder="价格类型" id="" name="travel_carrental_category_title[]"></span>
+                   <span class="col-xs-2 col-sm-2"><input type="text" class="input-text" value="<?php echo ($vo['travel_carrental_category_original_price']); ?>" placeholder="市场价格" id="" name="travel_carrental_category_original_price[]"></span>
+                   <span class="col-xs-2 col-sm-2"><input type="text" class="input-text" value="<?php echo ($vo['travel_carrental_category_price']); ?>" placeholder="价格" id="" name="travel_carrental_category_price[]"></span>
+                   <span class="col-xs-2 col-sm-2"><input type="text" class="input-text" value="<?php echo ($vo['travel_carrental_category_unit']); ?>" placeholder="单位" id="" name="travel_carrental_category_unit[]"></span>
+                   <span class="col-xs-2 col-sm-2"><input type="text" class="input-text" value="<?php echo ($vo['travel_carrental_category_sort']); ?>" placeholder="排序" id="" name="travel_carrental_category_sort[]"></span> 
+                   <span class="col-xs-1 col-sm-1"><a style="text-decoration:none" onclick="delCategory(this)" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe609;</i></a></span>
+                </div><?php endforeach; endif; else: echo "" ;endif; ?>
             </div>
+            
+            
+                   
             <div class="row cl">
-                <label class="form-label col-xs-4 col-sm-2">线路图片：</label>
+                <label class="form-label col-xs-4 col-sm-2">车辆图片：</label>
                 <div class="formControls col-xs-8 col-sm-9">
                     <div class="uploader-thum-container">
                         <div id="filePicker">选择图片</div>
@@ -135,9 +146,9 @@
 				</ul>
 			</div> 
             <div class="row cl">
-                <label class="form-label col-xs-4 col-sm-2">详细内容：</label>
+                <label class="form-label col-xs-4 col-sm-2">车型介绍：</label>
                 <div class="formControls col-xs-8 col-sm-9"> 
-                    <script id="editor" type="text/plain" style="width:100%;height:400px;"><?php echo ($travel['travel_introduce']); ?></script> 
+                    <script id="editor" type="text/plain" style="width:100%;height:400px;"><?php echo ($carrental['carrental_introduce']); ?></script> 
                 </div>
             </div>
             <div class="row cl">
@@ -306,11 +317,26 @@ function mainshow(){
 		});
 	}
 }
-
+//添加线路类别
+function addCategory(){
+	var htm = '<div class="formControls col-xs-8 col-sm-9 col-xs-8 col-xs-offset-4 col-sm-offset-2">';
+        htm += '   <span class="col-xs-3 col-sm-3"><input type="hidden" name="travel_carrental_category_id[]"><input type="text" class="input-text" value="" placeholder="价格类型" id="" name="travel_carrental_category_title[]"></span>';
+        htm += '   <span class="col-xs-2 col-sm-2"><input type="text" class="input-text" value="" placeholder="市场价格" id="" name="travel_carrental_category_original_price[]"></span>';
+        htm += '   <span class="col-xs-2 col-sm-2"><input type="text" class="input-text" value="" placeholder="价格" id="" name="travel_carrental_category_price[]"></span>';
+        htm += '   <span class="col-xs-2 col-sm-2"><input type="text" class="input-text" value="" placeholder="单位" id="" name="travel_carrental_category_unit[]"></span>';
+        htm += '   <span class="col-xs-2 col-sm-2"><input type="text" class="input-text" value="" placeholder="排序" id="" name="travel_carrental_category_sort[]"></span>'; 
+        htm += '   <span class="col-xs-1 col-sm-1"><a style="text-decoration:none" onclick="delCategory(this)" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe609;</i></a></span>';
+        htm += '</div>';
+	$('#carrentalCategory').append(htm);
+}
+//删除线路类别
+function delCategory(obj){
+	$(obj).parent().parent().remove();
+}
 
 
 $(function(){
-	var ue = UE.getEditor('editor',{textarea:'travel_introduce'});
+	var ue = UE.getEditor('editor',{textarea:'carrental_introduce'});
 	
 	$("#form-travel-add").validate({
 		rules:{
@@ -337,6 +363,8 @@ $(function(){
 	});
 	
 	mainshow();
+	
+	<?php if(empty($carrental_category)): ?>addCategory();<?php endif; ?>
 });
 </script>
 

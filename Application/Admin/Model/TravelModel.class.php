@@ -11,7 +11,7 @@ class TravelModel extends Model{
 	
 	protected $_validate = array(
 			array('travel_title', 'require', '线路类别为必填项'),
-			array('travel_title','','线路类别长度范围是2~200个字节！',self::MUST_VALIDATE,'unique',self::MODEL_BOTH),
+			array('travel_title','2,200','线路类别长度范围是2~200个字节！',self::MUST_VALIDATE,'length',self::MODEL_BOTH),
 			array('travel_column', 'require', '线路类别为必填项'),			
 			array('travel_price', 'require', '排序为必填项'),
 	);
