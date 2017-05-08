@@ -32,7 +32,7 @@
 <!-- /头部 -->
 
 <div class="page-container">
-	<p class="f-20 text-success">欢迎使用H-ui.admin <span class="f-14">v3.0</span>后台模版！</p>
+	<p class="f-20 text-success">欢迎使用西藏旅游</span>后台管理！</p>
 	<p>登录次数：<?php echo ($login_count); ?> </p>
 	<p>上次登录IP：<?php echo ($login_before['ip']); ?>  上次登录时间：<?php echo (date("Y-m-d H:i:s",$login_before['time'])); ?></p>
 <!-- 	<table class="table table-border table-bordered table-bg">
