@@ -1,0 +1,99 @@
+
+/*~~~~~~~~~~carrent_introduce_wrapper~~~~~~~~~~*/
+.carrent_introduce_wrapper{
+	padding: 0.3rem;
+}
+.carrent_introduce_wrapper .thumbnail{
+	display: inline-block;
+	width: 6rem;
+	vertical-align: top;
+	border: 1px solid #ccc;
+}
+.carrent_introduce_wrapper .thumbnail img{
+	display: inline-block;
+	width: 100%;
+}
+.carrent_introduce_wrapper .main{
+	display: inline-block;
+	width: 9rem;
+	vertical-align: top;
+}
+.carrent_introduce_wrapper .main .title{
+	margin: 0 0 0.5rem 0;
+	font-size: 0.9rem;
+}
+.carrent_introduce_wrapper .main .property{
+	font-size: 0.7rem;
+	line-height: 1rem;
+}
+.carrent_introduce_wrapper .introduce{
+	margin: 1rem 0;
+	font-size: 0.7rem;
+	line-height: 1.1rem;
+	color: #333;
+}
+/*~~~~~~~~~~carrent_pricelist_wrapper~~~~~~~~~~*/
+.carrent_pricelist_wrapper{
+	font-size: 0.5rem;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	box-shadow: 0 0 10px #ccc;
+}
+.carrent_pricelist_wrapper thead {
+	background-color: #ddd;
+	font-size: 0.7rem;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+}
+.carrent_pricelist_wrapper thead td{
+	padding: 0.3rem 0;
+}
+.carrent_pricelist_wrapper tbody{
+	font-size: 0.7rem;
+	text-align: center;
+}
+.carrent_pricelist_wrapper tbody tr{
+	border-bottom: 1px solid #ccc;
+}
+.carrent_pricelist_wrapper tbody td:first-child{
+	text-align: left;
+}
+.carrent_pricelist_wrapper tbody td{
+	padding: 0.3rem 0;
+}
+.carrent_pricelist_wrapper tbody .preferentialprice{
+	color: #ff4400;
+}
+
+/*~~~~~~~~~~carrent_detail_wrapper~~~~~~~~~~*/
+.carrent_detail_wrapper{
+	margin: 1rem 0;
+}
+.carrent_detail_wrapper .title{
+	border-bottom: 1px solid #60c601;
+}
+.carrent_detail_wrapper .title li{
+	display: inline-block;
+	
+}
+.carrent_detail_wrapper .title .active a{
+	background-color: #60c601;
+}
+.carrent_detail_wrapper .title li a{
+	display: inline-block;
+	padding: 0.3rem;
+	font-size: 0.8rem;
+	border-top-left-radius: 0.2rem;
+	border-top-right-radius: 0.2rem;
+	overflow: hidden;
+	color: #fff;
+}
+
+.carrent_detail_wrapper .content li{
+	padding: 0.2rem;
+	font-size: 0.8rem;
+	line-height: 1.1rem;
+}
+.carrent_detail_wrapper .introduce p{
+	margin: 0 0 0.5rem 0;
+}
