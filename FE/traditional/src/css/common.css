@@ -302,10 +302,12 @@ a.disabled:hover {
 
 .common_block_wrapper {
     margin: 0.5rem 0 0 0;
-    /*padding: 0.1rem 0;*/
+    padding: 0.1rem 0.5rem;
     width: 100%;
     background-color: #fff;
     overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
 }
 
 /*~~~~~~~~~~common_redpacket_item~~~~~~~~~~*/
@@ -325,11 +327,14 @@ a.disabled:hover {
     background-size: 0.8rem;
     vertical-align: middle;
 }
+.common_redpacket_item label{
+    font-size: 0.7rem;
+}
 
 /*~~~~~~~~~~common_producttitle_item~~~~~~~~~~*/
 
 .common_producttitle_item {
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
     width: 100%;
     border-top: 1px solid #ccc;
 }
