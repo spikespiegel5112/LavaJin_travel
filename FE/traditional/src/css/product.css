@@ -206,3 +206,70 @@
     width: 75%;
     vertical-align: top;
 }
+
+
+
+/*~~~~~~~~~~draftingoflegalinstruments.html~~~~~~~~~~*/
+.drafting_list_wrapper>li{
+    border-bottom: 1px solid #efefef;
+}
+.drafting_list_wrapper li{
+    width: 100%;
+    line-height: 1.5rem;
+    font-size: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+.drafting_list_wrapper li label{
+    display: inline-block;
+    padding: 0 0 0 0.5rem;
+    width: 9rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    font-size: 0.6rem;
+    vertical-align: top;
+}
+.drafting_list_wrapper li>p{
+    display: inline-block;
+    padding: 0 1.5rem 0 0;
+    width: 5rem;
+    height: 1.7rem;
+    font-size: 0.6rem;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.drafting_list_wrapper li>a{
+    display: inline-block;
+    width: 8.5rem;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.drafting_list_wrapper li>a p{
+    display: inline-block;
+    width: 7rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    color: #000;
+    font-size: 0.6rem;
+}
+.drafting_list_wrapper li>a p i{
+    font-style: normal;
+    color: #ff9900;
+}
+.drafting_list_wrapper li>a span{
+    display: inline-block;
+    text-align: center;
+    width: 1.5rem;
+    font-size: 0.6rem;
+}
+.drafting_list_wrapper li .price{
+    color: #e60853;
+}
+.drafting_pulldownlist_wrapper{
+    display: none;
+    background-color: #dcdcdc;
+}
