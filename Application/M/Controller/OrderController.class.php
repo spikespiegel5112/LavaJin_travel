@@ -6,7 +6,7 @@ class OrderController extends Controller {
    		 $this->display();
        
 }
-
+		//获取订单信息
   	public function detail(){
 
 

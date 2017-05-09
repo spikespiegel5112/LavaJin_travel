@@ -1,3 +1,6 @@
+* {
+    font-family: 'Microsoft Yahei'
+}
 input {
     outline: none;
 }
@@ -45,7 +48,7 @@ a.disabled:hover {
 /*~~~~~~~~~~common_navgap_item~~~~~~~~~~*/
 
 .common_navgap_item {
-    height: 3rem;
+    height: 2.5rem;
 }
 
 /*~~~~~~~~~~form~~~~~~~~~~*/
@@ -204,9 +207,9 @@ a.disabled:hover {
 }
 
 /*.common_header_wrapper .search_btn span{
-	color: #fff;
-	font-size: 24px;
-	line-height: 42px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 42px;
 }*/
 
 .common_header_wrapper li:first-child, .common_header_wrapper a {
@@ -718,4 +721,61 @@ a.disabled:hover {
 .common_pagination_wrapper a:hover, .common_pagination_wrapper .active a {
     background-color: #3da14d;
     color: #fff;
+}
+
+/*~~~~~~~~~~common_list_wrapper~~~~~~~~~~*/
+
+.common_list_wrapper {
+    padding: 0.2rem;
+    width: 100%;
+}
+.common_list_wrapper>ul>li {
+    margin: 0 0 0.5rem 0;
+    padding: 0.5rem 0 0 0;
+    min-height: 4rem;
+    border-top: 1px solid #ccc;
+}
+.common_list_wrapper>ul>li:first-child {
+    border: 0;
+}
+.common_list_wrapper>ul>li .thumbnail {
+    display: inline-block;
+    width: 5rem;
+    height: 4rem;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+    vertical-align: top;
+}
+.common_list_wrapper>ul>li .thumbnail img {
+    display: block;
+    width: 100%;
+    transition: all 0.3s;
+}
+.common_list_wrapper>ul>li .detail {
+    display: inline-block;
+    padding: 0 0 0 0.2rem;
+    width: 10rem;
+    min-height: 4rem;
+    vertical-align: top;
+    border-left: 1px solid #ccc;
+}
+.common_list_wrapper>ul>li .detail .title {
+    padding: 0 0 0.3rem 0;
+    font-size: 0.6rem;
+}
+.common_list_wrapper>ul>li .detail .introduce {
+    font-size: 0.4rem;
+    line-height: 0.7rem;
+}
+.common_list_wrapper>ul>li .detail .desc {
+    font-size: 0.4rem;
+}
+.common_list_wrapper>ul>li .detail .price{
+    color: red;
+    font-size: 0.8rem;
+}
+.common_list_wrapper .productid{
+    display: inline-block;
+    margin: 0 0.2rem 0 0;
+    color: #F77D0F;
 }

@@ -13,7 +13,6 @@ class ProductController extends Controller {
   		 $this->dispaly();
   	}
 
-
   
 
 }
