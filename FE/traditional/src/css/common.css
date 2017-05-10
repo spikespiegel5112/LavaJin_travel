@@ -51,22 +51,7 @@ a.disabled:hover {
 	height: 2.5rem;
 }
 
-/*~~~~~~~~~~form~~~~~~~~~~*/
 
-.common_radio_wrapper {
-	display: inline-block;
-}
-.common_radio_wrapper input, .common_radio_wrapper label {
-	display: inline-block;
-}
-.common_input_item input, .common_input_item textarea {
-	padding: 5px;
-}
-.common_layout_container {
-	width: 100%;
-	min-width: 1000px;
-	font-size: 0;
-}
 
 /*~~~~~~~~~~common_btn_item~~~~~~~~~~*/
 
@@ -630,7 +615,6 @@ a.disabled:hover {
 	color: #666;
 	vertical-align: middle;
 }
-.common_form_wrapper .common_input_item {}
 .common_form_wrapper textarea {
 	height: 60px;
 }
@@ -827,7 +811,7 @@ a.disabled:hover {
 	background-color: #dcdcdc;
 }
 
-/*~~~~~~~~~~common_form_item~~~~~~~~~~*/
+/*~~~~~~~~~~form~~~~~~~~~~*/
 
 .common_form_item {
 	display: table-row;
@@ -836,11 +820,25 @@ a.disabled:hover {
 }
 .common_form_item .title {
 	display: table-cell;
-	min-width: 4rem;
 	font-size: 0.7rem;
 	color: #333;
 	vertical-align: middle;
 }
+.common_radio_wrapper {
+	display: inline-block;
+}
+.common_radio_wrapper input, .common_radio_wrapper label {
+	display: inline-block;
+}
+.common_layout_container {
+	width: 100%;
+	min-width: 1000px;
+	font-size: 0;
+}
+.common_input_item input, .common_input_item textarea {
+	padding: 5px;
+}
+
 .common_input_item {
 	display: table-cell;
 	padding: 10px;
