@@ -22,60 +22,36 @@
 			<a class="left_btn back_btn" href="javascript:;">
 				<span class="iconfont icon-backward2"></span>
 			</a>
-			<p>酒店留言</p>
+			<p>机票留言</p>
 		</div>
 		<div class='common_block_wrapper'>
 			<form class="common_form_wrapper">
 				<div class="common_form_item">
-					<label class='title'>入住日期</label>
+					<label class='title'>出行日期</label>
 					<div class='common_input_item'>
 						<input type='text' disabled>
 					</div>
 				</div>
-				<div class="common_form_item">
-					<label class='title'>房间规格</label>
-					<div class='common_input_item'>
-						<div class="common_radio_item">
-							<label for="danjian">单间</label>
-							<input type="radio" id="danjian" name='roomstandard'>
-						</div>
-						<div class="common_radio_item">
-							<label for="biaojian">标间</label>
-							<input type="radio" id="biaojian" name='roomstandard'>
-						</div>
-						<div class="common_radio_item">
-							<label for="haohua">豪华</label>
-							<input type="radio" id="haohua" name='roomstandard'>
-						</div>
-					</div>
-				</div>
-				<div class="common_form_item">
-					<label class='title'>房间类型</label>
-					<div class='common_input_item'>
-						<div class="common_radio_item">
-							<label for="tesekezhan">特色客栈</label>
-							<input type="radio" id="tesekezhan" name='roomtype'>
-						</div>
-						<div class="common_radio_item">
-							<label for="jignjixing">经济型</label>
-							<input type="radio" id="jignjixing" name='roomtype'>
-						</div>
-						<div class="common_radio_item">
-							<label for="sanxing">三星</label>
-							<input type="radio" id="sanxing" name='roomtype'>
-						</div>
-						<div class="common_radio_item">
-							<label for="sixing">四星</label>
-							<input type="radio" id="sixing" name='roomtype'>
-						</div>
-						<div class="common_radio_item">
-							<label for="wuxinghaohua">五星豪华</label>
-							<input type="radio" id="wuxinghaohua" name='roomtype'>
-						</div>
+				<div class='common_form_item'>
+					<label class='title'>出发开始</label>
+					<div class="common_input_item">
+						<input type="text" id="biaojian">
 					</div>
 				</div>
 				<div class='common_form_item'>
-					<label class='title'>姓名</label>
+					<label class='title'>出发地</label>
+					<div class="common_input_item">
+						<input type="text" id="biaojian">
+					</div>
+				</div>
+				<div class='common_form_item'>
+					<label class='title'>乘客姓名</label>
+					<div class="common_input_item">
+						<input type="text" id="biaojian">
+					</div>
+				</div>
+				<div class='common_form_item'>
+					<label class='title'>身份证</label>
 					<div class="common_input_item">
 						<input type="text" id="biaojian">
 					</div>
@@ -86,10 +62,30 @@
 						<input type="text" id="biaojian">
 					</div>
 				</div>
-				<div class='common_form_item'>
-					<label class='title'>身份证</label>
-					<div class="common_input_item">
-						<input type="text" id="biaojian">
+				<div class="common_form_item">
+					<label class='title'>座舱规格</label>
+					<div class='common_input_item'>
+						<div class="common_radio_item">
+							<label for="economy">经济舱</label>
+							<input type="radio" id="economy" name='cabinspecification'>
+						</div>
+						<div class="common_radio_item">
+							<label for="firstclass">头等舱</label>
+							<input type="radio" id="firstclass" name='cabinspecification'>
+						</div>
+					</div>
+				</div>
+				<div class="common_form_item">
+					<label class='title'>是否买过保险</label>
+					<div class='common_input_item'>
+						<div class="common_radio_item">
+							<label for="yes">是</label>
+							<input type="radio" id="yes" name='hassecurity'>
+						</div>
+						<div class="common_radio_item">
+							<label for="no">否</label>
+							<input type="radio" id="no" name='hassecurity'>
+						</div>
 					</div>
 				</div>
 			</form>
