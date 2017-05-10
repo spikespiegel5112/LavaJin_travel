@@ -194,3 +194,7 @@
 .order_detail_wrapper li .price {
     color: #e60853;
 }
+/*~~~~~~~~~~order_message_wrapper~~~~~~~~~~*/
+.order_message_wrapper{
+    background: #ccc;
+}

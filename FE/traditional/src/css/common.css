@@ -26,10 +26,12 @@ span.error {
 	color: red;
 	font-size: 12px;
 }
-.common_input_item  input.error[type=text]{
+.common_input_item  textarea.error, .common_input_item  input.error[type=text]{
 	border: 1px solid red;
 }
-
+.common_error_wrapper{
+	padding: 0.2rem 1rem;
+}
 
 .fixed {
 	position: fixed!important;
@@ -121,6 +123,7 @@ a.disabled:hover {
 	width: 100%;
 	height: 2rem;
 	background-color: #fff;
+	box-shadow: 0 0 1rem #ccc;
 }
 .common_header_wrapper .iconfont {
 	font-size: 1rem;
@@ -613,6 +616,7 @@ a.disabled:hover {
 
 .common_form_wrapper {
 	font-size: 0.8rem;
+	box-shadow: 0 0 1rem #ccc;
 }
 .common_form_wrapper ul {
 	display: table;
@@ -630,7 +634,9 @@ a.disabled:hover {
 	vertical-align: middle;
 }
 .common_form_wrapper textarea {
-	height: 60px;
+	width: 100%;
+	min-height: 4rem;
+	border: 1px solid #ccc;
 }
 .common_radio_item {
 	display: inline-block;
