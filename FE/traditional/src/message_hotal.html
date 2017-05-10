@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
-	<title>用户列表</title>
+	<title>酒店留言</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_icgfcixm8qn9izfr.css" />
 	<link rel="stylesheet" href="assets/css/swiper.min.css" />
 	<link rel="stylesheet" href="css/reset.css" />
@@ -22,27 +22,74 @@
 			<a class="left_btn back_btn" href="javascript:;">
 				<span class="iconfont icon-backward2"></span>
 			</a>
-			<p>租车列表</p>
+			<p>酒店留言</p>
 		</div>
 		<div class='common_block_wrapper'>
 			<form class="common_form_wrapper">
 				<div class="common_form_item">
-					<label class='title' for="exampleInputName2">入住日期</label>
-					<input type='text' class="form-control">
+					<label class='title'>入住日期</label>
+					<div class='common_input_item'>
+						<input type='text' disabled>
+					</div>
 				</div>
 				<div class="common_form_item">
-					<label for="exampleInputName2">房间类型</label>
-					<div class="common_radio_item">
-						<label for="danjian">单间</label>
-						<input type="radio" class="form-control" id="danjian" name='roomtype'>
+					<label class='title'>房间规格</label>
+					<div class='common_input_item'>
+						<div class="common_radio_item">
+							<label for="danjian">单间</label>
+							<input type="radio" id="danjian" name='roomstandard'>
+						</div>
+						<div class="common_radio_item">
+							<label for="biaojian">标间</label>
+							<input type="radio" id="biaojian" name='roomstandard'>
+						</div>
+						<div class="common_radio_item">
+							<label for="haohua">豪华</label>
+							<input type="radio" id="haohua" name='roomstandard'>
+						</div>
 					</div>
-					<div class="common_radio_item">
-						<label for="biaojian">标间</label>
-						<input type="radio" class="form-control" id="biaojian" name='roomtype'>
+				</div>
+				<div class="common_form_item">
+					<label class='title'>房间类型</label>
+					<div class='common_input_item'>
+						<div class="common_radio_item">
+							<label for="tesekezhan">特色客栈</label>
+							<input type="radio" id="tesekezhan" name='roomtype'>
+						</div>
+						<div class="common_radio_item">
+							<label for="jignjixing">经济型</label>
+							<input type="radio" id="jignjixing" name='roomtype'>
+						</div>
+						<div class="common_radio_item">
+							<label for="sanxing">三星</label>
+							<input type="radio" id="sanxing" name='roomtype'>
+						</div>
+						<div class="common_radio_item">
+							<label for="sixing">四星</label>
+							<input type="radio" id="sixing" name='roomtype'>
+						</div>
+						<div class="common_radio_item">
+							<label for="wuxinghaohua">五星豪华</label>
+							<input type="radio" id="wuxinghaohua" name='roomtype'>
+						</div>
 					</div>
-					<div class="common_radio_item">
-						<label for="haohua">豪华</label>
-						<input type="radio" class="form-control" id="haohua" name='roomtype'>
+				</div>
+				<div class='common_form_item'>
+					<label class='title'>姓名</label>
+					<div class="common_input_item">
+						<input type="text" id="biaojian">
+					</div>
+				</div>
+				<div class='common_form_item'>
+					<label class='title'>联系电话</label>
+					<div class="common_input_item">
+						<input type="text" id="biaojian">
+					</div>
+				</div>
+				<div class='common_form_item'>
+					<label class='title'>身份证</label>
+					<div class="common_input_item">
+						<input type="text" id="biaojian">
 					</div>
 				</div>
 			</form>
@@ -51,3 +98,4 @@
 </body>
 
 </html>
+
