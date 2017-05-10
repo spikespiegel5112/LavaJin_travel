@@ -16,6 +16,21 @@ a.disabled, .disabled {
 	border-color: #e8e8e8;
 	cursor: not-allowed;
 }
+/*~~~~~~~~~~error~~~~~~~~~~*/
+span.error {
+	display: block;
+	margin: 0.5rem 0 0 0;
+	padding: 0 0 0 1rem;
+	background: url("../images/icon/unchecked.gif") no-repeat 0px 0px;
+	font-weight: normal;
+	color: red;
+	font-size: 12px;
+}
+.common_input_item  input.error[type=text]{
+	border: 1px solid red;
+}
+
+
 .fixed {
 	position: fixed!important;
 }
@@ -50,8 +65,6 @@ a.disabled:hover {
 .common_navgap_item {
 	height: 2.5rem;
 }
-
-
 
 /*~~~~~~~~~~common_btn_item~~~~~~~~~~*/
 
@@ -97,6 +110,7 @@ a.disabled:hover {
 	color: #fff;
 	font-size: 0.8rem;
 	background-color: #ff4400;
+	border: 0;
 }
 
 /*~~~~~~~~~~common_header_wrapper~~~~~~~~~~*/
@@ -620,6 +634,11 @@ a.disabled:hover {
 }
 .common_radio_item {
 	display: inline-block;
+	position: relative;
+}
+.common_radio_item span.error{
+	width: 5rem;
+	position: absolute;
 }
 
 /*~~~~~~~~~~common_formdetail_item~~~~~~~~~~*/
@@ -820,8 +839,9 @@ a.disabled:hover {
 }
 .common_form_item .title {
 	display: table-cell;
+	min-width: 3rem;
 	font-size: 0.7rem;
-	color: #333;
+	color: #666;
 	vertical-align: middle;
 }
 .common_radio_wrapper {
@@ -838,16 +858,17 @@ a.disabled:hover {
 .common_input_item input, .common_input_item textarea {
 	padding: 5px;
 }
-
 .common_input_item {
 	display: table-cell;
 	padding: 10px;
+	min-width: 10rem;
 	border-color: #666;
+	position: relative;
 }
 .common_input_item input[type=text] {
 	width: 100%;
 	border-radius: 0.1rem;
-	border: 1px solid #999;
+	border: 1px solid #ccc;
 	font-size: 0.7rem;
 	color: #333;
 }
@@ -855,6 +876,12 @@ a.disabled:hover {
 	margin: 0.3rem 0.2rem;
 }
 .common_radio_item label {
+	display: inline-block;
 	font-size: 0.6rem;
 	color: #333;
+	vertical-align: middle;
+}
+.common_radio_item input {
+	display: inline-block;
+	vertical-align: middle;
 }
