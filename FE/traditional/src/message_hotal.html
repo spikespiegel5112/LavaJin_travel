@@ -14,12 +14,10 @@
 	<script type="text/javascript" src='assets/js/swiper.min.js'></script>
 	<script type="text/javascript" src='js/base.js'></script>
 	<script type="text/javascript" src='js/common.js'></script>
-	
 </head>
 
 <body>
 	<div class='main_container'>
-		
 		<div class="common_header_wrapper">
 			<a class="left_btn back_btn" href="javascript:;">
 				<span class="iconfont icon-backward2"></span>
@@ -27,23 +25,29 @@
 			<p>租车列表</p>
 		</div>
 		<div class='common_block_wrapper'>
-			<ul class='drafting_list_wrapper'>
-				<li>
-					<label>案由</label>
-					<p>
-						合同纠纷
-					</p>
-				</li>
-				<li>
-					<label>交付时间（不包括快递送达时间）</label>
-					<p>
-						2015-5-21
-					</p>
-				</li>
-			</ul>
+			<form class="common_form_wrapper">
+				<div class="common_form_item">
+					<label class='title' for="exampleInputName2">入住日期</label>
+					<input type='text' class="form-control">
+				</div>
+				<div class="common_form_item">
+					<label for="exampleInputName2">房间类型</label>
+					<div class="common_radio_item">
+						<label for="danjian">单间</label>
+						<input type="radio" class="form-control" id="danjian" name='roomtype'>
+					</div>
+					<div class="common_radio_item">
+						<label for="biaojian">标间</label>
+						<input type="radio" class="form-control" id="biaojian" name='roomtype'>
+					</div>
+					<div class="common_radio_item">
+						<label for="haohua">豪华</label>
+						<input type="radio" class="form-control" id="haohua" name='roomtype'>
+					</div>
+				</div>
+			</form>
 		</div>
 	</div>
 </body>
 
 </html>
-
