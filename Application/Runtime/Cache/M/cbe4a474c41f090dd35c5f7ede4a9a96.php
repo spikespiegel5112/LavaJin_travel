@@ -5,17 +5,17 @@
 	<meta name="viewport" content="initial-scale=1.0 user-scalable=no" />
 	<title>线路列表</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_icgfcixm8qn9izfr.css" />
-	<link rel="stylesheet" href="/travel/Public/M/assets/css/swiper.min.css" />
-	<link rel="stylesheet" href="/travel/Public/M/css/reset.css" />
-	<link rel='stylesheet' href="/travel/Public/M/css/common.css" />
-	<link rel='stylesheet' href="/travel/Public/M/css/user.css" />
-	<link rel='stylesheet' href="/travel/Public/M/css/access.css" />
-	<link rel='stylesheet' href="/travel/Public/M/css/carrent.css" />
-	<link rel='stylesheet' href="/travel/Public/M/css/product.css" />
-	<script type="text/javascript" src='/travel/Public/M/assets/js/jquery.min.js'></script>
-	<script type="text/javascript" src='/travel/Public/M/assets/js/swiper.min.js'></script>
-	<script type="text/javascript" src='/travel/Public/M/js/base.js'></script>
-	<script type="text/javascript" src='/travel/Public/M/js/common.js'></script>
+	<link rel="stylesheet" href="/Public/M/assets/css/swiper.min.css" />
+	<link rel="stylesheet" href="/Public/M/css/reset.css" />
+	<link rel='stylesheet' href="/Public/M/css/common.css" />
+	<link rel='stylesheet' href="/Public/M/css/user.css" />
+	<link rel='stylesheet' href="/Public/M/css/access.css" />
+	<link rel='stylesheet' href="/Public/M/css/carrent.css" />
+	<link rel='stylesheet' href="/Public/M/css/product.css" />
+	<script type="text/javascript" src='/Public/M/assets/js/jquery.min.js'></script>
+	<script type="text/javascript" src='/Public/M/assets/js/swiper.min.js'></script>
+	<script type="text/javascript" src='/Public/M/js/base.js'></script>
+	<script type="text/javascript" src='/Public/M/js/common.js'></script>
 </head>
 
 <body>
@@ -28,113 +28,30 @@
 		</div>
 		<div class='common_list_wrapper'>
 			<ul>
-				<li>
-					<a class='thumbnail' href="<?php echo U('Product/details');?>">
-						<img src="/travel/Public/M/images/static/10i58PICmeX.jpg">
+				<?php if(is_array($travel_list)): $i = 0; $__LIST__ = $travel_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
+					<a class='thumbnail' href="<?php echo U('Product/detail',array('id'=>$vo['id']));?>">
+						<img src="<?php echo ($vo["travel_mainimg"]); ?>">
 					</a>
 					<div class='detail'>
-						<a href="<?php echo U('Product/details');?>">
-						<h2 class='title'><span class='productid'>A938</span>拉萨之旅</h2>
-					</a>
-						<ul class='product_list_wrapper'>
-							<li>
-								<label>出发地：</label>
-								<p class='desc'>
-									拉萨市
-								</p>
-							</li>
-							<li>
-								<label>行程天数:</label>
-								<p class='desc'>
-									8天
-								</p>
-							</li>
+						<a href="<?php echo U('Product/detail',array('id'=>$vo['id']));?>">
+						<h2 class='title'><span class='productid'>A<?php echo ($vo["id"]); ?></span><?php echo ($vo["travel_title"]); ?></h2>
+						</a>
+						<ul class='product_list_wrapper'>							
 							<li>
 								<label>简述：</label>
 								<p class='introduce'>
-									领略世界屋脊之美，看珠峰旗云，游藏域高地，最美珠峰，最美圣湖，尽在咫尺。<a href="javascript:;">详情</a>
+									<?php echo ($vo["travel_short_title"]); ?><a href="javascript:;">详情</a>
 								</p>
 							</li>
 							<li>
 								<label>价格：</label>
 								<p class='desc'>
-									<span class='price'>¥2960</span> 元/人
+									<span class='price'>¥<?php echo ($vo["travel_price"]); ?></span> 元/人
 								</p>
 							</li>
 						</ul>
 					</div>
-				</li>
-				<li>
-					<a class='thumbnail' href="<?php echo U('Product/details');?>">
-						<img src="/travel/Public/M/images/static/10i58PICmeX.jpg">
-					</a>
-					<div class='detail'>
-						<a href="<?php echo U('Product/details');?>">
-						<h2 class='title'><span class='productid'>A937</span>拉萨之旅</h2>
-					</a>
-						<ul class='product_list_wrapper'>
-							<li>
-								<label>出发地：</label>
-								<p class='desc'>
-									拉萨市
-								</p>
-							</li>
-							<li>
-								<label>行程天数:</label>
-								<p class='desc'>
-									8天
-								</p>
-							</li>
-							<li>
-								<label>简述：</label>
-								<p class='introduce'>
-									领略世界屋脊之美，看珠峰旗云，游藏域高地，最美珠峰，最美圣湖，尽在咫尺。<a href="javascript:;">详情</a>
-								</p>
-							</li>
-							<li>
-								<label>价格：</label>
-								<p class='desc'>
-									<span class='price'>¥2960</span> 元/人
-								</p>
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<a class='thumbnail' href="javascript:;">
-						<img src="/travel/Public/M/images/static/10i58PICmeX.jpg">
-					</a>
-					<div class='detail'>
-						<h2 class='title'><span class='productid'>A937</span>拉萨之旅</h2>
-						<ul class='product_list_wrapper'>
-							<li>
-								<label>出发地：</label>
-								<p class='desc'>
-									拉萨市
-								</p>
-							</li>
-							<li>
-								<label>行程天数:</label>
-								<p class='desc'>
-									8天
-								</p>
-							</li>
-							<li>
-								<label>简述：</label>
-								<p class='introduce'>
-									领略世界屋脊之美，看珠峰旗云，游藏域高地，最美珠峰，最美圣湖，尽在咫尺。<a href="javascript:;">详情</a>
-								</p>
-							</li>
-							<li>
-								<label>价格：</label>
-								<p class='desc'>
-									<span class='price'>¥2960</span> 元/人
-								</p>
-							</li>
-						</ul>
-					</div>
-				</li>
-			
+				</li><?php endforeach; endif; else: echo "" ;endif; ?>			
 			</ul>
 		</div>
 		<div class='common_navgap_item'></div>

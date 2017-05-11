@@ -202,7 +202,7 @@ function getImageList($path,$mainimg=''){
 				if(strpos($mainimg,$item)){					
 					array_unshift($imglist,$item);
 				}else{
-					$imglist[] = $item;
+					$imglist[] = $path.'/'.$item;
 				}
 			}
 		}

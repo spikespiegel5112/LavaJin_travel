@@ -15,12 +15,12 @@ class UserController extends PublicController {
 		if(!$this->check_login()){
 			redirect(U('login/index'));
 		}
-		}
+	}
 
 		
 	public function index(){
-
-
+		 $userList = M('user')->select();
+		 $this->assign('userList',$userList);
 		 $this->display();
 	}
 
