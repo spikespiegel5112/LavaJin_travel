@@ -51,3 +51,8 @@
 	display: block;
 	margin: 0 auto;
 }
+
+/*~~~~~~~~~~order_message_wrapper~~~~~~~~~~*/
+.order_message_wrapper{
+    background: #efefef;
+}

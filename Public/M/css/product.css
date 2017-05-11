@@ -46,7 +46,8 @@
 }
 .product_detailprice_wrapper .price span {
     margin: 0 0.2rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    text-decoration: line-through;
 }
 .product_detailprice_wrapper .price label {
     margin: 0 0.2rem;
@@ -122,8 +123,8 @@
 }
 .product_detailroute_wrapper .ordernumber {
     display: inline-block;
-    padding: 0.2rem 2%;
-    width: 4%;
+    padding: 0.2rem 0;
+    width: 8%;
     line-height: 1rem;
     font-size: 0.8rem;
     background-color: #ff9900;
@@ -205,4 +206,88 @@
     display: inline-block;
     width: 75%;
     vertical-align: top;
+}
+
+/*~~~~~~~~~~draftingoflegalinstruments.html~~~~~~~~~~*/
+.drafting_list_wrapper>li{
+    border-bottom: 1px solid #efefef;
+}
+.drafting_list_wrapper li{
+    width: 100%;
+    line-height: 1.5rem;
+    font-size: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+.drafting_list_wrapper li label{
+    display: inline-block;
+    padding: 0 0 0 0.5rem;
+    width: 9rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    font-size: 0.6rem;
+    vertical-align: top;
+}
+.drafting_list_wrapper li>p{
+    display: inline-block;
+    padding: 0 1.5rem 0 0;
+    width: 5rem;
+    height: 1.7rem;
+    font-size: 0.6rem;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.drafting_list_wrapper li>a{
+    display: inline-block;
+    width: 8.5rem;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.drafting_list_wrapper li>a p{
+    display: inline-block;
+    width: 7rem;
+    height: 1.7rem;
+    line-height: 1.7rem;
+    color: #000;
+    font-size: 0.6rem;
+}
+.drafting_list_wrapper li>a p i{
+    font-style: normal;
+    color: #ff9900;
+}
+.drafting_list_wrapper li>a span{
+    display: inline-block;
+    text-align: center;
+    width: 1.5rem;
+    font-size: 0.6rem;
+}
+.drafting_list_wrapper li .price{
+    color: #e60853;
+}
+.drafting_pulldownlist_wrapper{
+    display: none;
+    background-color: #dcdcdc;
+}
+.product_dateinput_item{
+    display: none;
+}
+.product_subscribe_item a{
+    display: block;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+.product_confirmbtn_container{
+    display: none;
+    width: 100%;
+    position: absolute;
+    bottom: 0.13rem;
+    left: 0;
+}
+.product_confirmbtn_item{
+    width: 
 }
