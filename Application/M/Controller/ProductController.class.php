@@ -34,4 +34,15 @@ class ProductController extends Controller {
   		$this->display();
   	}
 
+    public function category(){
+
+         $db = M('category');
+
+         $list = $db->field('id,category')->select();
+
+         $this->assign('list',$list);
+
+         $this->display();
+    }
+
 }

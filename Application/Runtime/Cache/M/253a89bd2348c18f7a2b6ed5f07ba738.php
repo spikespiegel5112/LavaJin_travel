@@ -5,15 +5,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
 	<title>西藏旅游</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_icgfcixm8qn9izfr.css" />
-	<link rel="stylesheet" href="/Public/M/assets/css/swiper.min.css" />
-	<link rel="stylesheet" href="/Public/M/css/reset.css" />
-	<link rel='stylesheet' href="/Public/M/css/common.css" />
-	<link rel="stylesheet" href="/Public/M/css/index.css" />
-	<link rel='stylesheet' href="/Public/M/css/access.css" />
-	<script type="text/javascript" src='/Public/M/assets/js/jquery.min.js'></script>
-	<script type="text/javascript" src='/Public/M/assets/js/swiper.min.js'></script>
-	<script type="text/javascript" src='/Public/M/js/base.js'></script>
-	<script type="text/javascript" src='/Public/M/js/common.js'></script>
+	<link rel="stylesheet" href="/travel/Public/M/assets/css/swiper.min.css" />
+	<link rel="stylesheet" href="/travel/Public/M/css/reset.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/common.css" />
+	<link rel="stylesheet" href="/travel/Public/M/css/index.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/access.css" />
+	<script type="text/javascript" src='/travel/Public/M/assets/js/jquery.min.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/assets/js/swiper.min.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/js/base.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/js/common.js'></script>
 </head>
 
 <body>
@@ -22,12 +22,12 @@
 			<ul class='swiper-wrapper'>
 				<li class='swiper-slide'>
 					<a href='javascript:;'>
-						<img src='/Public/M/images/banner_articlelist_announcement_00000.jpg' />
+						<img src='/travel/Public/M/images/banner_articlelist_announcement_00000.jpg' />
 					</a>
 				</li>
 				<li class='swiper-slide'>
 					<a href='javascript:;'>
-						<img src='/Public/M/images/banner_articlelist_news_00000.jpg' />
+						<img src='/travel/Public/M/images/banner_articlelist_news_00000.jpg' />
 					</a>
 				</li>
 			</ul>
@@ -37,37 +37,37 @@
 			<ul>
 				<li>
 					<a href="<?php echo U('Product/index');?>">
-						<img src='/Public/M/images/static/02w58PICuYi_1024.jpg' />
+						<img src='/travel/Public/M/images/static/02w58PICuYi_1024.jpg' />
 					</a>
 					<label>旅游线路</label>
 				</li>
 				<li>
 					<a href="<?php echo U('Carrent/index');?>">
-						<img src='/Public/M/images/static/10i58PICmeX.jpg' />
+						<img src='/travel/Public/M/images/static/10i58PICmeX.jpg' />
 					</a>
 					<label>租车包车</label>
 				</li>
 				<li>
 					<a href="<?php echo U('Hotel/index');?>">
-						<img src='/Public/M/images/static/73t58PICjpT_1024.jpg' />
+						<img src='/travel/Public/M/images/static/73t58PICjpT_1024.jpg' />
 					</a>
 					<label>酒店预订</label>
 				</li>
 				<li>
 					<a href="<?php echo U('JiPiao/index');?>">
-						<img src='/Public/M/images/static/240418-14112P9345826.jpg' />
+						<img src='/travel/Public/M/images/static/240418-14112P9345826.jpg' />
 					</a>
 					<label>机票预订</label>
 				</li>
 				<li>
 					<a href="http://imf.zqggz.com">
-						<img src='/Public/M/images/static/9448607_153955535000_2.jpg' />
+						<img src='/travel/Public/M/images/static/9448607_153955535000_2.jpg' />
 					</a>
 					<label>特产专区</label>
 				</li>
 				<li>
 					<a href="javascript:;">
-						<img src='/Public/M/images/static/44n58PICAT2.jpg' />
+						<img src='/travel/Public/M/images/static/44n58PICAT2.jpg' />
 					</a>
 					<label>特色服务</label>
 				</li>
@@ -81,10 +81,10 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='/Public/M/images/icon/hot.png' />
+						  <img class='active' src='/travel/Public/M/images/icon/hot.png' />
 					  </span>
 					  <a href="<?php echo U('Product/details');?>">
-						<img src='/Public/M/images/static/73t58PICjpT_1024.jpg' />
+						<img src='/travel/Public/M/images/static/73t58PICjpT_1024.jpg' />
 					</a>
 						<div class='price'>
 							<span>￥298</span>
@@ -100,10 +100,10 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='/Public/M/images/icon/hot.png' />
+						  <img class='active' src='/travel/Public/M/images/icon/hot.png' />
 					  </span>
 					   <a href="<?php echo U('Product/details');?>">
-						<img src='/Public/M/images/static/240418-14112P9345826.jpg' />
+						<img src='/travel/Public/M/images/static/240418-14112P9345826.jpg' />
 					</a>
 						<div class='price'>
 							<span>￥298</span>
@@ -119,9 +119,9 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='/Public/M/images/icon/hot.png' />
+						  <img class='active' src='/travel/Public/M/images/icon/hot.png' />
 					  </span>
-						<img src='/Public/M/images/static/73t58PICjpT_1024.jpg' />
+						<img src='/travel/Public/M/images/static/73t58PICjpT_1024.jpg' />
 						<div class='price'>
 							<span>￥298</span>
 							<label>￥368</label>
@@ -143,9 +143,9 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='/Public/M/images/icon/hot.png' />
+						  <img class='active' src='/travel/Public/M/images/icon/hot.png' />
 					  </span>
-						<img src='/Public/M/images/static/44n58PICAT2.jpg' />
+						<img src='/travel/Public/M/images/static/44n58PICAT2.jpg' />
 						<div class='price'>
 							<span>￥298</span>
 							<label>￥368</label>
@@ -160,9 +160,9 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='/Public/M/images/icon/hot.png' />
+						  <img class='active' src='/travel/Public/M/images/icon/hot.png' />
 					  </span>
-						<img src='/Public/M/images/static/02w58PICuYi_1024.jpg' />
+						<img src='/travel/Public/M/images/static/02w58PICuYi_1024.jpg' />
 						<div class='price'>
 							<span>￥298</span>
 							<label>￥368</label>
@@ -177,9 +177,9 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='/Public/M/images/icon/hot.png' />
+						  <img class='active' src='/travel/Public/M/images/icon/hot.png' />
 					  </span>
-						<img src='/Public/M/images/static/10i58PICmeX.jpg' />
+						<img src='/travel/Public/M/images/static/10i58PICmeX.jpg' />
 						<div class='price'>
 							<span>￥298</span>
 							<label>￥368</label>
@@ -194,9 +194,9 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='/Public/M/images/icon/hot.png' />
+						  <img class='active' src='/travel/Public/M/images/icon/hot.png' />
 					  </span>
-						<img src='/Public/M/images/static/44n58PICAT2.jpg' />
+						<img src='/travel/Public/M/images/static/44n58PICAT2.jpg' />
 						<div class='price'>
 							<span>￥298</span>
 							<label>￥368</label>
@@ -211,9 +211,9 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='/Public/M/images/icon/hot.png' />
+						  <img class='active' src='/travel/Public/M/images/icon/hot.png' />
 					  </span>
-						<img src='/Public/M/images/static/73t58PICjpT_1024.jpg' />
+						<img src='/travel/Public/M/images/static/73t58PICjpT_1024.jpg' />
 						<div class='price'>
 							<span>￥298</span>
 							<label>￥368</label>

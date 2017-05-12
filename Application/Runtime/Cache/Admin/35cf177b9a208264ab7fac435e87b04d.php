@@ -31,45 +31,45 @@
 <body>
 <!-- /头部 -->
 
-	<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 线路管理 <span class="c-gray en">&gt;</span> 线路列表 <a id="reload" class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:void(0);" onclick="location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+	<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 线路管理 <span class="c-gray en">&gt;</span> 线路类别 <a id="reload" class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:void(0);" onclick="location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 	<div class="page-container">
         <div class="cl pd-5 bg-1 bk-gray mt-20">
             <span class="l">
-                <a href="javascript:;" onClick="travel_edit('新增线路','<?php echo U('travel/travel_edit');?>','1600','850')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 新增线路</a>
+                <a href="javascript:;" onClick="category_edit('类别编辑','<?php echo U('travel/travel_category_edit');?>','','510')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加类别</a>
             </span>
-            <span class="r">共有数据：<strong id="dataTableCount"><?php echo count($travel_list);?></strong> 条</span>
+            <span class="r">共有数据：<strong id="dataTableCount"><?php echo count($category_list);?></strong> 条</span>
         </div>
         <div class="mt-20">
         <table class="table table-border table-bordered table-hover table-bg table-sort">
             <thead>
                 <tr class="text-c">
                     <th width="40">ID</th>
-                    <th width="40">缩略图</th>
-                    <th width="300">产品</th>
-                    <th width="40">分类栏目</th>
-                    <th width="40">售卖价</th>
+                    <th width="150">类别编码</th>
+                    <th width="150">线路类别</th>
+                    <th width="40">排序</th>
                     <th width="40">状态</th>
+       				<th width="200">备注</th>
                     <th width="100">操作</th>
                 </tr>
             </thead>
             <tbody>
-            	<?php if(is_array($travel_list)): $k = 0; $__LIST__ = $travel_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr class="text-c">
+            	<?php if(is_array($category_list)): $k = 0; $__LIST__ = $category_list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($k % 2 );++$k;?><tr class="text-c">
                     <td><?php echo ($k); ?></td>
-                    <td><?php if($vo['smallImg'] != ''): ?><img src="<?php echo ($vo['smallImg']); ?>" style="width:60px;"><?php endif; ?></td>
-                    <td><?php echo ($vo["travel_title"]); ?></td>
+                    <td><?php echo ($vo["category_code"]); ?></td>
                     <td><?php echo ($vo["category"]); ?></td>
-                    <td><?php echo ($vo["travel_price"]); ?></td>               
+                    <td><?php echo ($vo["sort"]); ?></td>                    
                     <td class="td-status">
-                    	<?php if($vo['travel_status'] == 1): ?><span class="label label-success radius">已上架</span>
+                    	<?php if($vo['enable'] == 1): ?><span class="label label-success radius">已启用</span>
                         <?php else: ?>
-                        	<span class="label label-defaunt radius">已下架</span><?php endif; ?>
+                        	<span class="label label-defaunt radius">已停用</span><?php endif; ?>
                     </td>
+                    <td><?php echo ($vo["remark"]); ?></td>
                     <td class="td-manage">
-                    	<?php if($vo['travel_status'] == 1): ?><a style="text-decoration:none" onClick="travel_stop(this,'<?php echo ($vo["id"]); ?>')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe631;</i></a> 
+                    	<?php if($vo['enable'] == 1): ?><a style="text-decoration:none" onClick="category_stop(this,'<?php echo ($vo["id"]); ?>')" href="javascript:;" title="停用"><i class="Hui-iconfont">&#xe631;</i></a> 
                         <?php else: ?>
-                        	<a style="text-decoration:none" onClick="travel_start(this,'<?php echo ($vo["id"]); ?>')" href="javascript:;" title="上架"><i class="Hui-iconfont">&#xe6e1;</i></a><?php endif; ?>
-                        <a title="编辑" href="javascript:;" onClick="travel_edit('线路更新','<?php echo U('travel/travel_edit',array('id'=>$vo['id']));?>','1600','850')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> 
-                        <a title="删除" href="javascript:;" onClick="travel_del(this,'<?php echo ($vo["id"]); ?>')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+                        	<a style="text-decoration:none" onClick="category_start(this,'<?php echo ($vo["id"]); ?>')" href="javascript:;" title="启用"><i class="Hui-iconfont">&#xe6e1;</i></a><?php endif; ?>
+                        <a title="编辑" href="javascript:;" onClick="category_edit('编辑','<?php echo U('travel/travel_category_edit',array('id'=>$vo['id']));?>','','510')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> 
+                        <a title="删除" href="javascript:;" onClick="category_del(this,'<?php echo ($vo["id"]); ?>')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
                 </tr><?php endforeach; endif; else: echo "" ;endif; ?>
             </tbody>
         </table>
@@ -104,24 +104,24 @@ $(function(){
 	});
 });
 /*用户-添加*/
-function travel_edit(title,url,w,h){
+function category_edit(title,url,w,h){
 	layer_show(title,url,w,h);
 }
 
-/*用户-下架*/
-function travel_stop(obj,id){
-	layer.confirm('确认要下架吗？',function(index){
+/*用户-停用*/
+function category_stop(obj,id){
+	layer.confirm('确认要停用吗？',function(index){
 		$.ajax({
 			type: 'POST',
-			url: '<?php echo U("travel/travel_status");?>',
-			data:'status=stop&id='+id,
+			url: '<?php echo U("travel/travel_category_enable");?>',
+			data:'enable=stop&id='+id,
 			dataType: 'json',
 			success: function(data){
 				if(data.status==1){
-					$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="travel_start(this,'+id+')" href="javascript:;" title="上架"><i class="Hui-iconfont">&#xe6e1;</i></a>');
-					$(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">已下架</span>');
+					$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="category_start(this,'+id+')" href="javascript:;" title="启用"><i class="Hui-iconfont">&#xe6e1;</i></a>');
+					$(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">已停用</span>');
 					$(obj).remove();
-					layer.msg('已下架!',{icon: 6,time:1500});
+					layer.msg('已停用!',{icon: 6,time:1500});
 				}else{
 					layer.msg(data.info,{icon: 5,time:1500});
 				}
@@ -133,20 +133,20 @@ function travel_stop(obj,id){
 	});
 }
 
-/*用户-上架*/
-function travel_start(obj,id){
-	layer.confirm('确认要上架吗？',function(index){
+/*用户-启用*/
+function category_start(obj,id){
+	layer.confirm('确认要启用吗？',function(index){
 		$.ajax({
 			type: 'POST',
-			url: '<?php echo U("travel/travel_status");?>',
-			data:'status=start&id='+id,
+			url: '<?php echo U("travel/travel_category_enable");?>',
+			data:'enable=start&id='+id,
 			dataType: 'json',
 			success: function(data){
 				if(data.status==1){
-					$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="travel_stop(this,'+id+')" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe631;</i></a>');
-					$(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已上架</span>');
+					$(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="category_stop(this,'+id+')" href="javascript:;" title="停用"><i class="Hui-iconfont">&#xe631;</i></a>');
+					$(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已启用</span>');
 					$(obj).remove();
-					layer.msg('已上架!',{icon: 6,time:1500});
+					layer.msg('已启用!',{icon: 6,time:1500});
 				}else{
 					layer.msg(data.info,{icon: 5,time:1500});
 				}
@@ -159,11 +159,11 @@ function travel_start(obj,id){
 }
 
 /*用户-删除*/
-function travel_del(obj,id){
+function category_del(obj,id){
 	layer.confirm('确认要删除吗？',function(index){
 		$.ajax({
 			type: 'POST',
-			url: '<?php echo U("travel/travel_delete");?>',
+			url: '<?php echo U("travel/travel_category_delete");?>',
 			data:'id='+id,
 			dataType: 'json',
 			success: function(data){

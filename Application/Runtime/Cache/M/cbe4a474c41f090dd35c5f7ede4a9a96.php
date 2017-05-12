@@ -5,17 +5,17 @@
 	<meta name="viewport" content="initial-scale=1.0 user-scalable=no" />
 	<title>线路列表</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_icgfcixm8qn9izfr.css" />
-	<link rel="stylesheet" href="/Public/M/assets/css/swiper.min.css" />
-	<link rel="stylesheet" href="/Public/M/css/reset.css" />
-	<link rel='stylesheet' href="/Public/M/css/common.css" />
-	<link rel='stylesheet' href="/Public/M/css/user.css" />
-	<link rel='stylesheet' href="/Public/M/css/access.css" />
-	<link rel='stylesheet' href="/Public/M/css/carrent.css" />
-	<link rel='stylesheet' href="/Public/M/css/product.css" />
-	<script type="text/javascript" src='/Public/M/assets/js/jquery.min.js'></script>
-	<script type="text/javascript" src='/Public/M/assets/js/swiper.min.js'></script>
-	<script type="text/javascript" src='/Public/M/js/base.js'></script>
-	<script type="text/javascript" src='/Public/M/js/common.js'></script>
+	<link rel="stylesheet" href="/travel/Public/M/assets/css/swiper.min.css" />
+	<link rel="stylesheet" href="/travel/Public/M/css/reset.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/common.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/user.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/access.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/carrent.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/product.css" />
+	<script type="text/javascript" src='/travel/Public/M/assets/js/jquery.min.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/assets/js/swiper.min.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/js/base.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/js/common.js'></script>
 </head>
 
 <body>
