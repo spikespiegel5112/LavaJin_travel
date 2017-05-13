@@ -14,7 +14,8 @@
     border-radius: 2px;
     -webkit-box-shadow: 0 0 6px #ccc;
     box-shadow: 0 0 6px #ccc;
-    text-align: center
+    text-align: center;
+    position: absolute;
 }
 .datetimepicker:before {
     content: '';
@@ -112,8 +113,10 @@
     content: "\f054"
 }
 .datetimepicker table td {
-    width: 34px;
-    height: 34px;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
     cursor: pointer;
     font-size: 0.7rem;
     color: #555;

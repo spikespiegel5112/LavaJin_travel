@@ -273,7 +273,7 @@
     background-color: #dcdcdc;
 }
 .product_dateinput_item{
- /*   display: none;*/
+    display: none;
 }
 .product_subscribe_item a{
     display: block;
