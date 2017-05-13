@@ -28,113 +28,32 @@
 		</div>
 		<div class='common_list_wrapper'>
 			<ul>
+				<volist name="travel_list" id="vo">
 				<li>
-					<a class='thumbnail' href="{:U('Product/details')}">
-						<img src="__PUBLIC__/M/images/static/10i58PICmeX.jpg">
+					<a class='thumbnail' href="{:U('Product/detail',array('id'=>$vo['id']))}">
+						<img src="{$vo.travel_mainimg}">
 					</a>
 					<div class='detail'>
-						<a href="{:U('Product/details')}">
-						<h2 class='title'><span class='productid'>A938</span>拉萨之旅</h2>
-					</a>
-						<ul class='product_list_wrapper'>
-							<li>
-								<label>出发地：</label>
-								<p class='desc'>
-									拉萨市
-								</p>
-							</li>
-							<li>
-								<label>行程天数:</label>
-								<p class='desc'>
-									8天
-								</p>
-							</li>
+						<a href="{:U('Product/detail',array('id'=>$vo['id']))}">
+						<h2 class='title'><span class='productid'>A{$vo.id}</span>{$vo.travel_title}</h2>
+						</a>
+						<ul class='product_list_wrapper'>							
 							<li>
 								<label>简述：</label>
 								<p class='introduce'>
-									领略世界屋脊之美，看珠峰旗云，游藏域高地，最美珠峰，最美圣湖，尽在咫尺。<a href="javascript:;">详情</a>
+									{$vo.travel_short_title}<a href="javascript:;">详情</a>
 								</p>
 							</li>
 							<li>
 								<label>价格：</label>
 								<p class='desc'>
-									<span class='price'>¥2960</span> 元/人
+									<span class='price'>¥{$vo.travel_price}</span> 元/人
 								</p>
 							</li>
 						</ul>
 					</div>
 				</li>
-				<li>
-					<a class='thumbnail' href="{:U('Product/details')}">
-						<img src="__PUBLIC__/M/images/static/10i58PICmeX.jpg">
-					</a>
-					<div class='detail'>
-						<a href="{:U('Product/details')}">
-						<h2 class='title'><span class='productid'>A937</span>拉萨之旅</h2>
-					</a>
-						<ul class='product_list_wrapper'>
-							<li>
-								<label>出发地：</label>
-								<p class='desc'>
-									拉萨市
-								</p>
-							</li>
-							<li>
-								<label>行程天数:</label>
-								<p class='desc'>
-									8天
-								</p>
-							</li>
-							<li>
-								<label>简述：</label>
-								<p class='introduce'>
-									领略世界屋脊之美，看珠峰旗云，游藏域高地，最美珠峰，最美圣湖，尽在咫尺。<a href="javascript:;">详情</a>
-								</p>
-							</li>
-							<li>
-								<label>价格：</label>
-								<p class='desc'>
-									<span class='price'>¥2960</span> 元/人
-								</p>
-							</li>
-						</ul>
-					</div>
-				</li>
-				<li>
-					<a class='thumbnail' href="javascript:;">
-						<img src="__PUBLIC__/M/images/static/10i58PICmeX.jpg">
-					</a>
-					<div class='detail'>
-						<h2 class='title'><span class='productid'>A937</span>拉萨之旅</h2>
-						<ul class='product_list_wrapper'>
-							<li>
-								<label>出发地：</label>
-								<p class='desc'>
-									拉萨市
-								</p>
-							</li>
-							<li>
-								<label>行程天数:</label>
-								<p class='desc'>
-									8天
-								</p>
-							</li>
-							<li>
-								<label>简述：</label>
-								<p class='introduce'>
-									领略世界屋脊之美，看珠峰旗云，游藏域高地，最美珠峰，最美圣湖，尽在咫尺。<a href="javascript:;">详情</a>
-								</p>
-							</li>
-							<li>
-								<label>价格：</label>
-								<p class='desc'>
-									<span class='price'>¥2960</span> 元/人
-								</p>
-							</li>
-						</ul>
-					</div>
-				</li>
-			
+				</volist>			
 			</ul>
 		</div>
 		<div class='common_navgap_item'></div>

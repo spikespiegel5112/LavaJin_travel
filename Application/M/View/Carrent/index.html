@@ -22,65 +22,28 @@
 	<div class='main_container'>
 		<div class='common_list_wrapper'>
 			<ul>
+            	<volist name="carrental_list" id="vo">
 				<li>
-					<a class='thumbnail' href="javascript:;">
-						<img src="__PUBLIC__/M/images/static/car.jpg">
+					<a class='thumbnail' href="{:U('Carrent/detail',array('id'=>$vo['id']))}">
+						<img src="{$vo.carrental_mainimg}">
 					</a>
 					<div class='detail'>
-						 <a href="{:U('Carrent/details')}">
-						<h2 class='title'>14座金杯/大宇商务车 桂林阳朔包车旅游</h2>
+						 <a href="{:U('Carrent/detail',array('id'=>$vo['id']))}">
+						<h2 class='title'>{$vo.carrental_title}</h2>
 					</a>
 					   <div class="introduce">
-						<p>金杯海狮H2L成功打造出5420×1880×2285(mm）的超大车身，其轴距更达到了惊人的3110mm。</p>
+						<p>{$vo.carrental_briefing}</p>
 						</div>
 					</div>
 				</li>
-				<li>
-					<a class='thumbnail' href="javascript:;">
-						<img src="__PUBLIC__/M/images/static/car.jpg">
-					</a>
-					<div class='detail'>
-						 <a href="{:U('Carrent/details')}">
-						<h2 class='title'>14座金杯/大宇商务车 桂林阳朔包车旅游</h2>
-					</a>
-					<div class="introduce">
-						<p>金杯海狮H2L成功打造出5420×1880×2285(mm）的超大车身，其轴距更达到了惊人的3110mm。</p>
-					</div>
-					</div>
-				</li>
-				<li>
-					<a class='thumbnail' href="javascript:;">
-						<img src="__PUBLIC__/M/images/static/car.jpg">
-					</a>
-					<div class='detail'>
-						 <a href="{:U('Carrent/details')}">
-						<h2 class='title'>14座金杯/大宇商务车 桂林阳朔包车旅游</h2>
-					</a>
-					<div class="introduce">
-						<p>金杯海狮H2L成功打造出5420×1880×2285(mm）的超大车身，其轴距更达到了惊人的3110mm。</p>
-					</div>
-					</div>
-				</li>
-				<li>
-					<a class='thumbnail' href="javascript:;">
-						<img src="__PUBLIC__/M/images/static/car.jpg">
-					</a>
-					<div class='detail'>
-						 <a href="{:U('Carrent/details')}">
-						<h2 class='title'>14座金杯/大宇商务车 桂林阳朔包车旅游</h2>
-					</a>
-					<div class="introduce">
-						<p>金杯海狮H2L成功打造出5420×1880×2285(mm）的超大车身，</p>
-					</div>
-					</div>
-				</li>
+                </volist>				
 			</ul>
 		</div>
 		<div class='common_navgap_item'></div>
 		<div class='common_nav_wrapper'>
 			<ul>
 				<li>
-					<a href='{:U('Index/index')}'>
+					<a href='<{:U('Index/index')}>'>
 						<span class='iconfont icon-house'></span>
 						<label>首页</label>
 					</a>
@@ -92,7 +55,7 @@
 					</a>
 				</li>
 				<li>
-					<a href='{:U('User/index')}'>
+					<a href='<{:U('User/index')}>'>
 						<span class='iconfont icon-user2'></span>
 						<label>我的</label>
 					</a>

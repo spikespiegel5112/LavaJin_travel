@@ -1,19 +1,19 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
 	<title>西藏旅游</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_icgfcixm8qn9izfr.css" />
-	<link rel="stylesheet" href="__PUBLIC__/M/assets/css/swiper.min.css" />
-	<link rel="stylesheet" href="__PUBLIC__/M/css/reset.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/common.css" />
-	<link rel="stylesheet" href="__PUBLIC__/M/css/index.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/access.css" />
-	<script type="text/javascript" src='__PUBLIC__/M/assets/js/jquery.min.js'></script>
-	<script type="text/javascript" src='__PUBLIC__/M/assets/js/swiper.min.js'></script>
-	<script type="text/javascript" src='__PUBLIC__/M/js/base.js'></script>
-	<script type="text/javascript" src='__PUBLIC__/M/js/common.js'></script>
+	<link rel="stylesheet" href="/Public/M/assets/css/swiper.min.css" />
+	<link rel="stylesheet" href="/Public/M/css/reset.css" />
+	<link rel='stylesheet' href="/Public/M/css/common.css" />
+	<link rel="stylesheet" href="/Public/M/css/index.css" />
+	<link rel='stylesheet' href="/Public/M/css/access.css" />
+	<script type="text/javascript" src='/Public/M/assets/js/jquery.min.js'></script>
+	<script type="text/javascript" src='/Public/M/assets/js/swiper.min.js'></script>
+	<script type="text/javascript" src='/Public/M/js/base.js'></script>
+	<script type="text/javascript" src='/Public/M/js/common.js'></script>
 </head>
 
 <body>
@@ -22,12 +22,12 @@
 			<ul class='swiper-wrapper'>
 				<li class='swiper-slide'>
 					<a href='javascript:;'>
-						<img src='__PUBLIC__/M/images/banner_articlelist_announcement_00000.jpg' />
+						<img src='/Public/M/images/banner_articlelist_announcement_00000.jpg' />
 					</a>
 				</li>
 				<li class='swiper-slide'>
 					<a href='javascript:;'>
-						<img src='__PUBLIC__/M/images/banner_articlelist_news_00000.jpg' />
+						<img src='/Public/M/images/banner_articlelist_news_00000.jpg' />
 					</a>
 				</li>
 			</ul>
@@ -36,38 +36,38 @@
 		<div class='index_categorylist_wrapper'>
 			<ul>
 				<li>
-					<a href="{:U('Product/index')}">
-						<img src='__PUBLIC__/M/images/static/02w58PICuYi_1024.jpg' />
+					<a href="<?php echo U('Product/index');?>">
+						<img src='/Public/M/images/static/02w58PICuYi_1024.jpg' />
 					</a>
 					<label>旅游线路</label>
 				</li>
 				<li>
-					<a href="{:U('Carrent/index')}">
-						<img src='__PUBLIC__/M/images/static/10i58PICmeX.jpg' />
+					<a href="<?php echo U('Carrent/index');?>">
+						<img src='/Public/M/images/static/10i58PICmeX.jpg' />
 					</a>
 					<label>租车包车</label>
 				</li>
 				<li>
-					<a href="{:U('Hotel/index')}">
-						<img src='__PUBLIC__/M/images/static/73t58PICjpT_1024.jpg' />
+					<a href="<?php echo U('Hotel/index');?>">
+						<img src='/Public/M/images/static/73t58PICjpT_1024.jpg' />
 					</a>
 					<label>酒店预订</label>
 				</li>
 				<li>
-					<a href="{:U('JiPiao/index')}">
-						<img src='__PUBLIC__/M/images/static/240418-14112P9345826.jpg' />
+					<a href="<?php echo U('JiPiao/index');?>">
+						<img src='/Public/M/images/static/240418-14112P9345826.jpg' />
 					</a>
 					<label>机票预订</label>
 				</li>
 				<li>
 					<a href="http://imf.zqggz.com">
-						<img src='__PUBLIC__/M/images/static/9448607_153955535000_2.jpg' />
+						<img src='/Public/M/images/static/9448607_153955535000_2.jpg' />
 					</a>
 					<label>特产专区</label>
 				</li>
 				<li>
 					<a href="javascript:;">
-						<img src='__PUBLIC__/M/images/static/44n58PICAT2.jpg' />
+						<img src='/Public/M/images/static/44n58PICAT2.jpg' />
 					</a>
 					<label>特色服务</label>
 				</li>
@@ -81,10 +81,10 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='__PUBLIC__/M/images/icon/hot.png' />
+						  <img class='active' src='/Public/M/images/icon/hot.png' />
 					  </span>
-					  <a href="{:U('Product/details')}">
-						<img src='__PUBLIC__/M/images/static/73t58PICjpT_1024.jpg' />
+					  <a href="<?php echo U('Product/details');?>">
+						<img src='/Public/M/images/static/73t58PICjpT_1024.jpg' />
 					</a>
 						<div class='price'>
 							<span>￥298</span>
@@ -100,10 +100,10 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='__PUBLIC__/M/images/icon/hot.png' />
+						  <img class='active' src='/Public/M/images/icon/hot.png' />
 					  </span>
-					   <a href="{:U('Product/details')}">
-						<img src='__PUBLIC__/M/images/static/240418-14112P9345826.jpg' />
+					   <a href="<?php echo U('Product/details');?>">
+						<img src='/Public/M/images/static/240418-14112P9345826.jpg' />
 					</a>
 						<div class='price'>
 							<span>￥298</span>
@@ -119,9 +119,9 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='__PUBLIC__/M/images/icon/hot.png' />
+						  <img class='active' src='/Public/M/images/icon/hot.png' />
 					  </span>
-						<img src='__PUBLIC__/M/images/static/73t58PICjpT_1024.jpg' />
+						<img src='/Public/M/images/static/73t58PICjpT_1024.jpg' />
 						<div class='price'>
 							<span>￥298</span>
 							<label>￥368</label>
@@ -143,9 +143,9 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='__PUBLIC__/M/images/icon/hot.png' />
+						  <img class='active' src='/Public/M/images/icon/hot.png' />
 					  </span>
-						<img src='__PUBLIC__/M/images/static/44n58PICAT2.jpg' />
+						<img src='/Public/M/images/static/44n58PICAT2.jpg' />
 						<div class='price'>
 							<span>￥298</span>
 							<label>￥368</label>
@@ -160,9 +160,9 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='__PUBLIC__/M/images/icon/hot.png' />
+						  <img class='active' src='/Public/M/images/icon/hot.png' />
 					  </span>
-						<img src='__PUBLIC__/M/images/static/02w58PICuYi_1024.jpg' />
+						<img src='/Public/M/images/static/02w58PICuYi_1024.jpg' />
 						<div class='price'>
 							<span>￥298</span>
 							<label>￥368</label>
@@ -177,9 +177,9 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='__PUBLIC__/M/images/icon/hot.png' />
+						  <img class='active' src='/Public/M/images/icon/hot.png' />
 					  </span>
-						<img src='__PUBLIC__/M/images/static/10i58PICmeX.jpg' />
+						<img src='/Public/M/images/static/10i58PICmeX.jpg' />
 						<div class='price'>
 							<span>￥298</span>
 							<label>￥368</label>
@@ -194,9 +194,9 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='__PUBLIC__/M/images/icon/hot.png' />
+						  <img class='active' src='/Public/M/images/icon/hot.png' />
 					  </span>
-						<img src='__PUBLIC__/M/images/static/44n58PICAT2.jpg' />
+						<img src='/Public/M/images/static/44n58PICAT2.jpg' />
 						<div class='price'>
 							<span>￥298</span>
 							<label>￥368</label>
@@ -211,9 +211,9 @@
 				<li>
 					<div class='thumbnail'>
 						<span class='hot'>
-						  <img class='active' src='__PUBLIC__/M/images/icon/hot.png' />
+						  <img class='active' src='/Public/M/images/icon/hot.png' />
 					  </span>
-						<img src='__PUBLIC__/M/images/static/73t58PICjpT_1024.jpg' />
+						<img src='/Public/M/images/static/73t58PICjpT_1024.jpg' />
 						<div class='price'>
 							<span>￥298</span>
 							<label>￥368</label>
@@ -231,7 +231,7 @@
 		<div class='common_nav_wrapper'>
 			<ul>
 				<li>
-					<a href='{:U('Index/index')}'>
+					<a href='<?php echo U('Index/index');?>'>
 						<span class='iconfont icon-house'></span>
 						<label>首页</label>
 					</a>
@@ -243,7 +243,7 @@
 					</a>
 				</li>
 				<li>
-					<a href='{:U('User/index')}'>
+					<a href='<?php echo U('User/index');?>'>
 						<span class='iconfont icon-user2'></span>
 						<label>我的</label>
 					</a>

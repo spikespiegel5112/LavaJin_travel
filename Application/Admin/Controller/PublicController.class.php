@@ -18,7 +18,7 @@ class PublicController extends Controller {
 			session('admin_auth_sign',null);
 			return FALSE;
 		}else{
-			$admin_auth = M('member')->where(array('id'=>$admin_auth_id))->find();
+			$admin_auth = M('user')->where(array('id'=>$admin_auth_id))->find();
 			if(empty($admin_auth)||data_auth_sign($admin_auth)!=session('admin_auth_sign')){
 				session(null);
 				return FALSE;
