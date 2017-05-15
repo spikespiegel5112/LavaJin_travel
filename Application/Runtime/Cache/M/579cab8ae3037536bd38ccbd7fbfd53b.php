@@ -1,41 +1,41 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes" />
 	<title>产品详情</title>
 	<link rel="stylesheet" href="http://at.alicdn.com/t/font_icgfcixm8qn9izfr.css" />
-	<link rel="stylesheet" href="__PUBLIC__/M/assets/css/swiper.min.css" />
-	<link rel="stylesheet" href="__PUBLIC__/M/css/reset.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/common.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/order.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/access.css" />
-	<link rel='stylesheet' href="__PUBLIC__/M/css/product.css" />
-	<script type="text/javascript" src='__PUBLIC__/M/assets/js/jquery.min.js'></script>
-	<script type="text/javascript" src='__PUBLIC__/M/assets/js/swiper.min.js'></script>
-	<script type="text/javascript" src='__PUBLIC__/M/js/base.js'></script>
-	<script type="text/javascript" src='__PUBLIC__/M/js/common.js'></script>
+	<link rel="stylesheet" href="/travel/Public/M/assets/css/swiper.min.css" />
+	<link rel="stylesheet" href="/travel/Public/M/css/reset.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/common.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/order.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/access.css" />
+	<link rel='stylesheet' href="/travel/Public/M/css/product.css" />
+	<script type="text/javascript" src='/travel/Public/M/assets/js/jquery.min.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/assets/js/swiper.min.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/js/base.js'></script>
+	<script type="text/javascript" src='/travel/Public/M/js/common.js'></script>
 </head>
 
 <body>
 	<div class='main_container'>
 		<div class="common_header_wrapper fixed transparent">
-			<a class="common_navbtn_item" href="{:U('Product/index')}">
+			<a class="common_navbtn_item" href="<?php echo U('Product/index');?>">
 				<span class="iconfont icon-backward2"></span>
 			</a>
 		</div>
 		<div class='product_detailbanner_wrapper'>
-			<img src="__PUBLIC__/M/images/banner_articlelist_announcement_00000.jpg">
+			<img src="/travel/Public/M/images/banner_articlelist_announcement_00000.jpg">
 		</div>
 		<div class='common_block_wrapper'>
 			<div class='product_detailtitle_wrapper'>
-				<h2>{$travel.travel_title}</h2>
-				<p>{$travel.travel_short_title}</p>
+				<h2><?php echo ($travel["travel_title"]); ?></h2>
+				<p><?php echo ($travel["travel_short_title"]); ?></p>
 			</div>
 			<div class='product_detailprice_wrapper'>
 				<label class='peoples'><span class='iconfont'></span>68人参加过</label>
 				<div class='price'>
-					<span>￥{$travel.travel_price}</span>
-					<label>￥{$travel.travel_original_price}</label>
+					<span>￥<?php echo ($travel["travel_price"]); ?></span>
+					<label>￥<?php echo ($travel["travel_original_price"]); ?></label>
 				</div>
 			</div>
 			<div class='product_detailredpocket_wrapper'>
@@ -52,12 +52,10 @@
 			</div>
 			<div class='product_detailhighlight_wrapper'>
 				<ul>
-					<volist name="travel_highlights" id="vo">
-					<li>
+					<?php if(is_array($travel_highlights)): $i = 0; $__LIST__ = $travel_highlights;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li>
 						<span></span>
-						<label>{$vo}</label>
-					</li>
-					</volist>
+						<label><?php echo ($vo); ?></label>
+					</li><?php endforeach; endif; else: echo "" ;endif; ?>
 				</ul>
 			</div>
 		</div>
@@ -73,7 +71,7 @@
 				</div>
 			</div>
 		</div>
-		{$travel.travel_introduce}
+		<?php echo ($travel["travel_introduce"]); ?>
 		<div class="common_block_wrapper">
 			<div class='common_navgap_item'></div>
 			<div>

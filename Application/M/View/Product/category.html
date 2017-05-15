@@ -17,21 +17,6 @@
 
 <body>
 	<div class='main_container'>
-		<!-- <div class='index_carousel_wrapper swiper-container'>
-			<ul class='swiper-wrapper'>
-				<li class='swiper-slide'>
-					<a href='javascript:;'>
-						<img src='__PUBLIC__/M/images/banner_articlelist_announcement_00000.jpg' />
-					</a>
-				</li>
-				<li class='swiper-slide'>
-					<a href='javascript:;'>
-						<img src='__PUBLIC__/M/images/banner_articlelist_news_00000.jpg' />
-					</a>
-				</li>
-			</ul>
-			<div class='swiper-pagination'></div>
-		</div> -->
 
 		<div class="common_header_wrapper">
 			<a class="left_btn back_btn" href="{:U('Index/index')}">
@@ -42,43 +27,14 @@
 		<div class='index_categorylist_wrapper'>
 			
 			<ul>
-				<volist name="list" id="vo">
+				<volist name="category_list" id="vo">
 				<li>
-					<a href="{:U('Product/index')}">
-						<img src='__PUBLIC__/M/images/static/02w58PICuYi_1024.jpg' />
+					<a href="{:U('Product/index',array('category_code'=>$vo['category_code']))}">
+						<img src='{$vo.category_mainimg}' />
 					</a>
 					<label>{$vo.category}</label>
 				</li>
-			<!-- 	<li>
-					<a href="{:U('Carrent/index')}">
-						<img src='__PUBLIC__/M/images/static/10i58PICmeX.jpg' />
-					</a>
-					<label>多日游</label>
-				</li>
-				<li>
-					<a href="{:U('Hotel/index')}">
-						<img src='__PUBLIC__/M/images/static/73t58PICjpT_1024.jpg' />
-					</a>
-					<label>深度游</label>
-				</li>
-				<li>
-					<a href="{:U('JiPiao/index')}">
-						<img src='__PUBLIC__/M/images/static/240418-14112P9345826.jpg' />
-					</a>
-					<label>当下必玩</label>
-				</li>
-				<li>
-					<a href="http://imf.zqggz.com">
-						<img src='__PUBLIC__/M/images/static/9448607_153955535000_2.jpg' />
-					</a>
-					<label>测试1</label>
-				</li>
-				<li>
-					<a href="javascript:;">
-						<img src='__PUBLIC__/M/images/static/44n58PICAT2.jpg' />
-					</a>
-					<label>测试2</label>
-				</li> -->
+			
 				</volist>
 			</ul>
 		
