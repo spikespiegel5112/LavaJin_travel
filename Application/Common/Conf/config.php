@@ -35,7 +35,7 @@ return array(
 		
 	'SESSION_OPTIONS'    => array (
 			'type'   => 'Db',//session采用数据库保存
-			'expire' => 3600,//session过期时间，如果不设就是php.ini中设置的默认值
+			'expire' => 10800,//session过期时间，如果不设就是php.ini中设置的默认值
 	),
 	'SESSION_TABLE'      => 'think_session',
 	'SESSION_AUTO_START' => true,
