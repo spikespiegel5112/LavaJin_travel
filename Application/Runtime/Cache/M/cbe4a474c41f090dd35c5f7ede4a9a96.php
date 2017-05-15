@@ -1,5 +1,4 @@
 <?php if (!defined('THINK_PATH')) exit();?><html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1.0 user-scalable=no" />
