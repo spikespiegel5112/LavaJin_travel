@@ -7,15 +7,15 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <!--[if lt IE 9]>
-<script type="text/javascript" src="/travel/Public/Admin/H-ui.admin_v3.0/lib/html5shiv.js"></script>
-<script type="text/javascript" src="/travel/Public/Admin/H-ui.admin_v3.0/lib/respond.min.js"></script>
+<script type="text/javascript" src="/Public/Admin/H-ui.admin_v3.0/lib/html5shiv.js"></script>
+<script type="text/javascript" src="/Public/Admin/H-ui.admin_v3.0/lib/respond.min.js"></script>
 <![endif]-->
-<link href="/travel/Public/Admin/H-ui.admin_v3.0/static/h-ui/css/H-ui.min.css" rel="stylesheet" type="text/css" />
-<link href="/travel/Public/Admin/H-ui.admin_v3.0/static/h-ui.admin/css/H-ui.login.css" rel="stylesheet" type="text/css" />
-<link href="/travel/Public/Admin/H-ui.admin_v3.0/static/h-ui.admin/css/style.css" rel="stylesheet" type="text/css" />
-<link href="/travel/Public/Admin/H-ui.admin_v3.0/lib/Hui-iconfont/1.0.8/iconfont.css" rel="stylesheet" type="text/css" />
+<link href="/Public/Admin/H-ui.admin_v3.0/static/h-ui/css/H-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="/Public/Admin/H-ui.admin_v3.0/static/h-ui.admin/css/H-ui.login.css" rel="stylesheet" type="text/css" />
+<link href="/Public/Admin/H-ui.admin_v3.0/static/h-ui.admin/css/style.css" rel="stylesheet" type="text/css" />
+<link href="/Public/Admin/H-ui.admin_v3.0/lib/Hui-iconfont/1.0.8/iconfont.css" rel="stylesheet" type="text/css" />
 <!--[if IE 6]>
-<script type="text/javascript" src="/travel/Public/Admin/H-ui.admin_v3.0/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script type="text/javascript" src="/Public/Admin/H-ui.admin_v3.0/lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
 <title>西藏旅游后台登录</title>
@@ -61,8 +61,8 @@
   </div>
 </div>
 <div class="footer">西藏旅游</div>
-<script type="text/javascript" src="/travel/Public/Admin/H-ui.admin_v3.0/lib/jquery/1.9.1/jquery.min.js"></script> 
-<script type="text/javascript" src="/travel/Public/Admin/H-ui.admin_v3.0/static/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="/Public/Admin/H-ui.admin_v3.0/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="/Public/Admin/H-ui.admin_v3.0/static/h-ui/js/H-ui.min.js"></script>
 
 <script>
 $('#kanbuq').on('click',function(){

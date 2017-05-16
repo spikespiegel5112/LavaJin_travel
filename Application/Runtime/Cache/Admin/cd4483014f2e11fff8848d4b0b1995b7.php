@@ -31,70 +31,47 @@
 <body>
 <!-- /头部 -->
 
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 会员管理 <span class="c-gray en">&gt;</span> 会员列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
 <div class="page-container">
-	<p class="f-20 text-success">欢迎使用西藏旅游</span>后台管理！</p>
-	<p>登录次数：<?php echo ($login_count); ?> </p>
-	<p>上次登录IP：<?php echo ($login_before['ip']); ?>  上次登录时间：<?php echo (date("Y-m-d H:i:s",$login_before['time'])); ?></p>
-<!-- 	<table class="table table-border table-bordered table-bg">
+	<div class="text-c"> 搜索用户：
+		<input type="text" class="input-text" style="width:250px" placeholder="输入管理员名称" id="" name="">
+		<button type="submit" class="btn btn-success" id="" name=""><i class="Hui-iconfont">&#xe665;</i> 搜用户</button>
+	</div>
+	<div class="cl pd-5 bg-1 bk-gray mt-20">
+	 <span class="l"><a href="javascript:;" onclick="datadel()" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a> 
+	 	<!-- <a href="javascript:;" onclick="admin_add('添加管理员','admin-add.html','800','500')" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加管理员</a> --></span> <span class="r">共有数据：<strong></strong> 条</span> </div>
+	<table class="table table-border table-bordered table-bg">
 		<thead>
 			<tr>
-				<th colspan="7" scope="col">信息统计</th>
+				<th scope="col" colspan="9">员工列表</th>
 			</tr>
 			<tr class="text-c">
-				<th>统计</th>
-				<th>在库图书</th>
-				<th>借出图书</th>
-				<th>访问量</th>
-				<th>评论数</th>
-				<th>意见</th>
+				<th width="25"><input type="checkbox" name="" value=""></th>
+				<th width="40">ID</th>
+				<th width="150">会员名</th>
+				<th width="90">手机</th>
+				<th width="150">邮箱</th>
+				<th>常用地址</th>
+				<th width="130">加入时间</th>
+				<th width="100">是否已启用</th>
+				<th width="100">操作</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr class="text-c">
-				<td>总数</td>
-				<td>92</td>
-				<td>9</td>
-				<td>0</td>
-				<td>8</td>
-				<td>20</td>
-			</tr>
-			<tr class="text-c">
-				<td>今日</td>
-				<td>0</td>
-				<td>0</td>
-				<td>0</td>
-				<td>0</td>
-				<td>0</td>
-			</tr>
-			<tr class="text-c">
-				<td>昨日</td>
-				<td>0</td>
-				<td>0</td>
-				<td>0</td>
-				<td>0</td>
-				<td>0</td>
-			</tr>
-			<tr class="text-c">
-				<td>本周</td>
-				<td>2</td>
-				<td>0</td>
-				<td>0</td>
-				<td>0</td>
-				<td>0</td>
-			</tr>
-			<tr class="text-c">
-				<td>本月</td>
-				<td>2</td>
-				<td>0</td>
-				<td>0</td>
-				<td>0</td>
-				<td>0</td>
+				<td><input type="checkbox" value="1" name=""></td>
+				<td>1</td>
+				<td>lavajin</td>
+				<td>13915251176</td>
+				<td>lavajin@laravel.cm</td>
+				<td>江苏省无锡市</td>
+				<td>2014-6-11 11:11:42</td>
+				<td class="td-status"><span class="label label-success radius">已启用</span></td>
+				<td class="td-manage"><a title="删除" href="javascript:;" onclick="admin_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
 			</tr>
 		</tbody>
-	</table> -->
-	
+	</table>
 </div>
-
 
 
 <!-- 底部 -->
