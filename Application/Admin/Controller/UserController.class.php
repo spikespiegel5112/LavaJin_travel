@@ -19,7 +19,7 @@ class UserController extends PublicController {
 
 		
 	public function index(){
-		 $user = M('user')->select();
+		 $user = M('user')->order('id DESC')->select();
 		 $this->assign('user',$user);
 		 $this->display();
 	}
