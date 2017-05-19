@@ -36,7 +36,7 @@
 		<div class='index_categorylist_wrapper'>
 			<ul>
 				<li>
-					<a href="<?php echo U('Product/index');?>">
+					<a href="<?php echo U('Product/category');?>">
 						<img src='/Public/M/images/static/02w58PICuYi_1024.jpg' />
 					</a>
 					<label>旅游线路</label>
