@@ -531,6 +531,85 @@
 				return (windowWidth < windowHeight) ? orientation = 'portrait' : orientation = 'landscape';
 			}
 		},
+		popup: function(options) {
+			options = $.extend({
+				container: '',
+				closebtn: '',
+				maskopacity: 0,
+				noborder: false,
+				noalign: false,
+				callback: function() {}
+			}, options);
+			var containerEl = $(options.container),
+				thisParent = containerEl.parent(),
+				contentWidth = 0;
+			var tools = {
+				getContainerWidth: function() {
+					popupContainerEl.show();
+					if (contentWidth == 0) {
+						contentWidth = containerEl.width();
+						this.getContainerWidth();
+					} else {
+						popupContainerEl.hide();
+					}
+				}
+			}
+			if ($('.commonPopupContainer').length == 0) {
+				popupWrapperEl = $('<div></div>').addClass('commonPopupWrapper').append(containerEl),
+					popupContainerEl = $('<div></div>').addClass('commonPopupContainer'),
+					$('body').append(popupContainerEl.append(popupWrapperEl));
+				tools.getContainerWidth();
+				popupWrapperEl.css({
+					width: contentWidth,
+					border: '10px solid rgba(153,153,153,0.5)',
+					'border-radius': 10
+				});
+				popupContainerEl.css({
+					display: 'block',
+					position: 'fixed',
+					top: 0,
+					left: 0,
+					'z-index': 99999,
+					width: $(window).width(),
+					height: $(window).height(),
+					background: 'rgba(0,0,0,' + options.maskopacity + ')'
+				});
+				popupContainerEl.resize(function() {
+					popupContainerEl.css({
+						width: $(window).width(),
+						height: $(window).height(),
+					});
+				});
+				containerEl.css({
+					display: 'block'
+				});
+				popupWrapperEl.css({
+					display: 'block',
+					opacity: 1
+				});
+				if (popupWrapperEl.height() > $(window).height() - 20) {
+					popupWrapperEl.css({
+						width: (containerEl.outerWidth() + 15),
+						height: ($(window).height() - 100),
+						overflow: 'auto'
+					});
+				};
+				if (!options.noalign) {
+					popupWrapperEl.align();
+				}
+			} else {
+				$('.commonPopupContainer').show();
+			}
+			if (options.closebtn != '') {
+				$(options.closebtn).each(function() {
+					$(this).one('click', function() {
+						popupContainerEl.hide();
+						// thisParent.append(containerEl.hide());
+					});
+				});
+			};
 
+			options.callback();
+		}
 	});
 })(jQuery, window);
