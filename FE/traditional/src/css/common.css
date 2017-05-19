@@ -12,8 +12,9 @@ textarea {
 	display: block;
 }
 a.disabled, .disabled {
-	color: #a2a2a2;
+	color: #fff;
 	border-color: #e8e8e8;
+	background-color: #aaa;
 	cursor: not-allowed;
 }
 /*~~~~~~~~~~error~~~~~~~~~~*/
@@ -23,8 +24,9 @@ span.error {
 	padding: 0 0 0 1rem;
 	background: url("../images/icon/unchecked.gif") no-repeat 0px 0px;
 	font-weight: normal;
+	background-size: 5%;
 	color: red;
-	font-size: 12px;
+	font-size: 0.7rem;
 }
 .common_input_item  textarea.error, .common_input_item  input.error[type=text]{
 	border: 1px solid red;

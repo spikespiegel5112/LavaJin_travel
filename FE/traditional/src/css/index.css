@@ -81,7 +81,7 @@
 .index_productlist_wrapper li .thumbnail .price {
 	padding: 0.3rem 0.5rem 0.3rem 0;
 	position: absolute;
-	bottom: 1rem;
+	bottom: 0.4rem;
 	left: 0;
 	background-color: rgba(0, 0, 0, 0.5);
 	border-top-right-radius: 1.5rem;
