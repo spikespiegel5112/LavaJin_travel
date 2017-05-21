@@ -329,18 +329,6 @@ a.disabled:hover {
 	font-size: 0.7rem;
 }
 
-/*~~~~~~~~~~common_producttitle_item~~~~~~~~~~*/
-
-.common_producttitle_item {
-	padding: 1rem 0.5rem;
-	width: 100%;
-	border-top: 1px solid #ccc;
-	box-sizing: border-box;
-}
-.common_producttitle_item h2 {
-	font-size: 1rem;
-	font-weight: bold;
-}
 
 /*~~~~~~~~~~common_popup_wrapper~~~~~~~~~~*/
 
