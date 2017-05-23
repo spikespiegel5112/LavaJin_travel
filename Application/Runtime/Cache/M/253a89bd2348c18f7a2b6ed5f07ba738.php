@@ -63,7 +63,7 @@
 					<a href="http://imf.zqggz.com">
 						<img src='/travel/Public/M/images/static/9448607_153955535000_2.jpg' />
 					</a>
-					<label>特产专区</label>
+					<label>特产超市</label>
 				</li>
 				<li>
 					<a href="<?php echo U('Tese/index');?>">
