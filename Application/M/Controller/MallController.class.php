@@ -9,7 +9,11 @@ class MallController extends Controller {
 		$this->display();
 	}
 
+	public function orderdetail(){
 
+
+		$this->display();
+	}
 
 
 }

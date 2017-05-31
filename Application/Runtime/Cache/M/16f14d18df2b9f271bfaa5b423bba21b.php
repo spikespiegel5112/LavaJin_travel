@@ -64,9 +64,9 @@
 					</a>
 				</li>
 				<li>
-					<a href='orderlist.html'>
+					<a href='<?php echo U('Mall/Order');?>'>
 						<span class='iconfont icon-order'></span>
-						<label>订单</label>
+						<label>超市订单</label>
 					</a>
 				</li>
 				<li>
