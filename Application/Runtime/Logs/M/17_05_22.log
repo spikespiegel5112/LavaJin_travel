@@ -1,9 +1,0 @@
-[ 2017-05-22T08:55:55+08:00 ] ::1 /travel/m.php?s=/tese/index.html
-ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'travel.travel_tese' doesn't exist
-
-[ 2017-05-22T08:55:58+08:00 ] ::1 /travel/m.php?s=/tese/index.html
-ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'travel.travel_tese' doesn't exist
-
-[ 2017-05-22T08:56:33+08:00 ] ::1 /travel/m.php?s=/tese/index.html
-ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'travel.travel_tese' doesn't exist
-

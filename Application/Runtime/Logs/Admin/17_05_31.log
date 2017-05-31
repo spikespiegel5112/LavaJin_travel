@@ -1,0 +1,911 @@
+[ 2017-05-31T09:29:18+08:00 ] ::1 /travel/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+
+[ 2017-05-31T09:29:18+08:00 ] ::1 /travel/admin.php?s=/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-31T09:29:18+08:00 ] ::1 /travel/admin.php?s=/Login/verify/t/1496194158.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-31T09:29:24+08:00 ] ::1 /travel/admin.php?s=/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-31T09:29:31+08:00 ] ::1 /travel/admin.php?s=/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `travel_user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `travel_user` SET `last_login_time`='1496194171',`last_login_ip`='0.0.0.0' WHERE ( id=1 ) [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `travel_user_login_log` [ RunTime:0.0340s ]
+SQL: INSERT INTO `travel_user_login_log` (`user_id`,`time`,`ip`) VALUES ('1','1496194171','0.0.0.0') [ RunTime:0.0000s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2017-05-31T09:29:31+08:00 ] ::1 /travel/admin.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-31T09:29:31+08:00 ] ::1 /travel/admin.php?s=/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `travel_member_login_log` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `travel_member_login_log` WHERE ( member_id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `travel_member_login_log` WHERE ( member_id=1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-31T09:30:08+08:00 ] ::1 /travel/admin.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-31T09:30:08+08:00 ] ::1 /travel/admin.php?s=/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `travel_member_login_log` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `travel_member_login_log` WHERE ( member_id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `travel_member_login_log` WHERE ( member_id=1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-31T09:30:11+08:00 ] ::1 /travel/admin.php?s=/Tese/tese_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 43 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 46 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 50 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 56 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 62 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 69 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 77 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 83 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 90 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 98 行.
+NOTIC: [8] Undefined variable: imageList D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 113 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 132 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-31T09:30:26+08:00 ] ::1 /travel/admin.php?s=/Tese/tese_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `travel_tese` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_tese` WHERE `tese_category` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: travel_mainimg D:\Program Files\php study\WWW\travel\Application\Admin\Controller\TeseController.class.php 第 65 行.
+NOTIC: [2] opendir(./Uploads/tese/1,./Uploads/tese/1): ϵͳ�Ҳ���ָ����·���� (code: 3) D:\Program Files\php study\WWW\travel\Application\Common\Common\function.php 第 197 行.
+NOTIC: [2] opendir(./Uploads/tese/1): failed to open dir: No such file or directory D:\Program Files\php study\WWW\travel\Application\Common\Common\function.php 第 197 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-31T09:31:18+08:00 ] ::1 /travel/admin.php?s=/Tese/tese_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 43 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 46 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 50 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 56 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 62 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 69 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 77 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 83 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 90 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 98 行.
+NOTIC: [8] Undefined variable: imageList D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 113 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 132 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-31T09:31:20+08:00 ] ::1 /travel/admin.php?s=/Tese/tese_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `travel_tese` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_tese` WHERE `tese_category` = 1  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: travel_mainimg D:\Program Files\php study\WWW\travel\Application\Admin\Controller\TeseController.class.php 第 65 行.
+NOTIC: [2] opendir(./Uploads/tese/1,./Uploads/tese/1): ϵͳ�Ҳ���ָ����·���� (code: 3) D:\Program Files\php study\WWW\travel\Application\Common\Common\function.php 第 197 行.
+NOTIC: [2] opendir(./Uploads/tese/1): failed to open dir: No such file or directory D:\Program Files\php study\WWW\travel\Application\Common\Common\function.php 第 197 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-31T09:31:21+08:00 ] ::1 /travel/admin.php?s=/Tese/tese_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 43 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 46 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 50 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 56 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 62 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 69 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 77 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 83 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 90 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 98 行.
+NOTIC: [8] Undefined variable: imageList D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 113 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 132 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\aa0203077c635d61ab900c2fef66b1f7.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-31T09:31:22+08:00 ] ::1 /travel/admin.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-31T09:31:22+08:00 ] ::1 /travel/admin.php?s=/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `travel_member_login_log` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `travel_member_login_log` WHERE ( member_id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `travel_member_login_log` WHERE ( member_id=1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-31T09:31:24+08:00 ] ::1 /travel/admin.php?s=/Mall/mall_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+ERR: 无法加载控制器:Mall
+
+[ 2017-05-31T09:31:26+08:00 ] ::1 /travel/admin.php?s=/Mall/mall_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+ERR: 无法加载控制器:Mall
+
+[ 2017-05-31T09:33:52+08:00 ] ::1 /travel/admin.php?s=/Mall/mall_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+ERR: 模板不存在:./Application/Admin/View/Mall/mall_edit.html
+
+[ 2017-05-31T09:34:31+08:00 ] ::1 /travel/admin.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-31T09:34:31+08:00 ] ::1 /travel/admin.php?s=/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `travel_member_login_log` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `travel_member_login_log` WHERE ( member_id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_member_login_log` WHERE ( member_id=1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-31T09:34:32+08:00 ] ::1 /travel/admin.php?s=/Mall/mall_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 43 行.
+NOTIC: [8] Undefined variable: tese_category D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 44 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 46 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 50 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 56 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 62 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 69 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 77 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 83 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 90 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 98 行.
+NOTIC: [8] Undefined variable: imageList D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 113 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 132 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-31T09:34:34+08:00 ] ::1 /travel/admin.php?s=/Mall/mall_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: tese_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 34 行.
+NOTIC: [8] Undefined variable: tese_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 34 行.
+NOTIC: [8] Undefined variable: tese_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 38 行.
+NOTIC: [8] Undefined variable: tese_category D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 38 行.
+NOTIC: [8] Undefined variable: tese_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 38 行.
+NOTIC: [8] Undefined variable: tese_list D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 40 行.
+NOTIC: [8] Undefined variable: tese_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 48 行.
+NOTIC: [8] Undefined variable: tese_list D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-31T09:35:34+08:00 ] ::1 /travel/admin.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-31T09:35:34+08:00 ] ::1 /travel/admin.php?s=/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `travel_member_login_log` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `travel_member_login_log` WHERE ( member_id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `travel_member_login_log` WHERE ( member_id=1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-31T09:35:36+08:00 ] ::1 /travel/admin.php?s=/Mall/mall_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 43 行.
+NOTIC: [8] Undefined variable: tese_category D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 44 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 46 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 50 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 56 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 62 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 69 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 77 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 83 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 90 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 98 行.
+NOTIC: [8] Undefined variable: imageList D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 113 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 132 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-31T09:36:27+08:00 ] ::1 /travel/admin.php?s=/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-31T09:36:27+08:00 ] ::1 /travel/admin.php?s=/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `travel_member_login_log` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `travel_member_login_log` WHERE ( member_id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `travel_member_login_log` WHERE ( member_id=1 ) ORDER BY id desc LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-31T09:36:29+08:00 ] ::1 /travel/admin.php?s=/Mall/mall_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 43 行.
+NOTIC: [8] Undefined variable: tese_category D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 44 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 46 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 50 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 56 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 62 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 69 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 77 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 83 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 90 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 98 行.
+NOTIC: [8] Undefined variable: imageList D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 113 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 132 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-05-31T09:36:39+08:00 ] ::1 /travel/admin.php?s=/Mall/mall_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: tese_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 34 行.
+NOTIC: [8] Undefined variable: tese_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 34 行.
+NOTIC: [8] Undefined variable: tese_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 38 行.
+NOTIC: [8] Undefined variable: tese_category D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 38 行.
+NOTIC: [8] Undefined variable: mall_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 38 行.
+NOTIC: [8] Undefined variable: tese_list D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 40 行.
+NOTIC: [8] Undefined variable: tese_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 48 行.
+NOTIC: [8] Undefined variable: tese_list D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-31T09:36:59+08:00 ] ::1 /travel/admin.php?s=/Mall/mall_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: tese_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 34 行.
+NOTIC: [8] Undefined variable: tese_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 34 行.
+NOTIC: [8] Undefined variable: tese_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 38 行.
+NOTIC: [8] Undefined variable: tese_category D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 38 行.
+NOTIC: [8] Undefined variable: mall_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 38 行.
+NOTIC: [8] Undefined variable: tese_list D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 40 行.
+NOTIC: [8] Undefined variable: tese_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 48 行.
+NOTIC: [8] Undefined variable: tese_list D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-31T09:36:59+08:00 ] ::1 /travel/admin.php?s=/Mall/mall_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 43 行.
+NOTIC: [8] Undefined variable: tese_category D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 44 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 46 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 50 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 56 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 62 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 69 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 77 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 83 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 90 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 98 行.
+NOTIC: [8] Undefined variable: imageList D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 113 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 132 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-05-31T09:37:03+08:00 ] ::1 /travel/admin.php?s=/Mall/mall_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 43 行.
+NOTIC: [8] Undefined variable: tese_category D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 44 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 46 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 50 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 56 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 62 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 69 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 77 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 83 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 90 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 98 行.
+NOTIC: [8] Undefined variable: imageList D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 113 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 132 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-31T09:37:07+08:00 ] ::1 /travel/admin.php?s=/Mall/mall_edit.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 43 行.
+NOTIC: [8] Undefined variable: tese_category D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 44 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 46 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 50 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 56 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 62 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 69 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 77 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 83 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 90 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 98 行.
+NOTIC: [8] Undefined variable: imageList D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 113 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 132 行.
+NOTIC: [8] Undefined variable: tese D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\91bbf830ed0296e94ef5744baf5e59fe.php 第 183 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-05-31T09:37:12+08:00 ] ::1 /travel/admin.php?s=/Mall/mall_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\Program Files\php study\WWW\travel\ThinkPHP\Library\Think\Session\Driver\Db.class.php 第 95 行.
+SQL: SHOW COLUMNS FROM `travel_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `travel_user` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: tese_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 34 行.
+NOTIC: [8] Undefined variable: tese_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 34 行.
+NOTIC: [8] Undefined variable: tese_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 38 行.
+NOTIC: [8] Undefined variable: tese_category D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 38 行.
+NOTIC: [8] Undefined variable: mall_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 38 行.
+NOTIC: [8] Undefined variable: tese_list D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 40 行.
+NOTIC: [8] Undefined variable: tese_name D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 48 行.
+NOTIC: [8] Undefined variable: tese_list D:\Program Files\php study\WWW\travel\Application\Runtime\Cache\Admin\0f38f1ecd58522f166c4b20aef40d3a9.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
