@@ -1,12 +1,7 @@
 <?php
-/**
- * 租车
- * @author guchunyan
- *
- */
 namespace Admin\Controller;
 
-class CarRentalController extends PublicController {
+class TeseController extends PublicController {
 	
 	public function _initialize(){
 		/**
@@ -19,33 +14,34 @@ class CarRentalController extends PublicController {
 	}
 	
 	/**
-	 * 登录租车画面
+	 * 后台首页
 	 */
-	public function carrental_edit(){
+	public function tese_edit(){
+		$tese_category = I('get.category',1);
+		$tese_name = $tese_category==1?'特产':'特色服务';
+		$this->assign('tese_category',$tese_category);
+		$this->assign('tese_name',$tese_name);
 		//存在id 更新画面
 		$id = I('get.id');
 		if($id){
-			$carrental = M('carrental')->find($id);
-			$imageList = getImageList("./Uploads/carrental/$id",$carrental['travel_mainimg']);
+			$tese = M('tese')->find($id);
+			$imageList = getImageList("./Uploads/tese/$id",$tese['tese_mainimg']);
 			
-			$carrental_category = M('carrental_category')->where(array('travel_carrental_id'=>$id))->order('travel_carrental_category_sort desc')->select();			
-			$this->assign('carrental',$carrental);
-			$this->assign('carrental_category',$carrental_category);
-			
+			$this->assign('tese',$tese);
 			$this->assign('imageList',$imageList);
 		}else{
 			$tmpFolder = tmpfolder('./Uploads/tmp');
 			$this->assign('tmpFolder',$tmpFolder);
 		}
-			
+		
 		$this->display();
 	}
 	
 	/**
-	 * 添加租赁车辆
+	 * 添加线路
 	 */
-	public function carrental_update(){		
-		$rst = D('carrental')->update();
+	public function tese_update(){		
+		$rst = D('tese')->update();
 		if($rst===TRUE){
 			$this->success('数据库操作成功!');
 		}else{
@@ -55,29 +51,35 @@ class CarRentalController extends PublicController {
 	
 
 	/**
-	 * 租赁车辆列表
+	 * 线路列表
 	 */
-	public function carrental_list(){		
-		$carrental_list = M('carrental')->select();
-		foreach ($carrental_list as $key => &$val){			
-			$imageList = getImageList("./Uploads/carrental/{$val['id']}",$val['travel_mainimg']);
+	public function tese_list(){	
+		$tese_category = I('get.category',1);
+		$tese_name = $tese_category==1?'特产':'特色服务';
+		$this->assign('tese_category',$tese_category);
+		$this->assign('tese_name',$tese_name);
+		
+		$tese_list = M('tese')->where(array('tese_category'=>$tese_category))->select();
+		foreach ($tese_list as $key => &$val){			
+			//查询图片
+			$imageList = getImageList("./Uploads/tese/{$val['id']}",$val['travel_mainimg']);
 			$val['smallImg'] = empty($imageList)?'':$imageList[0];
 		}
-		$this->assign('carrental_list',$carrental_list);	
+		$this->assign('tese_list',$tese_list);	
 		$this->display();
 	}
 	
 	/**
-	 * 租车开启 关闭
+	 * 线路上架 下架
 	 */
-	public function carrental_status(){
+	public function tese_status(){
 		$enable = I('post.status');
 		$id = I('post.id');
 		if($id){
 			if($enable=='start'){
-				M('carrental')->where("id={$id}")->save(array('carrental_status'=>1));
+				M('tese')->where("id={$id}")->save(array('tese_status'=>1));
 			}else{
-				M('carrental')->where("id={$id}")->save(array('carrental_status'=>0));
+				M('tese')->where("id={$id}")->save(array('tese_status'=>0));
 			}
 			$this->success("更新成功！");
 		}else{
@@ -88,16 +90,17 @@ class CarRentalController extends PublicController {
 	/**
 	 * 线路删除
 	 */
-	public function carrental_delete(){
+	public function tese_delete(){
 		$id = I('post.id');
 		if($id){
-			M('carrental')->delete($id);
-			delDirAndFile("./Uploads/carrental/$id",TRUE);
+			M('tese')->delete($id);
+			delDirAndFile("./Uploads/tese/$id",TRUE);
 			$this->success("删除成功！");
 		}else{
-			$this->error("类别id不存在！");
+			$this->error("id不存在！");
 		}
 	}
+	
 	
 	
 // 	/**
@@ -105,7 +108,7 @@ class CarRentalController extends PublicController {
 // 	 */
 // 	public function uploader(){
 // 		$id = I('get.id');
-// 		$tmpFolder = I('get.tmpFolder');
+// 		$tmpFolder = I('get.tmpFolder');		
 		
 // 		$upload = new \Think\Upload();// 实例化上传类
 // 		$upload->maxSize   =     3145728 ;// 设置附件上传大小
@@ -115,7 +118,7 @@ class CarRentalController extends PublicController {
 // 			$upload->savePath  =     'tmp/'; // 设置附件上传（子）目录
 // 			$upload->subName   = 	 $tmpFolder;
 // 		}else if(!empty($id)){
-// 			$upload->savePath  =     'carrental/'; // 设置附件上传（子）目录
+// 			$upload->savePath  =     'tese/'; // 设置附件上传（子）目录
 // 			$upload->subName   = 	 $id;
 // 		}
 // 		// 上传文件
@@ -133,6 +136,8 @@ class CarRentalController extends PublicController {
 // 		}		
 // 		echo json_encode($rst);
 // 	}
+	
+	
 	
 // 	/**
 // 	 * 删除图片
