@@ -37,6 +37,17 @@
                     </span> </div>
             </div>
             <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2">首页显示栏目：</label>
+                <div class="formControls col-xs-8 col-sm-9"> <span class="select-box"  style="width:20%;">
+                    <select name="travel_index_column" class="select">
+                    	<option value="">-----</option>
+                    	<volist name="index_category_list" id="vo">
+                    	<option value="{$vo.category_code}" <if condition="$travel['travel_index_column'] eq $vo['category_code'] ">selected</if> >{$vo.category}</option>
+                    	</volist>
+                    </select>
+                    </span><span> 不需要显示就不选择</span> </div>
+            </div>
+            <div class="row cl">
                 <label class="form-label col-xs-4 col-sm-2">排序值：</label>
                 <div class="formControls col-xs-8 col-sm-9">
                     <input type="text" class="input-text" value="{$travel['travel_sort']}" placeholder="数字越大越靠前" id="" name="travel_sort" style="width:20%;">
@@ -151,7 +162,7 @@ $(function(){
 		swf: '__HUIADMIN__/lib/webuploader/0.1.5/Uploader.swf',
 	
 		// 文件接收服务端。
-		server: '{:U("travel/uploader",array("id"=>$travel["id"],"tmpFolder"=>$tmpFolder))}',
+		server: '{:U("public/uploader",array("id"=>$travel["id"],"tmpFolder"=>$tmpFolder,"savePath"=>"travel"))}',
 	
 		// 选择文件的按钮。可选。
 		// 内部根据当前运行是创建，可能是input元素，也可能是flash.

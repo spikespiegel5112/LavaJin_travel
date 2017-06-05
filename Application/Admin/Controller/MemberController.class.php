@@ -20,7 +20,6 @@ class MemberController extends PublicController {
 		$this->display();
 	}
 	
-
 	
     
 }

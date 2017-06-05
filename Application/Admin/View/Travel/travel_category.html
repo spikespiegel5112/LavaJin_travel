@@ -13,8 +13,9 @@
             <thead>
                 <tr class="text-c">
                     <th width="40">ID</th>
+                    <th width="150">缩略图</th>
                     <th width="150">类别编码</th>
-                    <th width="150">线路类别</th>
+                    <th width="150">线路类别</th>                    
                     <th width="40">排序</th>
                     <th width="40">状态</th>
        				<th width="200">备注</th>
@@ -25,6 +26,7 @@
             	<volist name="category_list" id="vo" key="k">
                 <tr class="text-c">
                     <td>{$k}</td>
+                    <td><if condition="$vo['category_mainimg'] neq ''"><img src="{$vo['category_mainimg']}" style="width:60px;"></if></td>
                     <td>{$vo.category_code}</td>
                     <td>{$vo.category}</td>
                     <td>{$vo.sort}</td>                    
