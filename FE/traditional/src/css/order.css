@@ -188,7 +188,7 @@
 	width: 1.5rem;
 	font-size: 0.6rem;
 }
-.order_detail_wrapper li .price {
+.order_detail_wrapper li .totalprice {
 	color: #e60853;
 }
 .order_detail_wrapper .common_input_item{
