@@ -3,15 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes" />
-    <title>dasdasdsa</title>
+    <title>支付订单</title>
     <link rel="stylesheet" href="http://at.alicdn.com/t/font_74zzajc1zfytx1or.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
     <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="css/amazeui.datetimepicker.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel='stylesheet' href="css/common.css" />
     <link rel='stylesheet' href="css/order.css" />
     <link rel='stylesheet' href="css/access.css" />
     <script type="text/javascript" src='assets/js/jquery.min.js'></script>
     <script type="text/javascript" src='assets/js/swiper.min.js'></script>
+    <script type="text/javascript" src='assets/js/bootstrap-datetimepicker.min.js'></script>
+    <script type="text/javascript" src='assets/js/locales/bootstrap-datetimepicker.zh-CN.js'></script>
+	<script type="text/javascript" src='assets/js/jquery-validation/jquery.validate.js'></script>
+	<script type="text/javascript" src='assets/js/jquery-validation/locales/messages_zh.js'></script>
     <script type="text/javascript" src='js/base.js'></script>
     <script type="text/javascript" src='js/common.js'></script>
 </head>
@@ -24,97 +30,152 @@
             </a>
             <p>支付订单</p>
         </div>
-        <div class="common_block_wrapper">
-			<ul class="order_detail_wrapper">
-				<li>
-					<label>订单号</label>
-					<p>
-						170417948651
-					</p>
-				</li>
-				<li>
-					<label>商品名</label>
-					<p>
-						文成公主实景剧门票
-					</p>
-				</li>
-				<li>
-					<label>套餐名</label>
-					<p>
-						看台一区285元
-					</p>
-				</li>
-				<li>
-					<label>联系人</label>
-					<p>
-						按时打算
-					</p>
-				</li>
-				<li>
-					<label>联系电话</label>
-					<p>
-						18250045855
-					</p>
-				</li>
-
-				<li>
-					<label>出行时间</label>
-					<p>
-						2017-04-20
-					</p>
-				</li>
-				<li>
-					<label>出行人数</label>
-					<p>
-						¥285/成人×1
-					</p>
-				</li>
-				<li>
-					<label>总价</label>
-					<p>
-						¥285
-					</p>
-				</li>
-				<li>
-					<label>红包抵现</label>
-					<p>
-						-¥0
-					</p>
-				</li>
-				<li>
-					<label>实付</label>
-					<p class='price'>
-						¥285
-					</p>
-				</li>
-			</ul>
-			<div class='common_navgap_item'></div>
-			<a class="common_blockbtn_item" href="javascript:;">立即支付</a>
-		</div>
-       
+        <div class='order_message_wrapper'>
+            <div class='common_error_wrapper'></div>
+            <form class="common_form_wrapper common_block_wrapper">
+                <ul class="order_detail_wrapper">
+                    <li>
+                        <label>订单号</label>
+                        <p>
+                            170417948651
+                        </p>
+                    </li>
+                    <li>
+                        <label>商品名</label>
+                        <p>
+                            文成公主实景剧门票
+                        </p>
+                    </li>
+                    <li>
+                        <label>套餐名</label>
+                        <p>
+                            看台一区285元
+                        </p>
+                    </li>
+                    <li>
+                        <label>联系人</label>
+                        <div class='common_input_item'>
+                            <input type='text' name='contactperson'>
+                        </div>
+                    </li>
+                    <li>
+                        <label>联系电话</label>
+                        <div class='common_input_item'>
+                            <input type='text' name='contactphone'>
+                        </div>
+                    </li>
+                    <li>
+                        <label>出行人数</label>
+                        <p>
+                            ¥285/成人×1
+                        </p>
+                    </li>
+                    <li>
+                        <label>出行时间</label>
+                        <div class='common_input_item'>
+                            <input class='product_dateinput_item' type='text' name='departuredate' readonly data-date-format="yyyy-mm-dd" >
+                        </div>
+                    </li>
+                    <li>
+                        <label>总价</label>
+                        <p>
+                            ¥285
+                        </p>
+                    </li>
+                    <li>
+                        <label>红包抵现</label>
+                        <p>
+                            -¥0
+                        </p>
+                    </li>
+                    <li>
+                        <label>实付</label>
+                        <p class='price'>
+                            ¥285
+                        </p>
+                    </li>
+                </ul>
+                <div class='common_navgap_item'></div>
+                <div class="common_block_wrapper">
+                    <div>
+                    	<input type='submit' class="common_blockbtn_item product_subscribe_item" value='立即支付' />
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 <script type="text/javascript">
 (function($) {
     $(function() {
         var orderList = {
-            align: function() {
-                $('.order_list_wrapper .thumbnail img').align({
-                    container: '.order_list_wrapper .thumbnail'
+
+            calender: function() {
+                var subscribeBtn = $('.product_dateinput_item'),
+                    confirmBtn = $('.product_confirmbtn_container'),
+                    dateinputEl = $('.product_dateinput_item')
+                    // subscribeBtn.click(function(){
+                    //  dateinputEl.click();
+                    // })
+
+                subscribeBtn.datetimepicker({
+                    format: 'yyyy-mm-dd',
+                    minView: 2,
+                    weekStart: 1,
+                    // todayBtn: true,
+                    pickerPosition: 'top-left',
+                    autoclose: true,
+                    language: 'zh-CN'
+                }).on('changeDate', function(e) {
+
+                    var dateVal = '',
+                        dateObj;
+                    dateObj = e.date;
+                    dateVal = dateObj.getFullYear() + '-' + dateObj.getMonth() + '-' + dateObj.getDay();
+
+                    console.log(dateVal);
+                }).on('show', function() {
+                    confirmBtn.show();
+                }).on('hide', function() {
+                    confirmBtn.hide();
+                })
+                confirmBtn.click(function() {
+                    var $this = $(this);
+                    if ($this.is(':visible')) {
+                        $this.hide();
+                    } else {
+                        $this.show();
+                    }
                 })
             },
-            tab: function() {
-                var that = this;
-                $('.order_tab_wrapper li').tabSwitch({
-                    classname: '.order_list_wrapper>ul>li',
-                    callback: function() {
-                        that.align()
+            validate: function() {
+                $('.common_form_wrapper').validate({
+                    debug: true,
+                    submitHandler: function(form) {
+                        alert("提交事件!");
+                        form.submit();
+                    },
+                    errorElement: 'span',
+                    errorLabelContainer: $('.common_error_wrapper'),
+                    rules: {
+                        contactperson: {
+                            required: true,
+                        },
+                        contactphone: {
+                            required: true,
+                            number: true,
+                            minlength: 11,
+                            maxlength: 11
+                        },
+                        departuredate: {
+                            required: true
+                        }
                     }
                 })
             },
             main: function() {
-                this.align()
-                this.tab();
+            	this.calender();
+            	this.validate();
             },
             init: function() {
                 this.main();
@@ -123,6 +184,8 @@
         orderList.init();
     })
 })(jQuery)
+
 </script>
 
 </html>
+
