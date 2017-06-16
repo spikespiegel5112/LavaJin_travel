@@ -1,786 +1,892 @@
 * {
-    font-family: 'Microsoft Yahei'
+	font-family: 'Microsoft Yahei'
 }
 input {
-    outline: none;
+	outline: none;
 }
 textarea {
-    padding: 0;
-    resize: none;
+	padding: 0;
+	resize: none;
 }
 .active {
-    display: block;
+	display: block;
 }
 a.disabled, .disabled {
-    color: #a2a2a2;
-    border-color: #e8e8e8;
-    cursor: not-allowed;
+	color: #a2a2a2;
+	border-color: #e8e8e8;
+	cursor: not-allowed;
 }
+/*~~~~~~~~~~error~~~~~~~~~~*/
+span.error {
+	display: block;
+	margin: 0.5rem 0 0 0;
+	padding: 0 0 0 1rem;
+	background: url("../images/icon/unchecked.gif") no-repeat 0px 0px;
+	font-weight: normal;
+	color: red;
+	font-size: 12px;
+}
+.common_input_item  textarea.error, .common_input_item  input.error[type=text]{
+	border: 1px solid red;
+}
+.common_error_wrapper{
+	padding: 0.2rem 1rem;
+}
+
 .fixed {
-    position: fixed!important;
+	position: fixed!important;
 }
 .transparent {
-    background-color: transparent!important;
+	background-color: transparent!important;
 }
 .common_btn_item.disabled {
-    background-color: #e8e8e8;
+	background-color: #e8e8e8;
 }
 a.disabled:hover {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 /*~~~~~~~~~~swiper~~~~~~~~~~*/
 
 .main_container .swiper-pagination-bullets {
-    bottom: 1rem;
+	bottom: 1rem;
 }
 .main_container .swiper-pagination-bullet {
-    width: 0.4rem;
-    height: 0.4rem;
+	width: 0.4rem;
+	height: 0.4rem;
 }
 
 /*~~~~~~~~~~main_container~~~~~~~~~~*/
 
 .main_container {
-    width: 100%;
+	width: 100%;
 }
 
 /*~~~~~~~~~~common_navgap_item~~~~~~~~~~*/
 
 .common_navgap_item {
-    height: 2.5rem;
-}
-
-/*~~~~~~~~~~form~~~~~~~~~~*/
-
-.common_radio_wrapper {
-    display: inline-block;
-}
-.common_radio_wrapper input, .common_radio_wrapper label {
-    display: inline-block;
-}
-.common_input_item {
-    display: table-cell;
-    width: auto;
-    vertical-align: middle;
-}
-.common_input_item input, .common_input_item textarea {
-    padding: 5px;
-}
-.common_layout_container {
-    width: 100%;
-    min-width: 1000px;
-    font-size: 0;
+	height: 2.5rem;
 }
 
 /*~~~~~~~~~~common_btn_item~~~~~~~~~~*/
 
 .common_btn_wrapper {
-    padding: 1rem 0;
-    width: 100%;
-    text-align: center;
+	padding: 1rem 0;
+	width: 100%;
+	text-align: center;
 }
 .common_btn_item {
-    display: inline-block;
-    margin: 0.1rem;
-    min-width: 2rem;
-    height: 1rem;
-    line-height: 1rem;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    border-radius: 0.1rem;
-    padding: 0 0.2rem;
-    width: auto;
-    font-size: 0.5rem;
-    color: #333;
-    text-align: center;
-    box-sizing: border-box;
+	display: inline-block;
+	margin: 0.1rem;
+	min-width: 2rem;
+	height: 1rem;
+	line-height: 1rem;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 0.1rem;
+	padding: 0 0.2rem;
+	width: auto;
+	font-size: 0.5rem;
+	color: #333;
+	text-align: center;
+	box-sizing: border-box;
 }
 .common_btn_item.primary {
-    background-color: #ff9900;
-    border: 1px solid #ff9900;
-    color: #fff;
+	background-color: #ff9900;
+	border: 1px solid #ff9900;
+	color: #fff;
 }
 
 /*~~~~~~~~~~common_blockbtn_item~~~~~~~~~~*/
 
 .common_blockbtn_item.cancel {
-    background-color: #fff;
-    color: #666;
+	background-color: #fff;
+	color: #666;
 }
 .common_blockbtn_item {
-    display: block;
-    text-align: center;
-    width: 100%;
-    height: 2rem;
-    line-height: 2rem;
-    color: #fff;
-    font-size: 0.8rem;
-    background-color: #ff4400;
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 2rem;
+	line-height: 2rem;
+	color: #fff;
+	font-size: 0.8rem;
+	background-color: #ff4400;
+	border: 0;
 }
 
 /*~~~~~~~~~~common_header_wrapper~~~~~~~~~~*/
-
 .common_header_wrapper {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 2rem;
-    background-color: #fff;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 2rem;
+	background-color: #fff;
+	box-shadow: 0 0 1rem #ccc;
 }
 .common_header_wrapper .iconfont {
-    font-size: 1rem;
+	font-size: 1rem;
 }
 .common_header_wrapper .right_btn, .common_header_wrapper .left_btn {
-    font-size: 1rem;
-    line-height: 2rem;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    height: 100%;
-    margin: 0 0.4rem;
-    padding: 0 0.5rem;
+	font-size: 1rem;
+	line-height: 2rem;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	height: 100%;
+	margin: 0 0.4rem;
+	padding: 0 0.5rem;
 }
 .common_header_wrapper .title {
-    font-size: 0.75rem;
-    line-height: 2.5rem;
-    text-align: center;
-    color: #fff;
+	font-size: 0.75rem;
+	line-height: 2.5rem;
+	text-align: center;
+	color: #fff;
 }
 .common_header_wrapper .right_btn {
-    right: 0;
-    color: #000;
+	right: 0;
+	color: #000;
 }
 .common_header_wrapper .left_btn {
-    left: 0;
+	left: 0;
 }
 .common_header_wrapper .add_btn span {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    color: #fff;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	color: #fff;
 }
 .common_header_wrapper .back_btn span {
-    font-size: 1rem;
-    line-height: 2rem;
-    color: #000;
+	font-size: 1rem;
+	line-height: 2rem;
+	color: #000;
 }
 .common_header_wrapper .action_btn {
-    line-height: 1.1rem;
-    height: 1.1rem;
-    margin: 0.5rem;
-    padding: 0 0.6rem;
-    border-radius: 0.6rem;
-    border: 1px solid #fff;
+	line-height: 1.1rem;
+	height: 1.1rem;
+	margin: 0.5rem;
+	padding: 0 0.6rem;
+	border-radius: 0.6rem;
+	border: 1px solid #fff;
 }
 .common_header_wrapper .orange_btn {
-    line-height: 26px;
-    height: 26px;
-    margin: 8px;
-    padding: 0 20px;
-    border-radius: 1rem;
-    background-color: #ff6f29;
+	line-height: 26px;
+	height: 26px;
+	margin: 8px;
+	padding: 0 20px;
+	border-radius: 1rem;
+	background-color: #ff6f29;
 }
 .common_header_wrapper .setting_btn span {
-    font-size: 29px;
-    line-height: 42px;
-    color: #fff;
+	font-size: 29px;
+	line-height: 42px;
+	color: #fff;
 }
 .common_header_wrapper .share_btn span {
-    font-size: 26px;
-    line-height: 40px;
-    color: #fff;
+	font-size: 26px;
+	line-height: 40px;
+	color: #fff;
 }
 .common_header_wrapper .list_btn span {
-    font-size: 30px;
-    line-height: 40px;
-    color: #fff;
+	font-size: 30px;
+	line-height: 40px;
+	color: #fff;
 }
 .common_header_wrapper .left_angle span {
-    font-size: 26px;
-    line-height: 40px;
-    color: #fff;
+	font-size: 26px;
+	line-height: 40px;
+	color: #fff;
 }
 .common_header_wrapper .upload_btn span {
-    font-size: 24px;
-    line-height: 40px;
-    color: #fff;
+	font-size: 24px;
+	line-height: 40px;
+	color: #fff;
 }
 
 /*.common_header_wrapper .search_btn span{
-    color: #fff;
-    font-size: 24px;
-    line-height: 42px;
+	color: #fff;
+	font-size: 24px;
+	line-height: 42px;
 }*/
 
 .common_header_wrapper li:first-child, .common_header_wrapper a {
-    color: #fff;
+	color: #fff;
 }
 .common_header_wrapper li:before {
-    padding: 0 0 0 5px;
-    content: ' / ';
+	padding: 0 0 0 5px;
+	content: ' / ';
 }
 .common_header_wrapper li:after {
-    content: ' ';
+	content: ' ';
 }
 .common_header_wrapper li:first-child:before {
-    content: ' ';
+	content: ' ';
 }
 .common_header_wrapper p {
-    font-size: 0.8rem;
-    line-height: 2rem;
-    position: relative;
-    top: 0;
-    overflow: hidden;
-    width: 100%;
-    max-width: 240px;
-    height: 100%;
-    margin: 0 auto;
-    text-align: center;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    color: #000;
+	font-size: 0.8rem;
+	line-height: 2rem;
+	position: relative;
+	top: 0;
+	overflow: hidden;
+	width: 100%;
+	max-width: 240px;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #000;
 }
 @media only screen and (max-width: 320px) {
-    .common_header_wrapper p {
-        max-width: 230px;
-    }
+	.common_header_wrapper p {
+		max-width: 230px;
+	}
 }
 .common_header_wrapper label {
-    line-height: 40px;
-    margin: 0 1em;
-    /*  font-size: 0.9em;*/
+	line-height: 40px;
+	margin: 0 1em;
+	/*  font-size: 0.9em;*/
 }
 .common_header_wrapper h5 {
-    line-height: 2.5em;
-    float: left;
-    height: 2.5em;
-    padding: 0 0 0 1em;
+	line-height: 2.5em;
+	float: left;
+	height: 2.5em;
+	padding: 0 0 0 1em;
 }
 .common_header_wrapper .ok_item {
-    line-height: 1.5em;
-    float: right;
-    width: 2.5em;
-    height: 1.5em;
-    margin: 0 .5em;
-    padding: 0 5px;
-    text-align: center;
-    color: #000;
-    border-radius: 3px;
-    background: #eee;
+	line-height: 1.5em;
+	float: right;
+	width: 2.5em;
+	height: 1.5em;
+	margin: 0 .5em;
+	padding: 0 5px;
+	text-align: center;
+	color: #000;
+	border-radius: 3px;
+	background: #eee;
 }
 .common_header_wrapper ul {
-    position: absolute;
-    z-index: 1;
-    margin: 0 0 0 .5em;
+	position: absolute;
+	z-index: 1;
+	margin: 0 0 0 .5em;
 }
 .common_header_wrapper li {
-    font-size: 1em;
-    line-height: 3.5em;
-    position: absolute;
-    left: 0;
-    height: 100%;
-    color: #000;
+	font-size: 1em;
+	line-height: 3.5em;
+	position: absolute;
+	left: 0;
+	height: 100%;
+	color: #000;
 }
 
 /*~~~~~~~~~~common_navbtn_item~~~~~~~~~~*/
 
 .common_navbtn_item {
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    margin: 0.4rem;
-    text-align: center;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
+	width: 1.5rem;
+	height: 1.5rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	margin: 0.4rem;
+	text-align: center;
+	border-radius: 50%;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 /*~~~~~~~~~~common_block_wrapper~~~~~~~~~~*/
 
 .common_block_wrapper {
-    margin: 0.5rem 0 0 0;
-    padding: 0.1rem 0.5rem;
-    width: 100%;
-    background-color: #fff;
-    overflow: hidden;
-    position: relative;
-    box-sizing: border-box;
+	margin: 0.5rem 0 0 0;
+	padding: 0.1rem 0.5rem;
+	width: 100%;
+	background-color: #fff;
+	overflow: hidden;
+	position: relative;
+	box-sizing: border-box;
 }
 
 /*~~~~~~~~~~common_redpacket_item~~~~~~~~~~*/
 
 .common_redpacket_item {
-    display: inline-block;
-    margin: 0.3rem 0;
-    color: red;
-    font-size: 0.8rem;
-    vertical-align: middle;
+	display: inline-block;
+	margin: 0.3rem 0;
+	color: red;
+	font-size: 0.8rem;
+	vertical-align: middle;
 }
 .common_redpacket_item span {
-    display: inline-block;
-    width: 0.8rem;
-    height: 0.8rem;
-    background: url(../images/icon/coupon.jpg) no-repeat;
-    background-size: 0.8rem;
-    vertical-align: middle;
+	display: inline-block;
+	width: 0.8rem;
+	height: 0.8rem;
+	background: url(../images/icon/coupon.jpg) no-repeat;
+	background-size: 0.8rem;
+	vertical-align: middle;
 }
-.common_redpacket_item label{
-    font-size: 0.7rem;
+.common_redpacket_item label {
+	font-size: 0.7rem;
 }
 
 /*~~~~~~~~~~common_producttitle_item~~~~~~~~~~*/
 
 .common_producttitle_item {
-    padding: 1rem 0.5rem;
-    width: 100%;
-    border-top: 1px solid #ccc;
+	padding: 1rem 0.5rem;
+	width: 100%;
+	border-top: 1px solid #ccc;
 }
 .common_producttitle_item h2 {
-    font-size: 1rem;
-    font-weight: bold;
+	font-size: 1rem;
+	font-weight: bold;
 }
 
 /*~~~~~~~~~~common_popup_wrapper~~~~~~~~~~*/
 
 .common_popup_wrapper {
-    position: relative;
+	position: relative;
 }
 .common_popup_wrapper .form {
-    margin: 0 auto;
-    width: 95%;
-    font-size: 0;
+	margin: 0 auto;
+	width: 95%;
+	font-size: 0;
 }
 .common_popup_wrapper .form li {
-    font-size: 14px;
+	font-size: 14px;
 }
 .common_popup_wrapper .form label {
-    display: inline-block;
-    width: 20%;
-    color: #333;
-    text-align: right;
+	display: inline-block;
+	width: 20%;
+	color: #333;
+	text-align: right;
 }
 .common_popup_wrapper .form span {
-    display: inline-block;
-    padding: 0 0 0 15px;
-    width: 80%;
-    box-sizing: border-box;
+	display: inline-block;
+	padding: 0 0 0 15px;
+	width: 80%;
+	box-sizing: border-box;
 }
 .common_popup_wrapper .form input[type=text] {
-    display: inline-block;
-    margin: 0 0 0 5%;
-    padding: 0 5px;
-    width: 70%;
-    height: 100%;
-    font-size: 16px;
-    box-sizing: border-box;
+	display: inline-block;
+	margin: 0 0 0 5%;
+	padding: 0 5px;
+	width: 70%;
+	height: 100%;
+	font-size: 16px;
+	box-sizing: border-box;
 }
 .common_popup_wrapper .form input[type=checkbox] {
-    display: inline-block;
-    margin: 0 0 0 5%;
-    padding: 0 5px;
-    font-size: 16px;
-    box-sizing: border-box;
+	display: inline-block;
+	margin: 0 0 0 5%;
+	padding: 0 5px;
+	font-size: 16px;
+	box-sizing: border-box;
 }
 .common_popup_wrapper .form li {
-    margin: 20px 0;
-    height: 30px;
+	margin: 20px 0;
+	height: 30px;
 }
 .common_popup_wrapper .title {
-    padding: 15px 0 10px 0;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
+	padding: 15px 0 10px 0;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
 }
 .common_popupbtn_item {
-    display: block;
-    margin: 20px auto 0;
-    width: 100px;
-    height: 30px;
-    line-height: 30px;
-    background: #3da14d;
-    color: #fff;
-    font-size: 13px;
-    text-align: center;
-    border-radius: 5px;
+	display: block;
+	margin: 20px auto 0;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	background: #3da14d;
+	color: #fff;
+	font-size: 13px;
+	text-align: center;
+	border-radius: 5px;
 }
 .common_popupbtn_item:hover {
-    background: #51d366;
-    transition: all 0.3s;
+	background: #51d366;
+	transition: all 0.3s;
 }
 .common_popup_wrapper .closebtn {
-    display: block;
-    font-size: 13px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
+	display: block;
+	font-size: 13px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
 }
 
 /*~~~~~~~~~~layout_main_container~~~~~~~~~~*/
 
 .layout_main_container {
-    display: inline-block;
-    width: 100%;
-    /*  min-width: 1000px;*/
-    vertical-align: top;
+	display: inline-block;
+	width: 100%;
+	/*  min-width: 1000px;*/
+	vertical-align: top;
 }
 
 /*~~~~~~~~~~common_iconbtn_item~~~~~~~~~~*/
 
 .common_iconbtn_item {
-    display: inline-block;
-    width: 30px;
-    height: 20px;
-    text-align: center;
-    position: relative;
+	display: inline-block;
+	width: 30px;
+	height: 20px;
+	text-align: center;
+	position: relative;
 }
 .common_iconbtn_item span {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
 }
 .common_iconbtn_item label {
-    display: inline-block;
-    padding: 1px;
-    width: 15px;
-    height: 15px;
-    line-height: 15px;
-    font-size: 12px;
-    color: #fff;
-    text-align: center;
-    background-color: red;
-    border-radius: 50%;
-    cursor: pointer;
-    position: absolute;
-    top: -3px;
-    right: -5px;
+	display: inline-block;
+	padding: 1px;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+	background-color: red;
+	border-radius: 50%;
+	cursor: pointer;
+	position: absolute;
+	top: -3px;
+	right: -5px;
 }
 
 /*~~~~~~~~~~common_search_wapper~~~~~~~~~~*/
 
 .common_search_wapper {
-    display: inline-block;
-    padding: 0 10px;
-    width: 200px;
-    position: relative;
+	display: inline-block;
+	padding: 0 10px;
+	width: 200px;
+	position: relative;
 }
 .common_search_wapper input {
-    padding: 0 10% 0 5%;
-    width: 85%;
-    height: 30px;
-    border: 0;
-    border-radius: 15px;
-    background-color: #d7e0ef;
-    font-size: 15px;
+	padding: 0 10% 0 5%;
+	width: 85%;
+	height: 30px;
+	border: 0;
+	border-radius: 15px;
+	background-color: #d7e0ef;
+	font-size: 15px;
 }
 .common_search_wapper a {
-    display: block;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    font-size: 15px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 15px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
 }
 
 /*~~~~~~~~~~common_nav_wrapper~~~~~~~~~~*/
 
 .common_nav_wrapper {
-    display: block;
-    width: 100%;
-    height: 2.5rem;
-    background-color: #1b2133;
-    position: fixed;
-    bottom: 0;
-    z-index: 1;
+	display: block;
+	width: 100%;
+	height: 2.5rem;
+	background-color: #1b2133;
+	position: fixed;
+	bottom: 0;
+	z-index: 1;
 }
 .common_nav_wrapper.collapase {
-    width: 5%;
+	width: 5%;
 }
 .common_nav_wrapper ul {
-    display: -webkit-box;
+	display: -webkit-box;
 }
 .common_nav_wrapper ul.collapase>li>a label {
-    display: none;
+	display: none;
 }
 .common_nav_wrapper li {
-    line-height: 0.7rem;
-    box-sizing: border-box;
-    transition: all 0.3s;
-    flex-wrap: nowrap;
-    -webkit-box-flex: 1;
+	line-height: 0.7rem;
+	box-sizing: border-box;
+	transition: all 0.3s;
+	flex-wrap: nowrap;
+	-webkit-box-flex: 1;
 }
 .common_nav_wrapper li a {
-    display: block;
-    color: #eee;
-    font-size: 1rem;
-    text-align: center;
+	display: block;
+	color: #eee;
+	font-size: 1rem;
+	text-align: center;
 }
 .common_nav_wrapper li a span {
-    display: block;
-    padding: 0.5rem 0 0.3rem 0;
-    font-size: 1rem;
+	display: block;
+	padding: 0.5rem 0 0.3rem 0;
+	font-size: 1rem;
 }
 .common_nav_wrapper li a label {
-    display: inline-block;
-    font-size: 0.5rem;
-    cursor: pointer;
+	display: inline-block;
+	font-size: 0.5rem;
+	cursor: pointer;
 }
 .common_title_wrapper {
-    display: inline-block;
-    width: 10%;
-    height: 45px;
-    vertical-align: middle;
+	display: inline-block;
+	width: 10%;
+	height: 45px;
+	vertical-align: middle;
 }
 .common_title_wrapper h1 {
-    line-height: 44px;
-    font-size: 16px;
-    color: #1b2133;
-    text-align: center;
+	line-height: 44px;
+	font-size: 16px;
+	color: #1b2133;
+	text-align: center;
 }
 .common_title_wrapper .closebtn {
-    display: none;
+	display: none;
 }
 
 /*~~~~~~~~~~common_tabtitle_wrapper~~~~~~~~~~*/
 
 .common_tabtitle_wrapper {
-    font-size: 0;
+	font-size: 0;
 }
 .common_tabtitle_wrapper li {
-    display: inline-block;
-    font-size: 15px;
-    position: relative;
-    top: 1px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: transparent transparent #ccc transparent;
-    background-color: #fff;
+	display: inline-block;
+	font-size: 15px;
+	position: relative;
+	top: 1px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent transparent #ccc transparent;
+	background-color: #fff;
 }
 .common_tabtitle_wrapper li a {
-    display: block;
-    padding: 10px 20px;
-    color: #999;
+	display: block;
+	padding: 10px 20px;
+	color: #999;
 }
 .common_tabtitle_wrapper .active {
-    display: inline-block;
-    border-color: #ccc #ccc transparent #ccc;
+	display: inline-block;
+	border-color: #ccc #ccc transparent #ccc;
 }
 .common_tabtitle_wrapper .active a {
-    color: #666;
+	color: #666;
 }
 .common_tabcontent_wrapper {
-    border-top: 1px solid #ccc;
+	border-top: 1px solid #ccc;
 }
 .common_tabcontent_wrapper>ul>li {
-    display: none;
-    width: 100%;
+	display: none;
+	width: 100%;
 }
 .common_tabcontent_wrapper .active {
-    display: inline-block;
+	display: inline-block;
 }
 
 /*~~~~~~~~~~common_detailtitle_item~~~~~~~~~~*/
 
 .common_detailtitle_item {
-    padding: 10px 0;
-    width: 100%;
-    font-size: 20px;
-    border-bottom: 1px solid #ccc;
-    box-sizing: border-box;
+	padding: 10px 0;
+	width: 100%;
+	font-size: 20px;
+	border-bottom: 1px solid #ccc;
+	box-sizing: border-box;
 }
 .common_detailtitle_item a {
-    display: inline-block;
-    padding: 0 10px 0 0;
-    border-right: 1px solid #666;
-    font-size: 16px;
-    vertical-align: middle;
+	display: inline-block;
+	padding: 0 10px 0 0;
+	border-right: 1px solid #666;
+	font-size: 16px;
+	vertical-align: middle;
 }
 .common_detailtitle_item a span, .common_detailtitle_item a label {
-    display: inline-block;
-    vertical-align: middle;
-    cursor: pointer;
-    color: #2277da;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	color: #2277da;
 }
 .common_detailtitle_item a span {
-    padding: 0 2px;
+	padding: 0 2px;
 }
 .common_detailtitle_item h3 {
-    display: inline-block;
-    vertical-align: middle;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 /*~~~~~~~~~~common_form_wrapper~~~~~~~~~~*/
 
 .common_form_wrapper {
-    font-size: 15px;
+	font-size: 0.8rem;
+	box-shadow: 0 0 1rem #ccc;
 }
 .common_form_wrapper ul {
-    display: table;
+	display: table;
 }
 .common_form_wrapper li {
-    display: table-row;
-    margin: 30px 0;
-    width: 100%;
-    height: 40px;
+	display: table-row;
+	margin: 30px 0;
+	width: 100%;
+	height: 40px;
 }
 .common_form_wrapper li>label {
-    display: table-cell;
-    padding: 0 20px 0 0;
-    color: #666;
-    vertical-align: middle;
-}
-.common_form_wrapper .common_input_item {
-    display: table-cell;
-    padding: 10px 0;
-    border-color: #666;
+	display: table-cell;
+	padding: 0 20px 0 0;
+	color: #666;
+	vertical-align: middle;
 }
 .common_form_wrapper textarea {
-    height: 60px;
+	width: 100%;
+	min-height: 4rem;
+	border: 1px solid #ccc;
+}
+.common_radio_item {
+	display: inline-block;
+	position: relative;
+}
+.common_radio_item span.error{
+	width: 5rem;
+	position: absolute;
 }
 
 /*~~~~~~~~~~common_formdetail_item~~~~~~~~~~*/
 
 .common_formdetail_item {
-    display: table-cell;
-    color: #333;
-    vertical-align: middle;
+	display: table-cell;
+	color: #333;
+	vertical-align: middle;
 }
 
 /*~~~~~~~~~~common_footer_container~~~~~~~~~~*/
 
 .common_footer_container {
-    width: 100%;
+	width: 100%;
 }
 .common_footer_wrapper {
-    margin: 0 auto;
-    padding: 25px 0;
-    width: 1200px;
-    text-align: center;
+	margin: 0 auto;
+	padding: 25px 0;
+	width: 1200px;
+	text-align: center;
 }
 .common_footer_wrapper ul li {
-    display: inline-block;
-    padding: 0 10px;
-    font-size: 13px;
-    border-left: 1px solid #98aac2;
+	display: inline-block;
+	padding: 0 10px;
+	font-size: 13px;
+	border-left: 1px solid #98aac2;
 }
 .common_footer_wrapper ul li a {
-    color: #98aac2;
+	color: #98aac2;
 }
 .common_footer_wrapper ul li a:hover {
-    color: #68798f;
+	color: #68798f;
 }
 .common_footer_wrapper ul li:first-child {
-    border: 0;
+	border: 0;
 }
 .common_footer_wrapper .copyright {
-    margin: 20px 0 0 0;
-    font-size: 13px;
-    color: #98aac2;
+	margin: 20px 0 0 0;
+	font-size: 13px;
+	color: #98aac2;
 }
 
 /*~~~~~~~~~~common_pagination_wrapper~~~~~~~~~~*/
 
 .common_pagination_wrapper {
-    font-size: 0;
-    text-align: center;
+	font-size: 0;
+	text-align: center;
 }
 .common_pagination_wrapper>a {
-    display: inline-block;
-    padding: 0 5px;
-    height: 100%;
-    line-height: 30px;
-    background-color: #fff;
-    color: #3da14d;
-    text-align: center;
+	display: inline-block;
+	padding: 0 5px;
+	height: 100%;
+	line-height: 30px;
+	background-color: #fff;
+	color: #3da14d;
+	text-align: center;
 }
 .common_pagination_wrapper ul {
-    display: inline-block;
-    text-align: center;
+	display: inline-block;
+	text-align: center;
 }
 .common_pagination_wrapper li, .common_pagination_wrapper>a {
-    display: inline-block;
-    margin: 10px 5px;
-    min-width: 30px;
-    height: 30px;
-    vertical-align: top;
-    font-size: 13px;
+	display: inline-block;
+	margin: 10px 5px;
+	min-width: 30px;
+	height: 30px;
+	vertical-align: top;
+	font-size: 13px;
 }
 .common_pagination_wrapper li a {
-    display: inline-block;
-    padding: 0 5px;
-    width: 100%;
-    height: 100%;
-    line-height: 30px;
-    background-color: #fff;
-    color: #3da14d;
-    text-align: center;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+	display: inline-block;
+	padding: 0 5px;
+	width: 100%;
+	height: 100%;
+	line-height: 30px;
+	background-color: #fff;
+	color: #3da14d;
+	text-align: center;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 .common_pagination_wrapper a:hover, .common_pagination_wrapper .active a {
-    background-color: #3da14d;
-    color: #fff;
+	background-color: #3da14d;
+	color: #fff;
 }
 
 /*~~~~~~~~~~common_list_wrapper~~~~~~~~~~*/
 
 .common_list_wrapper {
-    padding: 0.2rem;
-    width: 100%;
+	padding: 0.2rem;
+	width: 100%;
 }
 .common_list_wrapper>ul>li {
-    margin: 0 0 0.5rem 0;
-    padding: 0.5rem 0 0 0;
-    min-height: 4rem;
-    border-top: 1px solid #ccc;
+	margin: 0 0 0.5rem 0;
+	padding: 0.5rem 0 0 0;
+	min-height: 4rem;
+	border-top: 1px solid #ccc;
 }
 .common_list_wrapper>ul>li:first-child {
-    border: 0;
+	border: 0;
 }
 .common_list_wrapper>ul>li .thumbnail {
-    display: inline-block;
-    width: 5rem;
-    height: 4rem;
-    border: 1px solid #ccc;
-    border-radius: 0.2rem;
-    vertical-align: top;
+	display: inline-block;
+	width: 5rem;
+	height: 4rem;
+	border: 1px solid #ccc;
+	border-radius: 0.2rem;
+	vertical-align: top;
 }
 .common_list_wrapper>ul>li .thumbnail img {
-    display: block;
-    width: 100%;
-    transition: all 0.3s;
+	display: block;
+	width: 100%;
+	transition: all 0.3s;
 }
 .common_list_wrapper>ul>li .detail {
-    display: inline-block;
-    padding: 0 0 0 0.2rem;
-    width: 10rem;
-    min-height: 4rem;
-    vertical-align: top;
-    border-left: 1px solid #ccc;
+	display: inline-block;
+	padding: 0 0 0 0.2rem;
+	width: 10rem;
+	min-height: 4rem;
+	vertical-align: top;
+	border-left: 1px solid #ccc;
 }
 .common_list_wrapper>ul>li .detail .title {
-    padding: 0 0 0.3rem 0;
-    font-size: 0.6rem;
+	padding: 0 0 0.3rem 0;
+	font-size: 0.6rem;
 }
 .common_list_wrapper>ul>li .detail .introduce {
-    font-size: 0.4rem;
-    line-height: 0.7rem;
+	font-size: 0.4rem;
+	line-height: 0.7rem;
 }
 .common_list_wrapper>ul>li .detail .desc {
-    font-size: 0.4rem;
+	font-size: 0.4rem;
 }
-.common_list_wrapper>ul>li .detail .price{
-    color: red;
-    font-size: 0.8rem;
+.common_list_wrapper>ul>li .detail .price {
+	color: red;
+	font-size: 0.8rem;
 }
-.common_list_wrapper .productid{
-    display: inline-block;
-    margin: 0 0.2rem 0 0;
-    color: #F77D0F;
+.common_list_wrapper .productid {
+	display: inline-block;
+	margin: 0 0.2rem 0 0;
+	color: #F77D0F;
+}
+
+/*~~~~~~~~~~draftingoflegalinstruments.html~~~~~~~~~~*/
+
+.form_list_wrapper>li {
+	border-bottom: 1px solid #efefef;
+}
+.form_list_wrapper>li {
+	display: table-row;
+	width: 100%;
+	font-size: 0;
+	position: relative;
+	box-sizing: border-box;
+}
+.form_list_wrapper .title {
+	display: table-cell;
+}
+.form_list_wrapper li label {
+	display: inline-block;
+	height: 1.3rem;
+	line-height: 1.3rem;
+	font-size: 0.6rem;
+	vertical-align: top;
+}
+.form_list_wrapper li input {
+	display: inline-block;
+	padding: 0 0.5rem;
+	height: 1.3rem;
+	font-size: 0.6rem;
+}
+.form_list_wrapper li>a {
+	display: inline-block;
+	width: 8.5rem;
+	text-align: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.form_list_wrapper li .price {
+	color: #e60853;
+}
+.form_list_wrapper .title {
+	padding: 0 1rem;
+	min-width: 4rem;
+}
+.drafting_pulldownlist_wrapper {
+	display: none;
+	background-color: #dcdcdc;
+}
+
+/*~~~~~~~~~~form~~~~~~~~~~*/
+
+.common_form_item {
+	display: table-row;
+	margin: 0.4rem 0;
+	height: 1rem;
+}
+.common_form_item .title {
+	display: table-cell;
+	min-width: 3rem;
+	font-size: 0.7rem;
+	color: #666;
+	vertical-align: middle;
+}
+.common_radio_wrapper {
+	display: inline-block;
+}
+.common_radio_wrapper input, .common_radio_wrapper label {
+	display: inline-block;
+}
+.common_layout_container {
+	width: 100%;
+	min-width: 1000px;
+	font-size: 0;
+}
+.common_input_item input, .common_input_item textarea {
+	padding: 5px;
+}
+.common_input_item {
+	display: table-cell;
+	padding: 10px;
+	min-width: 10rem;
+	border-color: #666;
+	position: relative;
+}
+.common_input_item input[type=text] {
+	width: 100%;
+	border-radius: 0.1rem;
+	border: 1px solid #ccc;
+	font-size: 0.7rem;
+	color: #333;
+}
+.common_radio_item {
+	margin: 0.3rem 0.2rem;
+}
+.common_radio_item label {
+	display: inline-block;
+	font-size: 0.6rem;
+	color: #333;
+	vertical-align: middle;
+}
+.common_radio_item input {
+	display: inline-block;
+	vertical-align: middle;
 }
