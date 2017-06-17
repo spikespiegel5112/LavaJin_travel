@@ -628,6 +628,7 @@ a.disabled:hover {
 	width: 100%;
 	min-height: 4rem;
 	border: 1px solid #ccc;
+	font-size: 0.7rem;
 }
 .common_radio_item {
 	display: inline-block;
