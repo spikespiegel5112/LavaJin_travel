@@ -154,9 +154,9 @@
 	font-size: 0.6rem;
 	vertical-align: top;
 }
-.order_detail_wrapper li .productname{
+/*.order_detail_wrapper .productname p{
 	text-align: left;
-}
+}*/
 .order_detail_wrapper li>p {
 	display: table-cell;
 	padding: 0 0.5rem 0 0;
