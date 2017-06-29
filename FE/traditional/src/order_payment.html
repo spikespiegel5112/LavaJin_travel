@@ -1,0 +1,121 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes" />
+	<title>充值</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_74zzajc1zfytx1or.css" />
+	<link rel="stylesheet" href="assets/css/swiper.min.css" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel='stylesheet' href="css/common.css" />
+	<link rel='stylesheet' href="css/order.css" />
+	<link rel='stylesheet' href="css/access.css" />
+	<script type="text/javascript" src='assets/js/jquery.min.js'></script>
+	<script type="text/javascript" src='assets/js/swiper.min.js'></script>
+	<script type="text/javascript" src='assets/js/jquery-validation/jquery.validate.js'></script>
+	<script type="text/javascript" src='assets/js/jquery-validation/locales/messages_zh.js'></script>
+	<script type="text/javascript" src='js/base.js'></script>
+	<script type="text/javascript" src='js/common.js'></script>
+</head>
+
+<body>
+	<div class='main_container'>
+		<div class="common_header_wrapper">
+			<a class="left_btn back_btn" href="javascript:;">
+				<span class="iconfont icon-backward2"></span>
+			</a>
+			<p>手机支付</p>
+		</div>
+		<form class='order_paymentinput_wrapper'>
+			<input type='text' placeholder='请输入手机号' name='phonenumber' />
+			<span class='avatar iconfont icon-user2'></span>
+		</form>
+		<div class='order_price_wrapper'>
+			<ul class='enabled'>
+				<li>
+					<a href="javascript:;">
+						<label>30元</label><span>售价49元</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<label>50元</label><span>售价49元</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<label>100元</label><span>售价49元</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<label>200元</label><span>售价49元</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<label>300元</label><span>售价49元</span>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<label>500元</label><span>售价49元</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="common_block_wrapper">
+			<a class="common_blockbtn_item order_paybtn_item" href="javascript:;">立即支付</a>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+(function($) {
+	$(function() {
+		var payment = {
+			validate: function() {
+				$('.order_paymentinput_wrapper').validate({
+					debug: true,
+					submitHandler: function(form) {
+						alert("提交事件!");
+						form.submit();
+					},
+					errorElement: 'span',
+					// errorLabelContainer: $('.common_error_wrapper'),
+					success: function(label) {
+						$('.order_price_wrapper ul').addClass('enabled')
+						$('.order_paybtn_item').removeClass('disabled')
+					},
+					rules: {
+						phonenumber: {
+							required: true,
+							number: true,
+							minlength: 11,
+							maxlength: 11
+						}
+					}
+				})
+			},
+			selectPrice: function() {
+				$('.order_price_wrapper li').click(function() {
+					if ($('.order_price_wrapper ul').hasClass('enabled')) {
+						var $this = $(this);
+						$this.addClass('active').siblings().removeClass('active')
+					};
+
+				})
+			},
+			main: function() {
+				this.validate();
+				this.selectPrice();
+			},
+			init: function() {
+				this.main();
+			}
+		}
+		payment.init();
+	})
+})(jQuery)
+</script>
+
+</html>

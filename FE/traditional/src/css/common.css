@@ -12,8 +12,9 @@ textarea {
 	display: block;
 }
 a.disabled, .disabled {
-	color: #a2a2a2;
+	color: #fff;
 	border-color: #e8e8e8;
+	background-color: #aaa;
 	cursor: not-allowed;
 }
 /*~~~~~~~~~~error~~~~~~~~~~*/
@@ -23,8 +24,9 @@ span.error {
 	padding: 0 0 0 1rem;
 	background: url("../images/icon/unchecked.gif") no-repeat 0px 0px;
 	font-weight: normal;
+	background-size: 5%;
 	color: red;
-	font-size: 12px;
+	font-size: 0.7rem;
 }
 .common_input_item  textarea.error, .common_input_item  input.error[type=text]{
 	border: 1px solid red;
@@ -126,6 +128,7 @@ a.disabled:hover {
 }
 .common_header_wrapper .iconfont {
 	font-size: 1rem;
+	line-height: 1.6rem;
 }
 .common_header_wrapper .right_btn, .common_header_wrapper .left_btn {
 	font-size: 1rem;
@@ -327,17 +330,6 @@ a.disabled:hover {
 	font-size: 0.7rem;
 }
 
-/*~~~~~~~~~~common_producttitle_item~~~~~~~~~~*/
-
-.common_producttitle_item {
-	padding: 1rem 0.5rem;
-	width: 100%;
-	border-top: 1px solid #ccc;
-}
-.common_producttitle_item h2 {
-	font-size: 1rem;
-	font-weight: bold;
-}
 
 /*~~~~~~~~~~common_popup_wrapper~~~~~~~~~~*/
 
@@ -636,6 +628,7 @@ a.disabled:hover {
 	width: 100%;
 	min-height: 4rem;
 	border: 1px solid #ccc;
+	font-size: 0.7rem;
 }
 .common_radio_item {
 	display: inline-block;
@@ -740,7 +733,7 @@ a.disabled:hover {
 	margin: 0 0 0.5rem 0;
 	padding: 0.5rem 0 0 0;
 	min-height: 4rem;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #eee;
 }
 .common_list_wrapper>ul>li:first-child {
 	border: 0;
@@ -760,11 +753,11 @@ a.disabled:hover {
 }
 .common_list_wrapper>ul>li .detail {
 	display: inline-block;
-	padding: 0 0 0 0.2rem;
-	width: 10rem;
+	padding: 0 0 0 0.6rem;
+	width: 9rem;
 	min-height: 4rem;
 	vertical-align: top;
-	border-left: 1px solid #ccc;
+	border-left: 1px solid #ddd;
 }
 .common_list_wrapper>ul>li .detail .title {
 	padding: 0 0 0.3rem 0;
