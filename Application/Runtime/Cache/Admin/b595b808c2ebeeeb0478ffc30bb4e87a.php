@@ -87,7 +87,7 @@
 			<dt><i class="Hui-iconfont">&#xe67f;</i> 酒店管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="<?php echo U('Hotel/index');?>" data-title="会员列表" href="javascript:;">酒店列表</a></li>
+					<li><a data-href="<?php echo U('Hotel/index');?>" data-title="酒店列表" href="javascript:;">酒店列表</a></li>
 				</ul>
 			</dd>
 		</dl>
@@ -121,11 +121,35 @@
 				</ul>
 			</dd>
 		</dl>
+
+
+		<dl id="menu-travel">
+			<dt><i class="Hui-iconfont">&#xe6c5;</i> 特色服务<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a data-href="<?php echo U('Tese/tese_edit');?>" data-title="新增线路" href="javascript:void(0)">新增特色</a></li>
+					<li><a data-href="<?php echo U('Tese/tese_list');?>" data-title="线路列表" href="javascript:void(0)">特色列表</a></li>
+					
+				</ul>
+			</dd>
+		</dl>
+
+			<dl id="menu-travel">
+			<dt><i class="Hui-iconfont">&#xe6c5;</i> 特产超市<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a data-href="<?php echo U('Mall/mall_edit');?>" data-title="新增商品" href="javascript:void(0)">新增商品</a></li>
+					<li><a data-href="<?php echo U('Mall/mall_list');?>" data-title="商品列表" href="javascript:void(0)">商品列表</a></li>
+					
+				</ul>
+			</dd>
+		</dl>
 		<dl id="menu-system">
 			<dt><i class="Hui-iconfont">&#xe62e;</i> 系统管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
 					<li><a data-href="<?php echo U('User/index');?>" data-title="管理员列表" href="javascipt:;">管理员列表</a> </li>
+					<li><a data-href="<?php echo U('system/index_category');?>" data-title="首页分类" href="javascipt:;">首页分类</a> </li>
 				</ul>
 			</dd>
 		</dl>
