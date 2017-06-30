@@ -1,0 +1,54 @@
+.redpocket_list_wrapper{
+	background-color: #f5f5f5;
+	overflow: hidden;
+}
+.redpocket_list_wrapper li {
+	margin: 0.5rem 0;
+	padding: 1rem 0;
+	background-color: #fff;
+	box-shadow: 0rem 0.2rem 0.5rem #ccc;
+}
+.redpocket_list_wrapper div {
+    font-size: 0;
+}
+.redpocket_list_wrapper .facevalue {
+    display: inline-block;
+    width: 20%;
+    vertical-align: middle;
+}
+.redpocket_list_wrapper .facevalue p {
+    font-size: 1rem;
+    color: red;
+}
+.redpocket_list_wrapper .facevalue p span{
+	font-size: 1.4rem;
+}
+.redpocket_list_wrapper .detail {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+}
+.redpocket_list_wrapper .detail h2 {
+	margin: 0 0 0.6rem 0;
+    font-size: 0.9rem;
+}
+.redpocket_list_wrapper .detail p {
+    font-size: 0.8rem;
+    color: #666;
+}
+.redpocket_list_wrapper .use {
+    display: inline-block;
+    width: 26%;
+    vertical-align: middle;
+    text-align: center;
+}
+.redpocket_list_wrapper .use a {
+	display: inline-block;
+	padding: 0.3em 0;
+	width: 3.5rem;
+    font-size: 0.7rem;
+    color: red;
+    text-align: center;
+    border-radius: 0.4rem;
+    border: 1px solid red;
+}
