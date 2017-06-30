@@ -6,6 +6,7 @@
 	margin: 0.5rem 0;
 	padding: 1rem 0;
 	background-color: #fff;
+    font-size: 0;
 	box-shadow: 0rem 0.2rem 0.5rem #ccc;
 }
 .redpocket_list_wrapper div {
@@ -13,10 +14,11 @@
 }
 .redpocket_list_wrapper .facevalue {
     display: inline-block;
-    width: 20%;
+    width: 25%;
     vertical-align: middle;
 }
 .redpocket_list_wrapper .facevalue p {
+    padding: 0 0 0 0.3rem;
     font-size: 1rem;
     color: red;
 }
@@ -38,7 +40,7 @@
 }
 .redpocket_list_wrapper .use {
     display: inline-block;
-    width: 26%;
+    width: 25%;
     vertical-align: middle;
     text-align: center;
 }
