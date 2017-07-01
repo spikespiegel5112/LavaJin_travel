@@ -39,7 +39,7 @@
 						<p>限2017-06-29当天使用，限收货手机号为18260045855</p>
 					</div>
 					<div class='use'>
-						<a href="javascript:;">立即使用</a>
+						<a class='runout' href="javascript:;">抢光了</a>
 					</div>
 				</li>
 				<li>
@@ -52,7 +52,7 @@
 						<p>限2017-06-29当天使用，限收货手机号为18260045855</p>
 					</div>
 					<div class='use'>
-						<a href="javascript:;">立即使用</a>
+						<a class='available' href="javascript:;">立即使用</a>
 					</div>
 				</li>
 				<li>
@@ -65,7 +65,7 @@
 						<p>限2017-06-29当天使用，限收货手机号为18260045855</p>
 					</div>
 					<div class='use'>
-						<a href="javascript:;">立即使用</a>
+						<a class='available' href="javascript:;">立即使用</a>
 					</div>
 				</li>
 				<li>
@@ -78,7 +78,7 @@
 						<p>限2017-06-29当天使用，限收货手机号为18260045855</p>
 					</div>
 					<div class='use'>
-						<a href="javascript:;">立即使用</a>
+						<a class='available' href="javascript:;">立即使用</a>
 					</div>
 				</li>
 			</ul>
@@ -113,26 +113,39 @@
 			</ul>
 		</div>
 	</div>
-	<div class='redpocket_getredpocket_container'>
-		<div class='redpocket_getredpocket_wrapper'>
-			<h2>现金红包</h2>
-			
+	<div class='commonPopupContainer'>
+		<div class='commonPopupWrapper'>
+			<div class='redpocket_getredpocket_wrapper'>
+				<a class='closebtn' href="javascript:;"></a>
+				<!-- <h2>现金红包</h2> -->
+				<div class='price'><span>5</span>元</div>
+				<a class='receive' href="javascript:;">领取红包</a>
+			</div>
 		</div>
 	</div>
+
 </body>
 <script>
 (function() {
 	$(function() {
 		var productList = {
+			openRedpocket: function() {
+				$('.redpocket_list_wrapper .use .available').click(function() {
+					$.popup({
+						container: '.redpocket_getredpocket_wrapper',
+						closebtn: '.redpocket_getredpocket_wrapper .closebtn',
+						noborder: true,
+						align: true,
+						maskopacity: 0.5
+					});
+				})
+			},
 			align: function() {
-				setTimeout(function() {
-					$('.common_list_wrapper .thumbnail img').align({
-						container: '.common_list_wrapper .thumbnail'
-					})
-				}, 500)
+
 			},
 			main: function() {
-				this.align();
+
+				this.openRedpocket();
 			},
 			init: function() {
 				this.main();
