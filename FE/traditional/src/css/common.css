@@ -126,6 +126,7 @@ a.disabled:hover {
 }
 .common_header_wrapper .iconfont {
 	font-size: 1rem;
+	line-height: 1.6rem;
 }
 .common_header_wrapper .right_btn, .common_header_wrapper .left_btn {
 	font-size: 1rem;
