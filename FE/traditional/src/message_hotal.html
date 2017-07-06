@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
     <title>酒店留言</title>
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_icgfcixm8qn9izfr.css" />
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_74zzajc1zfytx1or.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.css" />
     <link rel="stylesheet" href="assets/css/swiper.min.css" />
     <link rel="stylesheet" href="css/amazeui.datetimepicker.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel='stylesheet' href="css/common.css" />
-    <link rel='stylesheet' href="css/user.css" />
+    <link rel='stylesheet' href="css/order.css" />
     <link rel='stylesheet' href="css/access.css" />
     <script type="text/javascript" src='assets/js/jquery.min.js'></script>
     <script type="text/javascript" src='assets/js/swiper.min.js'></script>
@@ -53,6 +53,39 @@
                         <div class="common_radio_item">
                             <label for="haohua">豪华</label>
                             <input type="radio" id="haohua" name='roomstandard'>
+                        </div>
+                    </div>
+                </div>
+                <div class="common_form_item">
+                    <label class='title'>房间规格</label>
+                    <div class='common_input_item' name='roomstandardinputgroup'>
+                        <div class="common_radio_item">
+                            <label for="zhongxinchengqu">中心城区</label>
+                            <input type="radio" id="zhongxinchengqu" name='roomstandard'>
+                        </div>
+                        <div class="common_radio_item">
+                            <label for="dongjiao">东郊</label>
+                            <input type="radio" id="dongjiao" name='roomstandard'>
+                        </div>
+                        <div class="common_radio_item">
+                            <label for="xijiao">西郊</label>
+                            <input type="radio" id="xijiao" name='roomstandard'>
+                        </div>
+                        <div class="common_radio_item">
+                            <label for="taiyangdao">太阳岛</label>
+                            <input type="radio" id="taiyangdao" name='roomstandard'>
+                        </div>
+                        <div class="common_radio_item">
+                            <label for="chengbei">城北</label>
+                            <input type="radio" id="chengbei" name='roomstandard'>
+                        </div>
+                        <div class="common_radio_item">
+                            <label for="liuwu">柳梧</label>
+                            <input type="radio" id="liuwu" name='roomstandard'>
+                        </div>
+                        <div class="common_radio_item">
+                            <label for="kaifaqu">开发区</label>
+                            <input type="radio" id="kaifaqu" name='roomstandard'>
                         </div>
                     </div>
                 </div>
@@ -102,7 +135,7 @@
                 <div class='common_form_item'>
                     <label class='title'>留言</label>
                     <div class="common_input_item">
-                        <textarea name='message'></textarea>
+                        <textarea name='message' placeholder='如有指定区域，指定酒店可在此填写'></textarea>
                     </div>
                 </div>
                 <input type='submit' class="common_blockbtn_item product_subscribe_item" value='留言' />
