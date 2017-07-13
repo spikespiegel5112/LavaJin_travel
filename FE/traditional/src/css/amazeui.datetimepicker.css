@@ -10,7 +10,7 @@
 
 .datetimepicker {
     margin-top: 10px;
-    /*height: 16rem;*/
+    min-height: 13rem;
     border-radius: 2px;
     -webkit-box-shadow: 0 0 6px #ccc;
     box-shadow: 0 0 6px #ccc;
@@ -40,6 +40,7 @@
 }
 .datetimepicker>div {
     display: none;
+    min-height: 13rem;
     background-color: #fff;
 }
 .datetimepicker table {
@@ -207,8 +208,8 @@
     }
     .datetimepicker td span.hour, .datetimepicker td span.minute, .datetimepicker td span.month, .datetimepicker td span.year {
         width: 25%;
-        height: 2.3rem;
-        line-height: 2.3rem;
+        height: 3.5rem;
+        line-height: 3.5rem;
         text-align: center;
     }
     .datetimepicker:before {

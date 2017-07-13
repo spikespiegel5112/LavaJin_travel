@@ -1,5 +1,5 @@
 * {
-	font-family: 'Microsoft Yahei'
+	font-family: "Microsoft YaHei",tahoma,arial,"Hiragino Sans GB","宋体",sans-serif;
 }
 input {
 	outline: none;
@@ -313,7 +313,7 @@ a.disabled:hover {
 
 .common_redpacket_item {
 	display: inline-block;
-	margin: 0.3rem 0;
+	margin: 0 0 0.6rem 0;
 	color: red;
 	font-size: 0.8rem;
 	vertical-align: middle;
