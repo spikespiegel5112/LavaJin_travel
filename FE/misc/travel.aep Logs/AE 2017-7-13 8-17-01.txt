@@ -1,0 +1,27 @@
+Adobe After Effects v11.0 (Windows 64) render log for project ¡°travel.aep¡±
+
+Rendering started on 2017/7/13 at 8:17:01
+
+
+  2017/7/13 8:17:01: Starting composition ¡°hotal¡±.
+
+
+  Output To: H:\website\LavaJin\travel\FE\traditional\src\images\index\hotal_[#####].jpg
+  
+  2017/7/13 8:17:01: Finished composition ¡°hotal¡±.
+
+
+
+  2017/7/13 8:17:01: Starting composition ¡°carrent¡±.
+
+
+  Output To: H:\website\LavaJin\travel\FE\traditional\src\images\index\carrent_[#####].jpg
+  
+  2017/7/13 8:17:01: Finished composition ¡°carrent¡±.
+
+
+
+  Total Time Elapsed: 0 Seconds
+
+Log closed on 2017/7/13 at 8:17:01
+

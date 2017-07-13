@@ -41,7 +41,7 @@
 }
 .index_categorylist_wrapper li a img {
 	display: inline-block;
-	width: 160%;
+	width: 100%;
 	transition: all 0.3s;
 }
 .index_categorylist_wrapper li label {
