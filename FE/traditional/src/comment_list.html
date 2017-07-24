@@ -184,7 +184,6 @@
 							</li>
 						</ul>
 					</li>
-
 					<li>
 						<ul>
 							<li>
@@ -239,7 +238,6 @@
 					</li>
 					<li>
 						<ul>
-							
 						</ul>
 					</li>
 				</ul>
@@ -284,8 +282,9 @@
 	$(function() {
 		var orderList = {
 			align: function() {
-				$('.order_list_wrapper .thumbnail img').align({
-					container: '.order_list_wrapper .thumbnail'
+				$.align({
+					container: '.order_list_wrapper .thumbnail',
+					target: '.order_list_wrapper .thumbnail img'
 				})
 			},
 			tab: function() {
