@@ -87,8 +87,7 @@
 			</div>
 			<div class='product_detailintroduce_wrapper'>
 				<p>
-					<img src="images/static/02w58PICuYi_1024.jpg">
-					“纳木错”意为天湖、灵湖或神湖，是世界上海拔最高的咸水湖，也是西藏“三大圣湖”之一。湖面像海一样辽阔，湖水呈现出翡翠般的绿，蓝天下的云彩蔓延于青绿色的湖水上，湖边玛尼堆连城轨迹，经幡在风中飞扬，透露出让人无法抗拒的圣洁之美，是西藏必去的最美目的地之一。
+					<img src="images/static/02w58PICuYi_1024.jpg"> “纳木错”意为天湖、灵湖或神湖，是世界上海拔最高的咸水湖，也是西藏“三大圣湖”之一。湖面像海一样辽阔，湖水呈现出翡翠般的绿，蓝天下的云彩蔓延于青绿色的湖水上，湖边玛尼堆连城轨迹，经幡在风中飞扬，透露出让人无法抗拒的圣洁之美，是西藏必去的最美目的地之一。
 				</p>
 			</div>
 			<div class='product_detailroute_wrapper'>
@@ -199,12 +198,13 @@
 						</div>
 					</li>
 				</ul>
-			</div>	
+			</div>
 		</div>
 		<div class="common_block_wrapper">
 			<div>
 				<input class='product_dateinput_item' type='text'>
 				<a class="common_blockbtn_item product_subscribe_item" href="javascript:;">立即预定</a>
+				<a class="common_blockbtn_item product_personaltailor_item" href="http://www.tianchenglvyou.cn/m.php?s=/index/travel_personal.html">私人订制</a>
 				<div class='product_confirmbtn_container'>
 					<a class="common_blockbtn_item product_confirmbtn_item" href="javascript:;">确定</a>
 				</div>
@@ -220,7 +220,7 @@
 		var orderList = {
 			align: function() {
 				$.align({
-					target:'.product_detailbanner_wrapper img',
+					target: '.product_detailbanner_wrapper img',
 					container: '.product_detailbanner_wrapper'
 				})
 			},
@@ -237,9 +237,9 @@
 				var subscribeBtn = $('.product_subscribe_item'),
 					confirmBtn = $('.product_confirmbtn_container'),
 					dateinputEl = $('.product_dateinput_item')
-					// subscribeBtn.click(function(){
-					//  dateinputEl.click();
-					// })
+				subscribeBtn.click(function() {
+					$('.product_personaltailor_item').hide();
+				})
 
 				subscribeBtn.datetimepicker({
 					format: 'yyyy-mm-dd',
@@ -250,7 +250,6 @@
 					autoclose: false,
 					language: 'zh-CN'
 				}).on('changeDate', function(e) {
-
 					var dateVal = '',
 						dateObj;
 					dateObj = e.date;
@@ -261,11 +260,13 @@
 					confirmBtn.show();
 				}).on('hide', function() {
 					confirmBtn.hide();
+					$('.product_personaltailor_item').show();
 				})
 				confirmBtn.click(function() {
 					var $this = $(this);
 					if ($this.is(':visible')) {
 						$this.hide();
+						$('.product_personaltailor_item').show();
 					} else {
 						$this.show();
 					}
@@ -283,8 +284,6 @@
 		orderList.init();
 	})
 })(jQuery)
-
 </script>
 
 </html>
-
