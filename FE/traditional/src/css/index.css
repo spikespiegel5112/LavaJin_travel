@@ -100,7 +100,9 @@
 .index_productlist_wrapper>ul>li {
 	display: inline-block;
 	margin: 0.5rem;
+	width: 6.8rem;
 	position: relative;
+	vertical-align: top;
 }
 .index_productlist_wrapper>ul>li .title {
 	font-size: 0.7rem;

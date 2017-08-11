@@ -266,13 +266,15 @@
 			},
 			align: function() {
 				setTimeout(function() {
-					$('.index_categorylist_wrapper li a img').align({
+					$.align({
+						target:'.index_categorylist_wrapper li a img',
 						container: '.index_categorylist_wrapper li a'
 					})
 				}, 500)
 
 				setTimeout(function() {
-					$('.index_productlist_wrapper li .thumbnail>img').align({
+					$.align({
+						target:'.index_productlist_wrapper li .thumbnail>img',
 						container: '.index_productlist_wrapper li .thumbnail'
 					})
 				}, 500)

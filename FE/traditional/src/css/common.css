@@ -40,6 +40,7 @@ span.error {
 }
 .transparent {
 	background-color: transparent!important;
+	box-shadow: none!important;
 }
 .common_btn_item.disabled {
 	background-color: #e8e8e8;
@@ -308,6 +309,18 @@ a.disabled:hover {
 	position: relative;
 	box-sizing: border-box;
 }
+
+.common_block_wrapper .banner{
+	display: block;
+	margin: 0.5rem 0;
+	width: 100%;
+}
+.common_block_wrapper p img, .common_block_wrapper strong img{
+	display: block;
+	margin: 0.5rem 0;
+	width: 100%;
+}
+
 
 /*~~~~~~~~~~common_redpacket_item~~~~~~~~~~*/
 

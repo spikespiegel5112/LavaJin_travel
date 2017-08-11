@@ -93,7 +93,15 @@
 	padding: 0.2rem;
 	font-size: 0.8rem;
 	line-height: 1.1rem;
+
 }
+
 .carrent_detail_wrapper .introduce p{
 	margin: 0 0 0.5rem 0;
+	box-sizing: border-box;
+}
+.carrent_detail_wrapper .content li img{
+	display: block;
+	padding: 2%;
+	width: 96%;
 }
