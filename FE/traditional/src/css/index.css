@@ -3,7 +3,7 @@
 .index_carousel_wrapper {
 	width: 100%;
 	min-width: 320px;
-	height: 5rem;
+	height: 6rem;
 }
 .index_carousel_wrapper li {
 	height: 100%;
@@ -28,27 +28,36 @@
 }
 .index_categorylist_wrapper li {
 	display: inline-block;
-	margin: 0.5rem 1rem;
-	width: 3rem;
-	height: 3rem;
+	margin: 0.1rem;
+	width: 4.7rem;
+	height: 4.7rem;
+	overflow: hidden;
+	position: relative;
+	border-radius: 5%;
+	background: #000;
 }
 .index_categorylist_wrapper li a {
 	display: inline-block;
 	width: 100%;
 	height: 100%;
-	border-radius: 50%;
-	overflow: hidden;
+	
+
 }
 .index_categorylist_wrapper li a img {
 	display: inline-block;
 	width: 100%;
+	opacity: 0.5;
 	transition: all 0.3s;
 }
 .index_categorylist_wrapper li label {
 	display: block;
 	padding: 0.5rem 0;
+	width: 100%;
 	text-align: center;
-	font-size: 0.6rem;
+	font-size: 0.8rem;
+	color: #fff;
+	position: absolute;
+	bottom: 30%;
 }
 
 /*~~~~~~~~~~index_productlist_wrapper~~~~~~~~~~*/
@@ -56,8 +65,14 @@
 .index_productlist_wrapper {
 	margin: 0 0 0.5rem 0;
 }
+.index_productlist_wrapper ul{
+	display: none;
+}
+.index_productlist_wrapper ul.active{
+	display: block;
+}
 .index_productlist_wrapper li .thumbnail {
-	width: 6.8rem;
+	width: 100%;
 	height: 6rem;
 	border-radius: 0.4rem;
 	position: relative;
@@ -78,35 +93,38 @@
 	width: 200%;
 	transition: all 0.3s;
 }
-.index_productlist_wrapper li .thumbnail .price {
-	padding: 0.3rem 0.5rem 0.3rem 0;
+.index_productlist_wrapper li .desc{
 	position: absolute;
-	bottom: 0.4rem;
-	left: 0;
-	background-color: rgba(0, 0, 0, 0.5);
-	border-top-right-radius: 1.5rem;
-	border-bottom-right-radius: 1.5rem;
+	top: 0.5rem;
+	left: 0.5rem
 }
-.index_productlist_wrapper li .thumbnail .price span {
-	font-size: 0.7rem;
+.index_productlist_wrapper li .price{
+	line-height: 0.5rem;
+}
+.index_productlist_wrapper li .price span {
+	color: #fff;
+	font-size: 0.4rem;
 	font-weight: bold;
-	color: #fff000;
+	text-shadow: -0.05rem 0.05rem #333;
 }
-.index_productlist_wrapper li .thumbnail .price label {
-	font-size: 0.5rem;
-	color: #999;
+.index_productlist_wrapper li .price label {
+	font-size: 0.4rem;
+	color: #fff;
+	text-shadow: -0.05rem 0.05rem #333;
 	text-decoration: line-through;
 }
 .index_productlist_wrapper>ul>li {
 	display: inline-block;
 	margin: 0.5rem;
-	width: 6.8rem;
+	width: 15rem;
 	position: relative;
 	vertical-align: top;
 }
 .index_productlist_wrapper>ul>li .title {
+	margin: 0 0 0.3rem 0;
 	font-size: 0.7rem;
-	color: #333;
+	color: #fff;
+	text-shadow: -0.05rem 0.05rem #333;
 }
 .index_productlist_wrapper .common_redpacket_item span{
 	width: 0.6rem;
@@ -114,7 +132,10 @@
 	background-size: 0.6rem;
 }
 .index_productlist_wrapper .common_redpacket_item label{
-	font-size: 0.5rem;
+	font-size: 0.4rem;
+	line-height: 1rem;
+	color: #fff;
+	text-shadow: -0.05rem 0.05rem #333;
 }
 /*~~~~~~~~~~index_producttitle_item~~~~~~~~~~*/
 
@@ -134,4 +155,38 @@
 	width: 3rem;
 	height: 1px;
 	background-color: #ccc;
+}
+/*~~~~~~~~~~index_producttab_wrapper~~~~~~~~~~*/
+.index_producttab_wrapper{
+	width: 100%;
+	background: #fff;
+	font-size: 0;
+	text-align: center;
+}
+.index_producttab_wrapper li{
+	display: inline-block;
+	width: 33%;
+	font-size: 0.7rem;
+}
+.index_producttab_wrapper li a{
+	display: inline-block;
+	padding: 0.5rem 0;
+	width: 100%;
+	color: #666;
+}
+.index_producttab_wrapper .active a{
+	color: #4c9dc0;
+	position: relative;
+}
+.index_producttab_wrapper .active a:after{
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-width: 0.2rem;
+	border-color: transparent transparent #4c9dc0 transparent;
+	border-style: solid;
+	position: absolute;
+	bottom: 0;
+	left: 48%;
 }

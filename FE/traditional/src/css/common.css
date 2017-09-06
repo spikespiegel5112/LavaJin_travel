@@ -52,7 +52,7 @@ a.disabled:hover {
 /*~~~~~~~~~~swiper~~~~~~~~~~*/
 
 .main_container .swiper-pagination-bullets {
-	bottom: 1rem;
+	bottom: 0.3rem;
 }
 .main_container .swiper-pagination-bullet {
 	width: 0.4rem;
@@ -63,6 +63,7 @@ a.disabled:hover {
 
 .main_container {
 	width: 100%;
+	background: #eef0ef;
 }
 
 /*~~~~~~~~~~common_navgap_item~~~~~~~~~~*/
@@ -309,6 +310,18 @@ a.disabled:hover {
 	position: relative;
 	box-sizing: border-box;
 }
+
+.common_block_wrapper .banner{
+	display: block;
+	margin: 0.5rem 0;
+	width: 100%;
+}
+.common_block_wrapper p img, .common_block_wrapper strong img{
+	display: block;
+	margin: 0.5rem 0;
+	width: 100%;
+}
+
 
 /*~~~~~~~~~~common_redpacket_item~~~~~~~~~~*/
 
