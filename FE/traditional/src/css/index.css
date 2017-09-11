@@ -3,7 +3,7 @@
 .index_carousel_wrapper {
 	width: 100%;
 	min-width: 320px;
-	height: 6rem;
+	height: 9rem;
 }
 .index_carousel_wrapper li {
 	height: 100%;
@@ -19,7 +19,7 @@
 /*~~~~~~~~~~index_categorylist_wrapper~~~~~~~~~~*/
 
 .index_categorylist_wrapper {
-	margin: 0.5rem 0;
+	/*margin: 0.5rem 0;*/
 	padding: 0.5rem 0;
 	width: 100%;
 }
@@ -46,10 +46,9 @@
 .index_categorylist_wrapper li a img {
 	display: inline-block;
 	width: 100%;
-	opacity: 0.5;
 	transition: all 0.3s;
 }
-.index_categorylist_wrapper li label {
+.index_categorylist_wrapper li span {
 	display: block;
 	padding: 0.5rem 0;
 	width: 100%;
@@ -58,6 +57,17 @@
 	color: #fff;
 	position: absolute;
 	bottom: 30%;
+}
+
+.index_categorylist_wrapper li a:after{
+	content: '';
+	width: 1rem;
+	height: 0.1rem;
+	text-align: center;
+	background: #fff;
+	position: absolute;
+	bottom: 1.5rem;
+	left: 1.9rem;
 }
 
 /*~~~~~~~~~~index_productlist_wrapper~~~~~~~~~~*/
@@ -72,7 +82,7 @@
 	display: block;
 }
 .index_productlist_wrapper li .thumbnail {
-	width: 100%;
+	width: 15rem;
 	height: 6rem;
 	border-radius: 0.4rem;
 	position: relative;
@@ -90,7 +100,7 @@
 }
 .index_productlist_wrapper li .thumbnail img {
 	display: block;
-	width: 200%;
+	width: 100%;
 	transition: all 0.3s;
 }
 .index_productlist_wrapper li .desc{
@@ -162,6 +172,7 @@
 	background: #fff;
 	font-size: 0;
 	text-align: center;
+	box-shadow: 0px 1px 0 #ccc;
 }
 .index_producttab_wrapper li{
 	display: inline-block;
