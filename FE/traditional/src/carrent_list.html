@@ -91,6 +91,26 @@
 		</div>
 	</div>
 </body>
-
+<script type="text/javascript">
+(function($) {
+	$(function() {
+		var orderList = {
+			align: function() {
+				$.align({
+					container: '.common_list_wrapper .thumbnail',
+					target: '.common_list_wrapper .thumbnail img'
+				})
+			},
+			main: function() {
+				this.align();
+			},
+			init: function() {
+				this.main();
+			}
+		}
+		orderList.init();
+	})
+})(jQuery)
+</script>
 </html>
 
