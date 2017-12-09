@@ -177,7 +177,7 @@
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class=''>
 						<ul>
 							<li>
 								<div class='leftcontent'>
@@ -299,7 +299,7 @@
 			align: function() {
 				$.align({
 					container: '.order_list_wrapper .thumbnail',
-					target: '.order_list_wrapper .thumbnail img'
+					target: '.order_list_wrapper .thumbnail img',
 				})
 			},
 			tab: function() {
@@ -307,7 +307,9 @@
 				$('.order_tab_wrapper li').tabSwitch({
 					classname: '.order_list_wrapper>ul>li',
 					callback: function() {
-						that.align()
+						// setTimeout(function(){
+						// 	that.align()
+						// },500)
 					}
 				})
 			},
